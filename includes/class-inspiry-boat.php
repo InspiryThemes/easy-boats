@@ -22,11 +22,12 @@ class Inspiry_Boat {
      * @var array boat meta keys
      */
     private $meta_keys = array(
-        'custom_id'             => 'YACHTPRESS_boat_id',
         'price'                 => 'YACHTPRESS_boat_price',
         'length'                => 'YACHTPRESS_boat_length',
         'length_postfix'        => 'YACHTPRESS_boat_length_postfix',
-        'built_year'            => 'YACHTPRESS_boat_built_year',
+        'boat_built_year'       => 'YACHTPRESS_boat_built_year',
+        'boat_featured'         => 'YACHTPRESS_featured',
+        'custom_id'             => 'YACHTPRESS_boat_id',
         'video_url'             => 'YACHTPRESS_tour_video_url',
         'video_image'           => 'YACHTPRESS_tour_video_image',
         'agent_display_option'  => 'YACHTPRESS_agent_display_option',
@@ -123,6 +124,18 @@ class Inspiry_Boat {
         }
         return $this->get_boat_meta( $this->meta_keys['boat_built_year'] );
     }
+
+    /**
+     * Return boat built year
+     * @return bool|mixed
+     */
+    public function get_featured_tag(){
+        if ( ! $this->boat_id ) {
+            return false;
+        }
+        return $this->get_boat_meta( $this->meta_keys['boat_featured'] );
+    }
+
 
     /**
      * Get agent display option

@@ -392,10 +392,6 @@ class Inspiry_Boat_Post_Type {
                     'label' => esc_html__('Agent Information', 'inspiry-yachtpress'),
                     'icon' => 'dashicons-businessman',
                 ),
-                'misc' => array(
-                    'label' => esc_html__('Misc', 'inspiry-yachtpress'),
-                    'icon' => 'dashicons-lightbulb',
-                ),
                 'home-slider' => array(
                     'label' => esc_html__('Homepage Slider', 'inspiry-yachtpress'),
                     'icon' => 'dashicons-images-alt',
@@ -428,7 +424,7 @@ class Inspiry_Boat_Post_Type {
                     'tab' => 'details',
                 ),
                 array(
-                    'id' => "{$prefix}boat_size_postfix",
+                    'id' => "{$prefix}boat_length_postfix",
                     'name' => esc_html__('Length Postfix', 'inspiry-yachtpress'),
                     'desc' => esc_html__('Example Value: Ft or m', 'inspiry-yachtpress'),
                     'type' => 'text',
@@ -451,6 +447,18 @@ class Inspiry_Boat_Post_Type {
                     'desc' => esc_html__('It will help you search a boat directly.', 'inspiry-yachtpress'),
                     'type' => 'text',
                     'std' => "",
+                    'columns' => 6,
+                    'tab' => 'details',
+                ),
+                array(
+                    'name' => esc_html__('Mark this boat as featured ?', 'inspiry-yachtpress'),
+                    'id' => "{$prefix}featured",
+                    'type' => 'radio',
+                    'std' => 0,
+                    'options' => array(
+                        1 => esc_html__('Yes ', 'inspiry-yachtpress'),
+                        0 => esc_html__('No', 'inspiry-yachtpress')
+                    ),
                     'columns' => 6,
                     'tab' => 'details',
                 ),
@@ -510,28 +518,6 @@ class Inspiry_Boat_Post_Type {
                     'tab' => 'agent',
                 ),
 
-                // Misc
-                array(
-                    'name' => esc_html__('Mark this boat as featured ?', 'inspiry-yachtpress'),
-                    'id' => "{$prefix}featured",
-                    'type' => 'radio',
-                    'std' => 0,
-                    'options' => array(
-                        1 => esc_html__('Yes ', 'inspiry-yachtpress'),
-                        0 => esc_html__('No', 'inspiry-yachtpress')
-                    ),
-                    'columns' => 12,
-                    'tab' => 'misc',
-                ),
-                array(
-                    'id' => "{$prefix}boat_private_note",
-                    'name' => esc_html__('Private Note', 'inspiry-yachtpress'),
-                    'desc' => esc_html__('In this textarea, You can write your private note about this boat. This field will not be displayed anywhere else.', 'inspiry-yachtpress'),
-                    'type' => 'textarea',
-                    'std' => "",
-                    'columns' => 12,
-                    'tab' => 'misc',
-                ),
 
                 // Homepage Slider
                 array(
