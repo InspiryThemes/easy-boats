@@ -330,9 +330,10 @@ class Inspiry_Boat_Post_Type {
             $last_columns = array_splice( $defaults, -4, 4 );
 
             /* Simplify column titles */
-            $last_columns[ 'taxonomy-boat-type' ]   = esc_html__( 'Type', 'inspiry-yachtpress' );
-            $last_columns[ 'taxonomy-boat-status' ] = esc_html__( 'Status', 'inspiry-yachtpress' );
-            $last_columns[ 'taxonomy-boat-location' ]   = esc_html__( 'Location', 'inspiry-yachtpress' );
+            $last_columns[ 'taxonomy-boat-type' ]        = esc_html__( 'Type', 'inspiry-yachtpress' );
+            $last_columns[ 'taxonomy-boat-hull-type' ]   = esc_html__( 'Hull Type', 'inspiry-yachtpress' );
+            $last_columns[ 'taxonomy-boat-status' ]      = esc_html__( 'Status', 'inspiry-yachtpress' );
+            $last_columns[ 'taxonomy-boat-location' ]    = esc_html__( 'Location', 'inspiry-yachtpress' );
 
         }
 

@@ -125,7 +125,7 @@ class Inspiry_Yachtpress_Admin {
 			'administrator',					                        // What roles are able to access the menu
 			'inspiry_yachtpress',				                        // The ID used to bind submenu items to this menu
 			array( $this, 'display_yachtpress_settings'),			    // The callback function used to render this menu
-			'dashicons-admin-multisite',
+			'dashicons-admin-settings',
 			'25.786'
 		);
 

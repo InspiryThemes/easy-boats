@@ -317,6 +317,14 @@ class Inspiry_Boat {
     }
 
     /**
+     * Return boat hull types
+     * @return bool|null|string
+     */
+    public function get_hull_types() {
+        return $this->get_taxonomy_terms( 'boat-hull-type' );
+    }
+
+    /**
      * Return boat status
      * @return bool|null|string
      */
