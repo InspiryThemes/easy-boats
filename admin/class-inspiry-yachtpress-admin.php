@@ -375,6 +375,20 @@ class Inspiry_Yachtpress_Admin {
 		);
 
 		add_settings_field(
+			'boat_hull_type_url_slug',
+			__( 'Boat Hull Type', 'inspiry-yachtpress' ),
+			array( $this, 'text_option_field' ),
+			'inspiry_url_slugs_page',
+			'inspiry_url_slugs_section',
+			array(
+				'field_id'          => 'boat_hull_type_url_slug',
+				'field_option'      => 'inspiry_url_slugs_option',
+				'field_default'     => __( 'boat-hull-type', 'inspiry-yachtpress' ),
+				'field_description' => __( 'Default: boat-hull-type', 'inspiry-yachtpress' ),
+			)
+		);
+
+		add_settings_field(
 			'boat_status_url_slug',
 			__( 'Boat Status', 'inspiry-yachtpress' ),
 			array( $this, 'text_option_field' ),

@@ -234,6 +234,7 @@ class Inspiry_Yachtpress {
 		// Filters to modify URL slugs
 		$this->loader->add_filter( 'inspiry_boat_slug', $this, 'modify_boat_slug' );
 		$this->loader->add_filter( 'inspiry_boat_type_slug', $this, 'modify_boat_type_slug' );
+		$this->loader->add_filter( 'inspiry_boat_hull_type_slug', $this, 'modify_boat_hull_type_slug' );
 		$this->loader->add_filter( 'inspiry_boat_status_slug', $this, 'modify_boat_status_slug' );
 		$this->loader->add_filter( 'inspiry_boat_location_slug', $this, 'modify_boat_location_slug' );
 		$this->loader->add_filter( 'inspiry_boat_feature_slug', $this, 'modify_boat_feature_slug' );
@@ -243,6 +244,7 @@ class Inspiry_Yachtpress {
 		$boat_post_type = new Inspiry_Boat_Post_Type();
 		$this->loader->add_action( 'init', $boat_post_type, 'register_boat_post_type' );
 		$this->loader->add_action( 'init', $boat_post_type, 'register_boat_type_taxonomy' );
+		$this->loader->add_action( 'init', $boat_post_type, 'register_boat_hull_type_taxonomy' );
 		$this->loader->add_action( 'init', $boat_post_type, 'register_boat_status_taxonomy' );
 		$this->loader->add_action( 'init', $boat_post_type, 'register_boat_location_taxonomy' );
 		$this->loader->add_action( 'init', $boat_post_type, 'register_boat_feature_taxonomy' );
@@ -438,6 +440,21 @@ class Inspiry_Yachtpress {
 		$boat_type_url_slug = $this->get_boat_type_url_slug();
 		if ( $boat_type_url_slug ) {
 			return $boat_type_url_slug;
+		}
+		return $existing_slug;
+	}
+
+	public function get_boat_hull_type_url_slug() {
+		if( isset( $this->url_slugs_options[ 'boat_hull_type_url_slug' ] ) ) {
+			return sanitize_title( $this->url_slugs_options[ 'boat_hull_type_url_slug' ] );
+		}
+		return null;
+	}
+
+	public function modify_boat_hull_type_slug ( $existing_slug ) {
+		$boat_hull_type_url_slug = $this->get_boat_hull_type_url_slug();
+		if ( $boat_hull_type_url_slug ) {
+			return $boat_hull_type_url_slug;
 		}
 		return $existing_slug;
 	}

@@ -114,6 +114,53 @@ class Inspiry_Boat_Post_Type {
     }
 
     /**
+     * Register Boat Hull Type Taxonomy
+     * @since 1.0.0
+     */
+    public function register_boat_hull_type_taxonomy() {
+
+        $labels = array(
+            'name'                       => esc_html_x( 'Boat Hull Types', 'Taxonomy General Name', 'inspiry-yachtpress' ),
+            'singular_name'              => esc_html_x( 'Boat Feature', 'Taxonomy Singular Name', 'inspiry-yachtpress' ),
+            'menu_name'                  => esc_html__( 'Hull Types', 'inspiry-yachtpress' ),
+            'all_items'                  => esc_html__( 'All Boat Hull Types', 'inspiry-yachtpress' ),
+            'parent_item'                => esc_html__( 'Parent Boat Hull Type', 'inspiry-yachtpress' ),
+            'parent_item_colon'          => esc_html__( 'Parent Boat Hull Type:', 'inspiry-yachtpress' ),
+            'new_item_name'              => esc_html__( 'New Boat Hull Type Name', 'inspiry-yachtpress' ),
+            'add_new_item'               => esc_html__( 'Add New Boat Hull Type', 'inspiry-yachtpress' ),
+            'edit_item'                  => esc_html__( 'Edit Boat Hull Type', 'inspiry-yachtpress' ),
+            'update_item'                => esc_html__( 'Update Boat Hull Type', 'inspiry-yachtpress' ),
+            'view_item'                  => esc_html__( 'View Boat Hull Type', 'inspiry-yachtpress' ),
+            'separate_items_with_commas' => esc_html__( 'Separate Boat Hull Types with commas', 'inspiry-yachtpress' ),
+            'add_or_remove_items'        => esc_html__( 'Add or remove Boat Hull Types', 'inspiry-yachtpress' ),
+            'choose_from_most_used'      => esc_html__( 'Choose from the most used', 'inspiry-yachtpress' ),
+            'popular_items'              => esc_html__( 'Popular Boat Hull Types', 'inspiry-yachtpress' ),
+            'search_items'               => esc_html__( 'Search Boat Hull Types', 'inspiry-yachtpress' ),
+            'not_found'                  => esc_html__( 'Not Found', 'inspiry-yachtpress' ),
+        );
+
+        $rewrite = array(
+            'slug'                       => apply_filters( 'inspiry_boat_hull_type_slug', esc_html__( 'boat-hull-type', 'inspiry-yachtpress' ) ),
+            'with_front'                 => true,
+            'hierarchical'               => true,
+        );
+
+        $args = array(
+            'labels'                     => $labels,
+            'hierarchical'               => true,
+            'public'                     => true,
+            'show_ui'                    => true,
+            'show_admin_column'          => false,
+            'show_in_nav_menus'          => true,
+            'show_tagcloud'              => true,
+            'rewrite'                    => $rewrite,
+        );
+
+        register_taxonomy( 'boat-hull-type', array( 'boat' ), $args );
+
+    }
+
+    /**
      * Register Boat Status Taxonomy
      * @since 1.0.0
      */
