@@ -9,8 +9,8 @@
  * @link       https://themeforest.net/user/inspirythemes
  * @since      1.0.0
  *
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/includes
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/includes
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/includes
  * @author     InspiryThemes <info@inspirythemes.com>
  */
-class Inspiry_Yachtpress_i18n {
+class Easy_Boats_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Inspiry_Yachtpress_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'inspiry-yachtpress',
+			'easy-boats',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

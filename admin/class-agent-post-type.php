@@ -4,11 +4,11 @@
  *
  * Defines the agent post type.
  *
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/admin
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/admin
  */
 
-class Inspiry_Agent_Post_Type {
+class Easy_Boats_Agent_Post_Type {
 
     /**
      * Register Agent Post Type
@@ -17,33 +17,33 @@ class Inspiry_Agent_Post_Type {
     public function register_agent_post_type() {
 
         $labels = array(
-            'name'                => esc_html_x( 'Agents', 'Post Type General Name', 'inspiry-yachtpress' ),
-            'singular_name'       => esc_html_x( 'Agent', 'Post Type Singular Name', 'inspiry-yachtpress' ),
-            'menu_name'           => esc_html__( 'Agents', 'inspiry-yachtpress' ),
-            'name_admin_bar'      => esc_html__( 'Agent', 'inspiry-yachtpress' ),
-            'parent_item_colon'   => esc_html__( 'Parent Agent:', 'inspiry-yachtpress' ),
-            'all_items'           => esc_html__( 'All Agents', 'inspiry-yachtpress' ),
-            'add_new_item'        => esc_html__( 'Add New Agent', 'inspiry-yachtpress' ),
-            'add_new'             => esc_html__( 'Add New', 'inspiry-yachtpress' ),
-            'new_item'            => esc_html__( 'New Agent', 'inspiry-yachtpress' ),
-            'edit_item'           => esc_html__( 'Edit Agent', 'inspiry-yachtpress' ),
-            'update_item'         => esc_html__( 'Update Agent', 'inspiry-yachtpress' ),
-            'view_item'           => esc_html__( 'View Agent', 'inspiry-yachtpress' ),
-            'search_items'        => esc_html__( 'Search Agent', 'inspiry-yachtpress' ),
-            'not_found'           => esc_html__( 'Not found', 'inspiry-yachtpress' ),
-            'not_found_in_trash'  => esc_html__( 'Not found in Trash', 'inspiry-yachtpress' ),
+            'name'                => _x( 'Agents', 'Post Type General Name', 'easy-boats' ),
+            'singular_name'       => _x( 'Agent', 'Post Type Singular Name', 'easy-boats' ),
+            'menu_name'           => __( 'Agents', 'easy-boats' ),
+            'name_admin_bar'      => __( 'Agent', 'easy-boats' ),
+            'parent_item_colon'   => __( 'Parent Agent:', 'easy-boats' ),
+            'all_items'           => __( 'All Agents', 'easy-boats' ),
+            'add_new_item'        => __( 'Add New Agent', 'easy-boats' ),
+            'add_new'             => __( 'Add New', 'easy-boats' ),
+            'new_item'            => __( 'New Agent', 'easy-boats' ),
+            'edit_item'           => __( 'Edit Agent', 'easy-boats' ),
+            'update_item'         => __( 'Update Agent', 'easy-boats' ),
+            'view_item'           => __( 'View Agent', 'easy-boats' ),
+            'search_items'        => __( 'Search Agent', 'easy-boats' ),
+            'not_found'           => __( 'Not found', 'easy-boats' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'easy-boats' ),
         );
 
         $rewrite = array(
-            'slug'                => apply_filters( 'inspiry_agent_slug', esc_html__( 'agent', 'inspiry-yachtpress' ) ),
+            'slug'                => apply_filters( 'easy_boats_agent_slug', __( 'agent', 'easy-boats' ) ),
             'with_front'          => true,
             'pages'               => true,
             'feeds'               => false,
         );
 
         $args = array(
-            'label'               => esc_html__( 'agent', 'inspiry-yachtpress' ),
-            'description'         => esc_html__( 'Boat Agent', 'inspiry-yachtpress' ),
+            'label'               => __( 'agent', 'easy-boats' ),
+            'description'         => __( 'Boat Agent', 'easy-boats' ),
             'labels'              => $labels,
             'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions', ),
             'hierarchical'        => false,
@@ -76,9 +76,9 @@ class Inspiry_Agent_Post_Type {
     public function register_custom_column_titles ( $defaults ) {
 
         $new_columns = array(
-            "thumb"     => esc_html__( 'Photo', 'inspiry-yachtpress' ),
-            "email"     => esc_html__( 'Email', 'inspiry-yachtpress' ),
-            "mobile"    => esc_html__( 'Mobile', 'inspiry-yachtpress'),
+            "thumb"     => __( 'Photo', 'easy-boats' ),
+            "email"     => __( 'Email', 'easy-boats' ),
+            "mobile"    => __( 'Mobile', 'easy-boats'),
         );
 
         $last_columns = array();
@@ -114,25 +114,25 @@ class Inspiry_Agent_Post_Type {
                     </a>
                     <?php
                 } else {
-                    _e ( 'No Image', 'inspiry-yachtpress' );
+                    _e ( 'No Image', 'easy-boats' );
                 }
                 break;
 
             case 'email':
-                $agent_email = is_email( get_post_meta ( $post->ID, 'YACHTPRESS_agent_email', true ) );
+                $agent_email = is_email( get_post_meta ( $post->ID, 'EASYBOATS_agent_email', true ) );
                 if ( $agent_email ) {
                     echo $agent_email;
                 } else {
-                    _e ( 'NA', 'inspiry-yachtpress' );
+                    _e ( 'NA', 'easy-boats' );
                 }
                 break;
 
             case 'mobile':
-                $mobile_number = get_post_meta ( $post->ID, 'YACHTPRESS_mobile_number', true );
+                $mobile_number = get_post_meta ( $post->ID, 'EASYBOATS_mobile_number', true );
                 if ( !empty( $mobile_number ) ) {
                     echo $mobile_number;
                 } else {
-                    _e ( 'NA', 'inspiry-yachtpress' );
+                    _e ( 'NA', 'easy-boats' );
                 }
                 break;
 
@@ -150,75 +150,75 @@ class Inspiry_Agent_Post_Type {
      */
     public function register_meta_boxes ( $meta_boxes ){
 
-        $prefix = 'YACHTPRESS_';
+        $prefix = 'EASYBOATS_';
 
         // Agent Meta Box
         $meta_boxes[] = array(
             'id'        => 'agent-meta-box',
-            'title'     => esc_html__('Contact Details', 'inspiry-yachtpress'),
+            'title'     => __('Contact Details', 'easy-boats'),
             'pages'     => array( 'agent' ),
             'context'   => 'normal',
             'priority'  => 'high',
             'fields'    => array(
                 array(
-                    'name'  => esc_html__( 'Job Title', 'inspiry-yachtpress' ),
-                    'id'    => "inspiry_job_title",
+                    'name'  => __( 'Job Title', 'easy-boats' ),
+                    'id'    => "easy_boats_job_title",
                     'type'  => 'text',
                 ),
                 array(
-                    'name'  => esc_html__( 'Email Address', 'inspiry-yachtpress' ),
+                    'name'  => __( 'Email Address', 'easy-boats' ),
                     'id'    => "{$prefix}agent_email",
-                    'desc'  => esc_html__( "Agent related messages from contact form on boat details page, will be sent on this email address.", "inspiry-yachtpress" ),
+                    'desc'  => __( "Agent related messages from contact form on boat details page, will be sent on this email address.", "easy-boats" ),
                     'type'  => 'email',
                 ),
                 array(
-                    'name'  => esc_html__( 'Mobile Number', 'inspiry-yachtpress' ),
+                    'name'  => __( 'Mobile Number', 'easy-boats' ),
                     'id'    => "{$prefix}mobile_number",
                     'type'  => 'text',
                 ),
                 array(
-                    'name'  => esc_html__('Office Number', 'inspiry-yachtpress'),
+                    'name'  => __('Office Number', 'easy-boats'),
                     'id'    => "{$prefix}office_number",
                     'type'  => 'text',
                 ),
                 array(
-                    'name'  => esc_html__('Fax Number', 'inspiry-yachtpress'),
+                    'name'  => __('Fax Number', 'easy-boats'),
                     'id'    => "{$prefix}fax_number",
                     'type'  => 'text',
                 ),
                 array(
-                    'name'  => esc_html__( 'Office Address', 'inspiry-yachtpress' ),
-                    'id'    => "inspiry_office_address",
+                    'name'  => __( 'Office Address', 'easy-boats' ),
+                    'id'    => "easy_boats_office_address",
                     'type'  => 'text',
                 ),
                 array(
-                    'name'  => esc_html__('Facebook URL', 'inspiry-yachtpress'),
+                    'name'  => __('Facebook URL', 'easy-boats'),
                     'id'    => "{$prefix}facebook_url",
                     'type'  => 'url',
                 ),
                 array(
-                    'name'  => esc_html__('Twitter URL', 'inspiry-yachtpress'),
+                    'name'  => __('Twitter URL', 'easy-boats'),
                     'id'    => "{$prefix}twitter_url",
                     'type'  => 'url',
                 ),
                 array(
-                    'name'  => esc_html__('Google Plus URL', 'inspiry-yachtpress'),
+                    'name'  => __('Google Plus URL', 'easy-boats'),
                     'id'    => "{$prefix}google_plus_url",
                     'type'  => 'url',
                 ),
                 array(
-                    'name'  => esc_html__('LinkedIn URL', 'inspiry-yachtpress'),
+                    'name'  => __('LinkedIn URL', 'easy-boats'),
                     'id'    => "{$prefix}linked_in_url",
                     'type'  => 'text',
                 ),
                 array(
-                    'name'  => esc_html__('Pinterest URL', 'inspiry-yachtpress'),
-                    'id'    => "inspiry_pinterest_url",
+                    'name'  => __('Pinterest URL', 'easy-boats'),
+                    'id'    => "easy_boats_pinterest_url",
                     'type'  => 'url',
                 ),
                 array(
-                    'name'  => esc_html__('Instagram URL', 'inspiry-yachtpress'),
-                    'id'    => "inspiry_instagram_url",
+                    'name'  => __('Instagram URL', 'easy-boats'),
+                    'id'    => "easy_boats_instagram_url",
                     'type'  => 'url',
                 )
 

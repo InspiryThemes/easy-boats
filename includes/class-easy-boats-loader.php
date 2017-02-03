@@ -6,8 +6,8 @@
  * @link       https://themeforest.net/user/inspirythemes
  * @since      1.0.0
  *
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/includes
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/includes
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/includes
  * @author     InspiryThemes <info@inspirythemes.com>
  */
-class Inspiry_Yachtpress_Loader {
+class Easy_Boats_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

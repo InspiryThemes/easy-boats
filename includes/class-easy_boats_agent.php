@@ -6,12 +6,12 @@
  *
  *
  * @since      1.0.0
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/includes
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/includes
  * @author     InspiryThemes <info@inspirythemes.com>
  */
 
-class Inspiry_Agent {
+class Easy_Boats_Agent {
 
     private $agent_id;
 
@@ -19,18 +19,18 @@ class Inspiry_Agent {
      * @var array agent meta keys
      */
     private $meta_keys = array(
-        'job_title'     => 'inspiry_job_title',
-        'mobile'        => 'YACHTPRESS_mobile_number',
-        'office'        => 'YACHTPRESS_office_number',
-        'fax'           => 'YACHTPRESS_fax_number',
-        'email'         => 'YACHTPRESS_agent_email',
-        'office_address'=> 'inspiry_office_address',
-        'facebook'      => 'YACHTPRESS_facebook_url',
-        'twitter'       => 'YACHTPRESS_twitter_url',
-        'google'        => 'YACHTPRESS_google_plus_url',
-        'linkedin'      => 'YACHTPRESS_linked_in_url',
-        'pinterest'     => 'inspiry_pinterest_url',
-        'instagram'     => 'inspiry_instagram_url',
+        'job_title'     => 'EASYBOATS_job_title',
+        'mobile'        => 'EASYBOATS_mobile_number',
+        'office'        => 'EASYBOATS_office_number',
+        'fax'           => 'EASYBOATS_fax_number',
+        'email'         => 'EASYBOATS_agent_email',
+        'office_address'=> 'EASYBOATS_office_address',
+        'facebook'      => 'EASYBOATS_facebook_url',
+        'twitter'       => 'EASYBOATS_twitter_url',
+        'google'        => 'EASYBOATS_google_plus_url',
+        'linkedin'      => 'EASYBOATS_linked_in_url',
+        'pinterest'     => 'EASYBOATS_pinterest_url',
+        'instagram'     => 'EASYBOATS_instagram_url',
     );
 
     /**

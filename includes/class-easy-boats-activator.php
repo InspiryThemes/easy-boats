@@ -6,8 +6,8 @@
  * @link       https://themeforest.net/user/inspirythemes
  * @since      1.0.0
  *
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/includes
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/includes
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/includes
  * @author     InspiryThemes <info@inspirythemes.com>
  */
-class Inspiry_Yachtpress_Activator {
+class Easy_Boats_Activator {
 
 	/**
 	 * Short Description. (use period)

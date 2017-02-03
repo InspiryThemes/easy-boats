@@ -6,12 +6,12 @@
  *
  *
  * @since      1.0.0
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/includes
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/includes
  * @author     InspiryThemes <info@inspirythemes.com>
  */
 
-class Inspiry_Boat {
+class Easy_Boats_Boat {
 
     /**
      * @var int $boat_id contains boat post id.
@@ -22,17 +22,17 @@ class Inspiry_Boat {
      * @var array boat meta keys
      */
     private $meta_keys = array(
-        'price'                 => 'YACHTPRESS_boat_price',
-        'length'                => 'YACHTPRESS_boat_length',
-        'length_postfix'        => 'YACHTPRESS_boat_length_postfix',
-        'boat_built_year'       => 'YACHTPRESS_boat_built_year',
-        'boat_featured'         => 'YACHTPRESS_featured',
-        'custom_id'             => 'YACHTPRESS_boat_id',
-        'video_url'             => 'YACHTPRESS_tour_video_url',
-        'video_image'           => 'YACHTPRESS_tour_video_image',
-        'agent_display_option'  => 'YACHTPRESS_agent_display_option',
-        'agent_id'              => 'YACHTPRESS_agents',
-        'slider_image'          => 'YACHTPRESS_slider_image',
+        'price'                 => 'EASYBOATS_boat_price',
+        'length'                => 'EASYBOATS_boat_length',
+        'length_postfix'        => 'EASYBOATS_boat_length_postfix',
+        'boat_built_year'       => 'EASYBOATS_boat_built_year',
+        'boat_featured'         => 'EASYBOATS_featured',
+        'custom_id'             => 'EASYBOATS_boat_id',
+        'video_url'             => 'EASYBOATS_tour_video_url',
+        'video_image'           => 'EASYBOATS_tour_video_image',
+        'agent_display_option'  => 'EASYBOATS_agent_display_option',
+        'agent_id'              => 'EASYBOATS_agents',
+        'slider_image'          => 'EASYBOATS_slider_image',
     );
 
     /**
@@ -226,15 +226,15 @@ class Inspiry_Boat {
     public static function format_price ( $price_amount, $price_postfix = '' ) {
 
         // get related plugin options
-        $inspiry_yachtpress = Inspiry_Yachtpress::get_instance();
+        $easy_boats = Easy_Boats::get_instance();
 
         if( $price_amount ) {
 
-            $currency_sign      = $inspiry_yachtpress->get_currency_sign();
-            $number_of_decimals = $inspiry_yachtpress->get_number_of_decimals();
-            $decimal_separator  = $inspiry_yachtpress->get_decimal_separator();
-            $thousand_separator = $inspiry_yachtpress->get_thousand_separator();
-            $currency_position  = $inspiry_yachtpress->get_currency_position();
+            $currency_sign      = $easy_boats->get_currency_sign();
+            $number_of_decimals = $easy_boats->get_number_of_decimals();
+            $decimal_separator  = $easy_boats->get_decimal_separator();
+            $thousand_separator = $easy_boats->get_thousand_separator();
+            $currency_position  = $easy_boats->get_currency_position();
 
             // format price
             $formatted_price = number_format( $price_amount, $number_of_decimals, $decimal_separator, $thousand_separator );
@@ -254,7 +254,7 @@ class Inspiry_Boat {
 
         } else {
 
-            return $inspiry_yachtpress->get_empty_price_text();
+            return $easy_boats->get_empty_price_text();
 
         }
 

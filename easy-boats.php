@@ -3,17 +3,17 @@
  *
  * @link              https://themeforest.net/user/inspirythemes
  * @since             1.0.0
- * @package           Inspiry_Yachtpress
+ * @package           Easy_Boats
  *
  * @wordpress-plugin
- * Plugin Name:       Inspiry YachtPress
+ * Plugin Name:       Easy Boats
  * Plugin URI:        https://themeforest.net/user/inspirythemes
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Description:       Inspiry YachtPress plugin provides boat post type and agent post type with related functionality.
+ * Description:       Easy Boats plugin provides boat post type and agent post type with related functionality.
  * Version:           1.0.0
  * Author:            InspiryThemes
  * Author URI:        https://themeforest.net/user/inspirythemes
- * Text Domain:       inspiry-yachtpress
+ * Text Domain:       easy-boats
  * Domain Path:       /languages
  */
 
@@ -22,34 +22,34 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'INSPIRY_YACHTPRESS_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
+define( 'EASYBOATS_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-inspiry-yachtpress-activator.php
+ * This action is documented in includes/class-easy-boats-activator.php
  */
-function activate_inspiry_yachtpress() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-inspiry-yachtpress-activator.php';
-	Inspiry_Yachtpress_Activator::activate();
+function activate_easy_boats() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-easy-boats-activator.php';
+	Easy_Boats_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-inspiry-yachtpress-deactivator.php
+ * This action is documented in includes/class-easy-boats-deactivator.php
  */
-function deactivate_inspiry_yachtpress() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-inspiry-yachtpress-deactivator.php';
-	Inspiry_Yachtpress_Deactivator::deactivate();
+function deactivate_easy_boats() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-easy-boats-deactivator.php';
+	Easy_Boats_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_inspiry_yachtpress' );
-register_deactivation_hook( __FILE__, 'deactivate_inspiry_yachtpress' );
+register_activation_hook( __FILE__, 'activate_easy_boats' );
+register_deactivation_hook( __FILE__, 'deactivate_easy_boats' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-inspiry-yachtpress.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-easy-boats.php';
 
 /**
  * Begins execution of the plugin.
@@ -59,8 +59,8 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-inspiry-yachtpress.php';
  * not affect the page life cycle.
  */
 
-$inspiry_yachtpress = Inspiry_Yachtpress::get_instance();
-$inspiry_yachtpress->run();
+$easy_boats = Easy_Boats::get_instance();
+$easy_boats->run();
 
 /*
  * Meta Boxes Stuff
@@ -77,9 +77,9 @@ add_action( 'init', function() {
 		add_action( 'admin_notices', function () {
 			?>
 			<div class="update-nag notice is-dismissible">
-				<p><strong><?php _e( 'Meta Box plugin has been deactivated!', 'inspiry-yachtpress' ); ?></strong></p>
-				<p><?php _e( 'As now its functionality is embedded with in Inspiry Yachtpress plugin.', 'inspiry-yachtpress' ); ?></p>
-				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'inspiry-yachtpress' ); ?></em></p>
+				<p><strong><?php _e( 'Meta Box plugin has been deactivated!', 'easy-boats' ); ?></strong></p>
+				<p><?php _e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?></p>
+				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
 			</div>
 			<?php
 		} );
@@ -92,10 +92,10 @@ add_action( 'init', function() {
 			?>
 			<div class="update-nag notice is-dismissible">
 				<p>
-					<strong><?php _e( 'Meta Box Columns plugin has been deactivated!', 'inspiry-yachtpress' ); ?></strong>
-					&nbsp;<?php _e( 'As now its functionality is embedded with in Inspiry Yachtpress plugin.', 'inspiry-yachtpress' ); ?>
+					<strong><?php _e( 'Meta Box Columns plugin has been deactivated!', 'easy-boats' ); ?></strong>
+					&nbsp;<?php _e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
 				</p>
-				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'inspiry-yachtpress' ); ?></em></p>
+				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
 			</div>
 			<?php
 		} );
@@ -108,10 +108,10 @@ add_action( 'init', function() {
 			?>
 			<div class="update-nag notice is-dismissible">
 				<p>
-					<strong><?php _e( 'Meta Box Tabs plugin has been deactivated!', 'inspiry-yachtpress' ); ?></strong>
-					&nbsp;<?php _e( 'As now its functionality is embedded with in Inspiry Yachtpress plugin.', 'inspiry-yachtpress' ); ?>
+					<strong><?php _e( 'Meta Box Tabs plugin has been deactivated!', 'easy-boats' ); ?></strong>
+					&nbsp;<?php _e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
 				</p>
-				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'inspiry-yachtpress' ); ?></em></p>
+				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
 			</div>
 			<?php
 		} );
@@ -124,10 +124,10 @@ add_action( 'init', function() {
 			?>
 			<div class="update-nag notice is-dismissible">
 				<p>
-					<strong><?php _e( 'Meta Box Show Hide plugin has been deactivated!', 'inspiry-yachtpress' ); ?></strong>
-					&nbsp;<?php _e( 'As now its functionality is embedded with in Inspiry Yachtpress plugin.', 'inspiry-yachtpress' ); ?>
+					<strong><?php _e( 'Meta Box Show Hide plugin has been deactivated!', 'easy-boats' ); ?></strong>
+					&nbsp;<?php _e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
 				</p>
-				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'inspiry-yachtpress' ); ?></em></p>
+				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
 			</div>
 			<?php
 		} );
@@ -140,10 +140,10 @@ add_action( 'init', function() {
 			?>
 			<div class="update-nag notice is-dismissible">
 				<p>
-					<strong><?php _e( 'Meta Box Group plugin has been deactivated!', 'inspiry-yachtpress' ); ?></strong>
-					&nbsp;<?php _e( 'As now its functionality is embedded with in Inspiry Yachtpress plugin.', 'inspiry-yachtpress' ); ?>
+					<strong><?php _e( 'Meta Box Group plugin has been deactivated!', 'easy-boats' ); ?></strong>
+					&nbsp;<?php _e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
 				</p>
-				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'inspiry-yachtpress' ); ?></em></p>
+				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
 			</div>
 			<?php
 		} );

@@ -8,8 +8,8 @@
  * @link       https://themeforest.net/user/inspirythemes
  * @since      1.0.0
  *
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/public/partials
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/public/partials
  */
 ?>
 

@@ -9,8 +9,8 @@
  * @link       https://themeforest.net/user/inspirythemes
  * @since      1.0.0
  *
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/includes
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/includes
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/includes
  * @author     InspiryThemes <info@inspirythemes.com>
  */
-class Inspiry_Yachtpress {
+class Easy_Boats {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Inspiry_Yachtpress {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Inspiry_Yachtpress_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Easy_Boats_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -81,7 +81,7 @@ class Inspiry_Yachtpress {
 	/**
 	 * Return class instance
 	 *
-	 * @return Inspiry_Yachtpress|null
+	 * @return Easy_Boats|null
 	 */
 	public static function get_instance() {
 		if ( null == self::$instance ) {
@@ -101,7 +101,7 @@ class Inspiry_Yachtpress {
 	 */
 	public function __construct() {
 
-		$this->plugin_name = 'inspiry-yachtpress';
+		$this->plugin_name = 'easy-boats';
 		$this->version = '1.0.0';
 
 		$this->load_dependencies();
@@ -116,10 +116,10 @@ class Inspiry_Yachtpress {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Inspiry_Yachtpress_Loader. Orchestrates the hooks of the plugin.
-	 * - Inspiry_Yachtpress_i18n. Defines internationalization functionality.
-	 * - Inspiry_Yachtpress_Admin. Defines all hooks for the admin area.
-	 * - Inspiry_Yachtpress_Public. Defines all hooks for the public side of the site.
+	 * - Easy_Boats_Loader. Orchestrates the hooks of the plugin.
+	 * - Easy_Boats_i18n. Defines internationalization functionality.
+	 * - Easy_Boats_Admin. Defines all hooks for the admin area.
+	 * - Easy_Boats_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -133,73 +133,73 @@ class Inspiry_Yachtpress {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-inspiry-yachtpress-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-boats-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-inspiry-yachtpress-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-boats-i18n.php';
 
 		/**
 		 * The class responsible for defining boat functionality
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-inspiry-boat.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy-boats-boat.php';
 
 		/**
 		 * The class responsible for defining agent functionality
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-inspiry-agent.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-easy_boats_agent.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-inspiry-yachtpress-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-easy-boats-admin.php';
 
 		/**
 		 * The class responsible for providing boat custom post type and related stuff.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-inspiry-boat-post-type.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-boat-post-type.php';
 
 		/**
 		 * The class responsible for providing agent custom post type and related stuff.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-inspiry-agent-post-type.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-agent-post-type.php';
 
 		/**
 		 * The class responsible for providing partners custom post type and related stuff.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-inspiry-partner-post-type.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-partner-post-type.php';
 
 		/**
 		 * The class responsible for providing service custom post type and related stuff.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-inspiry-service-post-type.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-service-post-type.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-inspiry-yachtpress-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-easy-boats-public.php';
 
 		/**
 		 * The class responsible for providing theme shortcodes.
 		 */
-		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-inspiry-shortcodes.php';
+		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-shortcodes.php';
 
 		/**
 		 * The file responsible for providing all shortcodes.
 		 */
-		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/inspiry-yachtpress-shortcodes.php';
+		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/easy-boats-shortcodes.php';
 
-		$this->loader = new Inspiry_Yachtpress_Loader();
+		$this->loader = new Easy_Boats_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Inspiry_Yachtpress_i18n class in order to set the domain and to register the hook
+	 * Uses the Easy_Boats_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -207,7 +207,7 @@ class Inspiry_Yachtpress {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Inspiry_Yachtpress_i18n();
+		$plugin_i18n = new Easy_Boats_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -222,26 +222,26 @@ class Inspiry_Yachtpress {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Inspiry_Yachtpress_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Easy_Boats_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_yachtpress_settings' );
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_easy_boats_settings' );
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'initialize_price_format_options' );
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'initialize_url_slugs_options' );
-		$this->loader->add_filter( 'plugin_action_links_' . INSPIRY_YACHTPRESS_PLUGIN_BASENAME, $plugin_admin, 'inspiry_yachtpress_action_links' );
+		$this->loader->add_filter( 'plugin_action_links_' . EASYBOATS_PLUGIN_BASENAME, $plugin_admin, 'easy_boats_action_links' );
 
 		// Filters to modify URL slugs
-		$this->loader->add_filter( 'inspiry_boat_slug', $this, 'modify_boat_slug' );
-		$this->loader->add_filter( 'inspiry_boat_type_slug', $this, 'modify_boat_type_slug' );
-		$this->loader->add_filter( 'inspiry_boat_hull_type_slug', $this, 'modify_boat_hull_type_slug' );
-		$this->loader->add_filter( 'inspiry_boat_status_slug', $this, 'modify_boat_status_slug' );
-		$this->loader->add_filter( 'inspiry_boat_location_slug', $this, 'modify_boat_location_slug' );
-		$this->loader->add_filter( 'inspiry_boat_feature_slug', $this, 'modify_boat_feature_slug' );
-		$this->loader->add_filter( 'inspiry_agent_slug', $this, 'modify_agent_slug' );
+		$this->loader->add_filter( 'easy_boats_boat_slug', $this, 'modify_boat_slug' );
+		$this->loader->add_filter( 'easy_boats_boat_type_slug', $this, 'modify_boat_type_slug' );
+		$this->loader->add_filter( 'easy_boats_boat_hull_type_slug', $this, 'modify_boat_hull_type_slug' );
+		$this->loader->add_filter( 'easy_boats_boat_status_slug', $this, 'modify_boat_status_slug' );
+		$this->loader->add_filter( 'easy_boats_boat_location_slug', $this, 'modify_boat_location_slug' );
+		$this->loader->add_filter( 'easy_boats_boat_feature_slug', $this, 'modify_boat_feature_slug' );
+		$this->loader->add_filter( 'easy_boats_agent_slug', $this, 'modify_agent_slug' );
 
 		// Boat Post Type
-		$boat_post_type = new Inspiry_Boat_Post_Type();
+		$boat_post_type = new Easy_Boats_Boat_Post_Type();
 		$this->loader->add_action( 'init', $boat_post_type, 'register_boat_post_type' );
 		$this->loader->add_action( 'init', $boat_post_type, 'register_boat_type_taxonomy' );
 		$this->loader->add_action( 'init', $boat_post_type, 'register_boat_hull_type_taxonomy' );
@@ -251,22 +251,22 @@ class Inspiry_Yachtpress {
 		$this->loader->add_filter( 'rwmb_meta_boxes', $boat_post_type, 'register_meta_boxes' );
 
 		// Agent Post Type
-		$agent_post_type = new Inspiry_Agent_Post_Type();
+		$agent_post_type = new Easy_Boats_Agent_Post_Type();
 		$this->loader->add_action( 'init', $agent_post_type, 'register_agent_post_type' );
 		$this->loader->add_filter( 'rwmb_meta_boxes', $agent_post_type, 'register_meta_boxes' );
 
 		// Partner Post Type
-		$partner_post_type = new Inspiry_Partner_Post_Type();
+		$partner_post_type = new Easy_Boats_Partner_Post_Type();
 		$this->loader->add_action( 'init', $partner_post_type, 'register_partner_post_type' );
 		$this->loader->add_filter( 'rwmb_meta_boxes', $partner_post_type, 'register_meta_boxes' );
 
 		// Service Post Type
-		$service_post_type = new Inspiry_Service_Post_Type();
+		$service_post_type = new Easy_Boats_Service_Post_Type();
 		$this->loader->add_action( 'init', $service_post_type, 'register_service_post_type' );
 		$this->loader->add_action( 'init', $service_post_type, 'register_service_type_taxonomy' );
 
 		// Add theme shortcodes
-		//new Inspiry_Shortcodes();
+		//new Easy_Boats_Shortcodes();
 
 		if ( is_admin() ) {
 			global $pagenow;
@@ -306,8 +306,7 @@ class Inspiry_Yachtpress {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Inspiry_Yachtpress_Public( $this->get_plugin_name(), $this->get_version() );
-
+		$plugin_public = new Easy_Boats_Public( $this->get_plugin_name(), $this->get_version() );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
@@ -337,7 +336,7 @@ class Inspiry_Yachtpress {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Inspiry_Yachtpress_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Easy_Boats_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;
@@ -522,8 +521,8 @@ class Inspiry_Yachtpress {
 	private function refresh(){
 		if ( function_exists( 'icl_object_id' ) ) {
 			// re-read only for wpml
-			$this->price_format_options =  get_option( 'inspiry_price_format_option' );
-			$this->url_slugs_options = get_option( 'inspiry_url_slugs_option' );
+			$this->price_format_options =  get_option( 'easy_boats_price_format_option' );
+			$this->url_slugs_options = get_option( 'easy_boats_url_slugs_option' );
 
 		}
 	}

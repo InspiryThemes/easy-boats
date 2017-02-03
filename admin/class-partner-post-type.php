@@ -4,11 +4,11 @@
  *
  * Defines the partner post type.
  *
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/admin
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/admin
  */
 
-class Inspiry_Partner_Post_Type {
+class Easy_Boats_Partner_Post_Type {
 
     /**
      * Register partner post type
@@ -17,26 +17,26 @@ class Inspiry_Partner_Post_Type {
     public function register_partner_post_type() {
 
         $labels = array(
-            'name'                => esc_html_x( 'Partners', 'Post Type General Name', 'inspiry-yachtpress' ),
-            'singular_name'       => esc_html_x( 'Partner', 'Post Type Singular Name', 'inspiry-yachtpress' ),
-            'menu_name'           => esc_html__( 'Partners', 'inspiry-yachtpress' ),
-            'name_admin_bar'      => esc_html__( 'Partner', 'inspiry-yachtpress' ),
-            'parent_item_colon'   => esc_html__( 'Parent Partner:', 'inspiry-yachtpress' ),
-            'all_items'           => esc_html__( 'All Partners', 'inspiry-yachtpress' ),
-            'add_new_item'        => esc_html__( 'Add New Partner', 'inspiry-yachtpress' ),
-            'add_new'             => esc_html__( 'Add New', 'inspiry-yachtpress' ),
-            'new_item'            => esc_html__( 'New Partner', 'inspiry-yachtpress' ),
-            'edit_item'           => esc_html__( 'Edit Partners', 'inspiry-yachtpress' ),
-            'update_item'         => esc_html__( 'Update Partner', 'inspiry-yachtpress' ),
-            'view_item'           => esc_html__( 'View Partner', 'inspiry-yachtpress' ),
-            'search_items'        => esc_html__( 'Search Partner', 'inspiry-yachtpress' ),
-            'not_found'           => esc_html__( 'Not found', 'inspiry-yachtpress' ),
-            'not_found_in_trash'  => esc_html__( 'Not found in Trash', 'inspiry-yachtpress' ),
+            'name'                => _x( 'Partners', 'Post Type General Name', 'easy-boats' ),
+            'singular_name'       => _x( 'Partner', 'Post Type Singular Name', 'easy-boats' ),
+            'menu_name'           => __( 'Partners', 'easy-boats' ),
+            'name_admin_bar'      => __( 'Partner', 'easy-boats' ),
+            'parent_item_colon'   => __( 'Parent Partner:', 'easy-boats' ),
+            'all_items'           => __( 'All Partners', 'easy-boats' ),
+            'add_new_item'        => __( 'Add New Partner', 'easy-boats' ),
+            'add_new'             => __( 'Add New', 'easy-boats' ),
+            'new_item'            => __( 'New Partner', 'easy-boats' ),
+            'edit_item'           => __( 'Edit Partners', 'easy-boats' ),
+            'update_item'         => __( 'Update Partner', 'easy-boats' ),
+            'view_item'           => __( 'View Partner', 'easy-boats' ),
+            'search_items'        => __( 'Search Partner', 'easy-boats' ),
+            'not_found'           => __( 'Not found', 'easy-boats' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'easy-boats' ),
         );
 
         $args = array(
-            'label'               => esc_html__( 'Partners', 'inspiry-yachtpress' ),
-            'description'         => esc_html__( 'Partners', 'inspiry-yachtpress' ),
+            'label'               => __( 'Partners', 'easy-boats' ),
+            'description'         => __( 'Partners', 'easy-boats' ),
             'labels'              => $labels,
             'supports'            => array( 'title', 'thumbnail', ),
             'hierarchical'        => false,
@@ -66,7 +66,7 @@ class Inspiry_Partner_Post_Type {
     public function register_custom_column_titles ( $defaults ) {
 
         $new_columns = array(
-            "thumb"     => esc_html__( 'Logo', 'inspiry-yachtpress' ),
+            "thumb"     => __( 'Logo', 'easy-boats' ),
         );
 
         $last_columns = array();
@@ -98,7 +98,7 @@ class Inspiry_Partner_Post_Type {
                 if ( has_post_thumbnail ( $post->ID ) ) {
                     the_post_thumbnail( array( 150, 150 ) );
                 } else {
-                    _e ( 'No Image', 'inspiry-yachtpress' );
+                    _e ( 'No Image', 'easy-boats' );
                 }
                 break;
 
@@ -116,20 +116,20 @@ class Inspiry_Partner_Post_Type {
      */
     public function register_meta_boxes ( $meta_boxes ){
 
-        $prefix = 'YACHTPRESS_';
+        $prefix = 'EASYBOATS_';
 
         // Partners Meta Box
         $meta_boxes[] = array(
             'id' => 'partners-meta-box',
-            'title' => esc_html__('Partner Information', 'inspiry-yachtpress'),
+            'title' => __('Partner Information', 'easy-boats'),
             'pages' => array( 'partners' ),
             'context' => 'normal',
             'priority' => 'high',
             'fields' => array(
                 array(
-                    'name' => esc_html__('Website URL', 'inspiry-yachtpress'),
+                    'name' => __('Website URL', 'easy-boats'),
                     'id' => "{$prefix}partner_url",
-                    'desc' => esc_html__('Provide website URL', 'inspiry-yachtpress'),
+                    'desc' => __('Provide website URL', 'easy-boats'),
                     'type' => 'text',
                 )
             )

@@ -518,14 +518,14 @@ msgstr ""
 msgid "Author Website"
 msgstr ""
 
-#: inspiry-yachtpress.php:92
+#: easy-boats.php:92
 msgid "Meta Box plugin has been deactivated!"
 msgstr ""
 
-#: inspiry-yachtpress.php:93
-msgid "As now its functionality is embedded with in Inspiry Yachtpress plugin."
+#: easy-boats.php:93
+msgid "As now its functionality is embedded with in Easy Boats plugin."
 msgstr ""
 
-#: inspiry-yachtpress.php:95
+#: easy-boats.php:95
 msgid "So, You should completely remove it from your plugins."
 msgstr ""

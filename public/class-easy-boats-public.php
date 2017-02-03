@@ -6,8 +6,8 @@
  * @link       https://themeforest.net/user/inspirythemes
  * @since      1.0.0
  *
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/public
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/public
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Inspiry_Yachtpress
- * @subpackage Inspiry_Yachtpress/public
+ * @package    Easy_Boats
+ * @subpackage Easy_Boats/public
  * @author     InspiryThemes <info@inspirythemes.com>
  */
-class Inspiry_Yachtpress_Public {
+class Easy_Boats_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -65,15 +65,15 @@ class Inspiry_Yachtpress_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Inspiry_Yachtpress_Loader as all of the hooks are defined
+		 * defined in Easy_Boats_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Inspiry_Yachtpress_Loader will then create the relationship
+		 * The Easy_Boats_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/inspiry-yachtpress-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/easy-boats-public.css', array(), $this->version, 'all' );
 
 	}
 
@@ -88,15 +88,15 @@ class Inspiry_Yachtpress_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Inspiry_Yachtpress_Loader as all of the hooks are defined
+		 * defined in Easy_Boats_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Inspiry_Yachtpress_Loader will then create the relationship
+		 * The Easy_Boats_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/inspiry-yachtpress-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/easy-boats-public.js', array( 'jquery' ), $this->version, false );
 
 	}
 

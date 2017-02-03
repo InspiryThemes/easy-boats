@@ -22,7 +22,7 @@
  * @link       https://themeforest.net/user/inspirythemes
  * @since      1.0.0
  *
- * @package    Inspiry_Yachtpress
+ * @package    Easy_Boats
  */
 
 // If uninstall not called from WordPress, then exit.
