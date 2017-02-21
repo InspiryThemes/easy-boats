@@ -28,6 +28,7 @@ class Easy_Boats_Agent {
         'facebook'      => 'EASYBOATS_facebook_url',
         'twitter'       => 'EASYBOATS_twitter_url',
         'google'        => 'EASYBOATS_google_plus_url',
+        'youtube'       => 'EASYBOATS_youtube_url',
         'linkedin'      => 'EASYBOATS_linked_in_url',
         'pinterest'     => 'EASYBOATS_pinterest_url',
         'instagram'     => 'EASYBOATS_instagram_url',
@@ -122,17 +123,6 @@ class Easy_Boats_Agent {
     }
 
     /**
-     * Return facebook URL
-     * @return bool|mixed
-     */
-    public function get_facebook(){
-        if ( ! $this->agent_id ) {
-            return false;
-        }
-        return $this->get_boat_meta( $this->meta_keys['facebook'] );
-    }
-
-    /**
      * Return twitter URL
      * @return bool|mixed
      */
@@ -144,6 +134,17 @@ class Easy_Boats_Agent {
     }
 
     /**
+     * Return facebook URL
+     * @return bool|mixed
+     */
+    public function get_facebook(){
+        if ( ! $this->agent_id ) {
+            return false;
+        }
+        return $this->get_boat_meta( $this->meta_keys['facebook'] );
+    }
+
+    /**
      * Return google URL
      * @return bool|mixed
      */
@@ -152,6 +153,28 @@ class Easy_Boats_Agent {
             return false;
         }
         return $this->get_boat_meta( $this->meta_keys['google'] );
+    }
+
+    /**
+     * Return youtube URL
+     * @return bool|mixed
+     */
+    public function get_youtube(){
+        if ( ! $this->agent_id ) {
+            return false;
+        }
+        return $this->get_boat_meta( $this->meta_keys['youtube'] );
+    }
+
+    /**
+     * Return instagram URL
+     * @return bool|mixed
+     */
+    public function get_instagram(){
+        if ( ! $this->agent_id ) {
+            return false;
+        }
+        return $this->get_boat_meta( $this->meta_keys['instagram'] );
     }
 
     /**
@@ -175,19 +198,6 @@ class Easy_Boats_Agent {
         }
         return $this->get_boat_meta( $this->meta_keys['pinterest'] );
     }
-
-    /**
-     * Return instagram URL
-     * @return bool|mixed
-     */
-    public function get_instagram(){
-        if ( ! $this->agent_id ) {
-            return false;
-        }
-        return $this->get_boat_meta( $this->meta_keys['instagram'] );
-    }
-
-
 
     /**
      * Return job title

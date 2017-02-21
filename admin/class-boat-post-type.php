@@ -150,7 +150,7 @@ class Easy_Boats_Boat_Post_Type {
             'hierarchical'               => true,
             'public'                     => true,
             'show_ui'                    => true,
-            'show_admin_column'          => false,
+            'show_admin_column'          => true,
             'show_in_nav_menus'          => true,
             'show_tagcloud'              => true,
             'rewrite'                    => $rewrite,
@@ -318,7 +318,7 @@ class Easy_Boats_Boat_Post_Type {
 
         $last_columns = array();
 
-        if ( count( $defaults ) > 5 ) {
+        if ( count( $defaults ) > 6 ) {
 
             /* Remove Author */
             unset( $defaults['author'] );
@@ -327,7 +327,7 @@ class Easy_Boats_Boat_Post_Type {
             unset( $defaults['comments'] );
 
             /* get last 4 columns Type, Status, Location and Date */
-            $last_columns = array_splice( $defaults, -4, 4 );
+            $last_columns = array_splice( $defaults, -5, 5 );
 
             /* Simplify column titles */
             $last_columns[ 'taxonomy-boat-type' ]        = __( 'Type', 'easy-boats' );
@@ -455,17 +455,29 @@ class Easy_Boats_Boat_Post_Type {
                 // Details
                 array(
                     'id' => "{$prefix}boat_price",
-                    'name' => __(' Sale or Rent Price', 'easy-boats'),
-                    'desc' => __('Digits Only - Example Value: 435000', 'easy-boats'),
+                    'name' => __('Sale or Rent Price ( Only digits )', 'easy-boats'),
+                    'desc' => __('Example Value: 435000', 'easy-boats'),
                     'type' => 'text',
                     'std' => "",
                     'columns' => 6,
                     'tab' => 'details',
                 ),
                 array(
+                    'name' => __('Mark this boat as featured ?', 'easy-boats'),
+                    'id' => "{$prefix}featured",
+                    'type' => 'radio',
+                    'std' => 0,
+                    'options' => array(
+                        1 => __('Yes ', 'easy-boats'),
+                        0 => __('No', 'easy-boats')
+                    ),
+                    'columns' => 6,
+                    'tab' => 'details',
+                ),
+                array(
                     'id' => "{$prefix}boat_length",
-                    'name' => __('Length', 'easy-boats'),
-                    'desc' => __('Digits Only - Example Value: 2500', 'easy-boats'),
+                    'name' => __('Length ( Only digits )', 'easy-boats'),
+                    'desc' => __('Example Value: 2500', 'easy-boats'),
                     'type' => 'text',
                     'std' => "",
                     'columns' => 6,
@@ -474,7 +486,7 @@ class Easy_Boats_Boat_Post_Type {
                 array(
                     'id' => "{$prefix}boat_length_postfix",
                     'name' => __('Length Postfix', 'easy-boats'),
-                    'desc' => __('Example Value: Ft or m', 'easy-boats'),
+                    'desc' => __('Example Value: ft or m', 'easy-boats'),
                     'type' => 'text',
                     'std' => "",
                     'columns' => 6,
@@ -495,18 +507,6 @@ class Easy_Boats_Boat_Post_Type {
                     'desc' => __('It will help you search a boat directly.', 'easy-boats'),
                     'type' => 'text',
                     'std' => "",
-                    'columns' => 6,
-                    'tab' => 'details',
-                ),
-                array(
-                    'name' => __('Mark this boat as featured ?', 'easy-boats'),
-                    'id' => "{$prefix}featured",
-                    'type' => 'radio',
-                    'std' => 0,
-                    'options' => array(
-                        1 => __('Yes ', 'easy-boats'),
-                        0 => __('No', 'easy-boats')
-                    ),
                     'columns' => 6,
                     'tab' => 'details',
                 ),
@@ -544,11 +544,11 @@ class Easy_Boats_Boat_Post_Type {
                 // Agents
                 array(
                     'name' => __('What to display in agent information box ?', 'easy-boats'),
-                       'id' => "{$prefix}agent_display_option",
+                    'id' => "{$prefix}agent_display_option",
                     'type' => 'radio',
                     'std' => 'none',
                     'options' => array(
-                        'my_profile_info' => __('Author information.', 'easy-boats'),
+//                        'my_profile_info' => __('Author information.', 'easy-boats'),
                         'agent_info' => __('Agent Information. ( Select the agent below )', 'easy-boats'),
                         'none' => __('None. ( Hide information box )', 'easy-boats'),
                     ),

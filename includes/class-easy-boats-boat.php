@@ -22,17 +22,18 @@ class Easy_Boats_Boat {
      * @var array boat meta keys
      */
     private $meta_keys = array(
+        'custom_id'             => 'EASYBOATS_boat_id',
         'price'                 => 'EASYBOATS_boat_price',
+        'boat_featured'         => 'EASYBOATS_featured',
+        'boat_built_year'       => 'EASYBOATS_boat_built_year',
         'length'                => 'EASYBOATS_boat_length',
         'length_postfix'        => 'EASYBOATS_boat_length_postfix',
-        'boat_built_year'       => 'EASYBOATS_boat_built_year',
-        'boat_featured'         => 'EASYBOATS_featured',
-        'custom_id'             => 'EASYBOATS_boat_id',
         'video_url'             => 'EASYBOATS_tour_video_url',
         'video_image'           => 'EASYBOATS_tour_video_image',
         'agent_display_option'  => 'EASYBOATS_agent_display_option',
         'agent_id'              => 'EASYBOATS_agents',
         'slider_image'          => 'EASYBOATS_slider_image',
+        'additional_details'    => 'EASYBOATS_additional_details',
     );
 
     /**
@@ -136,6 +137,22 @@ class Easy_Boats_Boat {
         return $this->get_boat_meta( $this->meta_keys['boat_featured'] );
     }
 
+    /**
+     * Get gallery number of images
+     * @return bool|int
+     */
+    public function get_images() {
+        if ( ! $this->boat_id ) {
+            return false;
+        }
+
+        $get_images = $this->meta_data['EASYBOATS_boat_images'];
+        if ( ! empty( $get_images ) ){
+            return $get_images = count($get_images);
+        }
+
+       return false;
+    }
 
     /**
      * Get agent display option
@@ -212,8 +229,7 @@ class Easy_Boats_Boat {
             return null;
         }
         $price_amount = doubleval( $this->get_boat_meta( $this->meta_keys[ 'price' ] ) );
-        $price_postfix = $this->get_boat_meta( $this->meta_keys[ 'price_postfix' ] );
-        return $this->format_price( $price_amount, $price_postfix );
+        return $this->format_price( $price_amount );
     }
 
     /**
@@ -306,6 +322,17 @@ class Easy_Boats_Boat {
         }
         $video_url = $this->get_boat_meta( $this->meta_keys[ 'video_image' ] );
         return $video_url;
+    }
+
+    /**
+     * Return boat additional details
+     * @return bool|mixed
+     */
+    public function get_additional_details() {
+        if ( ! $this->boat_id ) {
+            return false;
+        }
+        return maybe_unserialize ( $this->get_boat_meta( $this->meta_keys['additional_details'] ) );
     }
 
     /**

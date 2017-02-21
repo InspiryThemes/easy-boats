@@ -162,7 +162,7 @@ class Easy_Boats_Agent_Post_Type {
             'fields'    => array(
                 array(
                     'name'  => __( 'Job Title', 'easy-boats' ),
-                    'id'    => "easy_boats_job_title",
+                    'id'    => "{$prefix}job_title",
                     'type'  => 'text',
                 ),
                 array(
@@ -188,7 +188,7 @@ class Easy_Boats_Agent_Post_Type {
                 ),
                 array(
                     'name'  => __( 'Office Address', 'easy-boats' ),
-                    'id'    => "easy_boats_office_address",
+                    'id'    => "{$prefix}office_address",
                     'type'  => 'text',
                 ),
                 array(
@@ -207,21 +207,25 @@ class Easy_Boats_Agent_Post_Type {
                     'type'  => 'url',
                 ),
                 array(
+                    'name'  => __('YouTube URL', 'easy-boats'),
+                    'id'    => "{$prefix}youtube_url",
+                    'type'  => 'url',
+                ),
+                array(
+                    'name'  => __('Instagram URL', 'easy-boats'),
+                    'id'    => "{$prefix}instagram_url",
+                    'type'  => 'url',
+                ),
+                array(
                     'name'  => __('LinkedIn URL', 'easy-boats'),
                     'id'    => "{$prefix}linked_in_url",
                     'type'  => 'text',
                 ),
                 array(
                     'name'  => __('Pinterest URL', 'easy-boats'),
-                    'id'    => "easy_boats_pinterest_url",
-                    'type'  => 'url',
-                ),
-                array(
-                    'name'  => __('Instagram URL', 'easy-boats'),
-                    'id'    => "easy_boats_instagram_url",
+                    'id'    => "{$prefix}pinterest_url",
                     'type'  => 'url',
                 )
-
             )
         );
 

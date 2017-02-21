@@ -177,20 +177,20 @@ class Easy_Boats {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-service-post-type.php';
 
 		/**
+		 * The class responsible for providing additional details meta box
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-additional-details-meta-box.php';
+
+		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-easy-boats-public.php';
 
 		/**
-		 * The class responsible for providing theme shortcodes.
-		 */
-		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-shortcodes.php';
-
-		/**
 		 * The file responsible for providing all shortcodes.
 		 */
-		//require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/easy-boats-shortcodes.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/easy-boats-shortcodes.php';
 
 		$this->loader = new Easy_Boats_Loader();
 
@@ -265,9 +265,6 @@ class Easy_Boats {
 		$this->loader->add_action( 'init', $service_post_type, 'register_service_post_type' );
 		$this->loader->add_action( 'init', $service_post_type, 'register_service_type_taxonomy' );
 
-		// Add theme shortcodes
-		//new Easy_Boats_Shortcodes();
-
 		if ( is_admin() ) {
 			global $pagenow;
 
@@ -291,9 +288,9 @@ class Easy_Boats {
 		}
 
 		// Additional details meta box
-		//$additional_details_meta_box = Additional_Details_Meta_Box::get_instance();
-		//$this->loader->add_action( 'add_meta_boxes', $additional_details_meta_box, 'add_additional_details_meta_box' );
-		//$this->loader->add_action( 'save_post', $additional_details_meta_box, 'save_additional_details' );
+		$additional_details_meta_box = Additional_Details_Meta_Box::get_instance();
+		$this->loader->add_action( 'add_meta_boxes', $additional_details_meta_box, 'add_additional_details_meta_box' );
+		$this->loader->add_action( 'save_post', $additional_details_meta_box, 'save_additional_details' );
 
 	}
 
@@ -370,7 +367,7 @@ class Easy_Boats {
 	}
 
 	public function get_currency_sign() {
-		$this->refresh();
+	//	$this->refresh();
 		if( isset( $this->price_format_options[ 'currency_sign' ] ) ) {
 			return $this->price_format_options[ 'currency_sign' ];
 		}
@@ -406,7 +403,7 @@ class Easy_Boats {
 	}
 
 	public function get_empty_price_text() {
-		$this->refresh();
+	//	$this->refresh();
 		if( isset( $this->price_format_options[ 'empty_price_text' ] ) ) {
 			return $this->price_format_options[ 'empty_price_text' ];
 		}
