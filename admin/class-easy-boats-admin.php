@@ -563,10 +563,11 @@ class Easy_Boats_Admin {
 		$defaults = array(
 			'boat_url_slug'		        =>	'boat',
 			'boat_type_url_slug'		=>	'boat-type',
+			'boat_hull_type_url_slug'	=>	'boat-hull-type',
 			'boat_status_url_slug'		=>	'boat-status',
-			'boat_location_url_slug'		=>	'boat-location',
+			'boat_location_url_slug'	=>	'boat-location',
 			'boat_feature_url_slug'		=>	'boat-feature',
-			'agent_url_slug'		        =>	'agent',
+			'agent_url_slug'		    =>	'agent',
 		);
 
 		return $defaults;

@@ -42,6 +42,4 @@ class Easy_Boats_i18n {
 
 	}
 
-
-
 }

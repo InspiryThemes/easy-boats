@@ -104,6 +104,9 @@ class Easy_Boats {
 		$this->plugin_name = 'easy-boats';
 		$this->version = '1.0.0';
 
+		$this->price_format_options =  get_option( 'easy_boats_price_format_option' );
+		$this->url_slugs_options = get_option( 'easy_boats_url_slugs_option' );
+
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
@@ -223,7 +226,7 @@ class Easy_Boats {
 	private function define_admin_hooks() {
 
 		$plugin_admin = new Easy_Boats_Admin( $this->get_plugin_name(), $this->get_version() );
-
+		
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_easy_boats_settings' );
@@ -367,7 +370,7 @@ class Easy_Boats {
 	}
 
 	public function get_currency_sign() {
-	//	$this->refresh();
+		$this->refresh();
 		if( isset( $this->price_format_options[ 'currency_sign' ] ) ) {
 			return $this->price_format_options[ 'currency_sign' ];
 		}
@@ -403,7 +406,7 @@ class Easy_Boats {
 	}
 
 	public function get_empty_price_text() {
-	//	$this->refresh();
+		$this->refresh();
 		if( isset( $this->price_format_options[ 'empty_price_text' ] ) ) {
 			return $this->price_format_options[ 'empty_price_text' ];
 		}
