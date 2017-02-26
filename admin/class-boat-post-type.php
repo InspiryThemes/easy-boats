@@ -443,11 +443,7 @@ class Easy_Boats_Boat_Post_Type {
                 'home-slider' => array(
                     'label' => __('Homepage Slider', 'easy-boats'),
                     'icon' => 'dashicons-images-alt',
-                ),
-                'banner' => array(
-                    'label' => __('Top Banner', 'easy-boats'),
-                    'icon' => 'dashicons-format-image',
-                ),
+                )
             ),
             'tab_style' => 'left',
             'fields' => array(
@@ -548,7 +544,7 @@ class Easy_Boats_Boat_Post_Type {
                     'type' => 'radio',
                     'std' => 'none',
                     'options' => array(
-//                        'my_profile_info' => __('Author information.', 'easy-boats'),
+                        'my_profile_info' => __('Author information.', 'easy-boats'),
                         'agent_info' => __('Agent Information. ( Select the agent below )', 'easy-boats'),
                         'none' => __('None. ( Hide information box )', 'easy-boats'),
                     ),
@@ -589,19 +585,7 @@ class Easy_Boats_Boat_Post_Type {
                     'max_file_uploads' => 1,
                     'columns' => 12,
                     'tab' => 'home-slider',
-                ),
-
-                // Top Banner
-                array(
-                    'name' => __('Top Banner Image', 'easy-boats'),
-                    'id' => "{$prefix}page_banner_image",
-                    'desc' => __('Upload the banner image, If you want to change it for this boat. Otherwise default banner image uploaded from theme options will be displayed. Image should have minimum width of 2000px and minimum height of 230px.', 'easy-boats'),
-                    'type' => 'image_advanced',
-                    'max_file_uploads' => 1,
-                    'columns' => 12,
-                    'tab' => 'banner',
                 )
-
             )
         );
 
