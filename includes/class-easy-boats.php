@@ -190,11 +190,6 @@ class Easy_Boats {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-easy-boats-public.php';
 
-		/**
-		 * The file responsible for providing all shortcodes.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/easy-boats-shortcodes.php';
-
 		$this->loader = new Easy_Boats_Loader();
 
 	}
