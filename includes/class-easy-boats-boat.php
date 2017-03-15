@@ -141,18 +141,17 @@ class Easy_Boats_Boat {
      * Get gallery number of images
      * @return bool|int
      */
-    public function get_images() {
-        if ( ! $this->boat_id ) {
-            return false;
-        }
+	public function get_images_count() {
+		if ( ! $this->boat_id ) {
+			return false;
+		}
 
-        $get_images = $this->meta_data['EASYBOATS_boat_images'];
-        if ( ! empty( $get_images ) ){
-            return $get_images = count($get_images);
-        }
+		if ( isset( $this->meta_data['EASYBOATS_boat_images'] ) ) {
+			return count( $this->meta_data['EASYBOATS_boat_images'] );
+		}
 
-       return false;
-    }
+		return false;
+	}
 
     /**
      * Get agent display option
