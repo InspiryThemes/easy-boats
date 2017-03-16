@@ -3,7 +3,7 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       https://themeforest.net/user/inspirythemes
+ * @link       https://inspirythemes.com
  * @since      1.0.0
  *
  * @package    Easy_Boats
