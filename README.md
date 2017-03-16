@@ -1,1 +1,1 @@
-Inspiry Boats Plugin
+# Inspiry Real Estate Plugin
