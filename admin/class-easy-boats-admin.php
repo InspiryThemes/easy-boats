@@ -129,14 +129,14 @@ class Easy_Boats_Admin {
 			'25.786'
 		);
 
-//		add_submenu_page(
-//			'easy_boats',				                    // The ID of the top-level menu page to which this submenu item belongs
-//			__( 'URL Slugs', 'easy-boats' ),			    // The value used to populate the browser's title bar when the menu page is active
-//			__( 'URL Slugs', 'easy-boats' ),			    // The label of this submenu item displayed in the menu
-//			'administrator',					                    // What roles are able to access this submenu item
-//			'easy_boats_url_slugs',	                        // The ID used to represent this submenu item
-//			array( $this, 'display_url_slugs_settings')		        // The callback function used to render the options for this submenu item
-//		);
+		add_submenu_page(
+			'easy_boats',				                    // The ID of the top-level menu page to which this submenu item belongs
+			__( 'URL Slugs', 'easy-boats' ),			    // The value used to populate the browser's title bar when the menu page is active
+			__( 'URL Slugs', 'easy-boats' ),			    // The label of this submenu item displayed in the menu
+			'administrator',					                    // What roles are able to access this submenu item
+			'easy_boats_url_slugs',	                        // The ID used to represent this submenu item
+			array( $this, 'display_url_slugs_settings')		        // The callback function used to render the options for this submenu item
+		);
 	}
 
 	/**
@@ -162,45 +162,21 @@ class Easy_Boats_Admin {
 		?>
 		<!-- Create a header in the default WordPress 'wrap' container -->
 		<div class="wrap">
-
-			<h2><?php _e( 'Easy Boats Settings', 'easy-boats' ); ?></h2>
+            <h1><?php esc_html_e( 'Easy Boats Settings', 'easy-boats' ); ?></h1>
 
 			<!-- Make a call to the WordPress function for rendering errors when settings are saved. -->
 			<?php settings_errors(); ?>
 
-			<?php
-			if ( isset( $_GET[ 'tab' ] ) ) {
-				$active_tab = $_GET[ 'tab' ];
-			} else if( $active_tab == 'url_slugs' ) {
-				$active_tab = 'url_slugs';
-			} else {
-				$active_tab = 'price_format';
-			}
-			?>
-
-			<h2 class="nav-tab-wrapper">
-				<a href="?page=easy_boats&tab=price_format" class="nav-tab <?php echo $active_tab == 'price_format' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Price Format', 'easy-boats' ); ?></a>
-				<a href="?page=easy_boats&tab=url_slugs" class="nav-tab <?php echo $active_tab == 'url_slugs' ? 'nav-tab-active' : ''; ?>"><?php _e( 'URL Slugs', 'easy-boats' ); ?></a>
-			</h2>
-
 			<!-- Create the form that will be used to render our options -->
 			<form method="post" action="options.php">
 				<?php
+				settings_fields( 'easy_boats_price_format_option_group' );
+				do_settings_sections( 'easy_boats_price_format_page' );
 
-				if( $active_tab == 'url_slugs' ) {
-
-					settings_fields( 'easy_boats_url_slugs_option_group' );
-					do_settings_sections( 'easy_boats_url_slugs_page' );
-
-				} else {
-
-					settings_fields( 'easy_boats_price_format_option_group' );
-					do_settings_sections( 'easy_boats_price_format_page' );
-
-				}
+				settings_fields( 'easy_boats_url_slugs_option_group' );
+				do_settings_sections( 'easy_boats_url_slugs_page' );
 
 				submit_button();
-
 				?>
 			</form>
 
@@ -462,8 +438,7 @@ class Easy_Boats_Admin {
 	 * URL slugs section description
 	 */
 	public function url_slugs_settings_desc() {
-		echo '<p>'. __( 'You can modify URL slugs to match your needs.', 'easy-boats' ) . '</p>';
-		echo '<p><strong>'. __( 'Just make sure to re-save permalinks settings after every change to avoid 404 errors. You can do that from Settings > Permalinks .', 'easy-boats' ) . '</strong></p>';
+		echo '<p>' . __( 'You can modify URL slugs to match your needs.', 'easy-boats' ) . '<br /><strong>' . __( 'Just make sure to re-save permalinks settings after every change to avoid 404 errors. You can do that from Settings > Permalinks.', 'easy-boats' ) . '</strong></p>';
 	}
 
 
