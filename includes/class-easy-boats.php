@@ -6,7 +6,7 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       https://themeforest.net/user/inspirythemes
+ * @link       https://inspirythemes.com
  * @since      1.0.0
  *
  * @package    Easy_Boats
@@ -170,16 +170,6 @@ class Easy_Boats {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-agent-post-type.php';
 
 		/**
-		 * The class responsible for providing partners custom post type and related stuff.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-partner-post-type.php';
-
-		/**
-		 * The class responsible for providing service custom post type and related stuff.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-service-post-type.php';
-
-		/**
 		 * The class responsible for providing additional details meta box
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-additional-details-meta-box.php';
@@ -253,16 +243,6 @@ class Easy_Boats {
 		$this->loader->add_action( 'init', $agent_post_type, 'register_agent_post_type' );
 		$this->loader->add_filter( 'rwmb_meta_boxes', $agent_post_type, 'register_meta_boxes' );
 
-		// Partner Post Type
-		$partner_post_type = new Easy_Boats_Partner_Post_Type();
-		$this->loader->add_action( 'init', $partner_post_type, 'register_partner_post_type' );
-		$this->loader->add_filter( 'rwmb_meta_boxes', $partner_post_type, 'register_meta_boxes' );
-
-		// Service Post Type
-		$service_post_type = new Easy_Boats_Service_Post_Type();
-		$this->loader->add_action( 'init', $service_post_type, 'register_service_post_type' );
-		$this->loader->add_action( 'init', $service_post_type, 'register_service_type_taxonomy' );
-
 		if ( is_admin() ) {
 			global $pagenow;
 
@@ -276,12 +256,6 @@ class Easy_Boats {
 			if ( $pagenow == 'edit.php' && isset( $_GET['post_type'] ) && esc_attr( $_GET['post_type'] ) == 'agent' ) {
 				$this->loader->add_filter( 'manage_edit-agent_columns', $agent_post_type, 'register_custom_column_titles' );
 				$this->loader->add_action( 'manage_posts_custom_column', $agent_post_type, 'display_custom_column' );
-			}
-
-			// partner custom columns
-			if ( $pagenow == 'edit.php' && isset( $_GET['post_type'] ) && esc_attr( $_GET['post_type'] ) == 'partners' ) {
-				$this->loader->add_filter( 'manage_edit-partners_columns', $partner_post_type, 'register_custom_column_titles' );
-				$this->loader->add_action( 'manage_posts_custom_column', $partner_post_type, 'display_custom_column' );
 			}
 		}
 
