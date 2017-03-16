@@ -1,8 +1,8 @@
 <?php
 /**
- * Represents a real estate boat.
+ * Represents a boat.
  *
- * This class provides utility functions related to a real estate boat.
+ * This class provides utility functions related to a boat.
  *
  *
  * @since      1.0.0

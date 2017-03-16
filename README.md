@@ -1,1 +1,1 @@
-# Inspiry Boat Plugin
+# Inspiry Boats Plugin

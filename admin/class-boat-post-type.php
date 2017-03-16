@@ -51,7 +51,7 @@ class Easy_Boats_Boat_Post_Type {
             'show_ui'             => true,
             'show_in_menu'        => true,
             'menu_position'       => 5,
-           // 'menu_icon'           => 'dashicons-building',
+            'menu_icon'           => 'dashicons-sos',
             'show_in_admin_bar'   => true,
             'show_in_nav_menus'   => true,
             'can_export'          => true,

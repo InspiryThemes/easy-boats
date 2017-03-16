@@ -129,14 +129,14 @@ class Easy_Boats_Admin {
 			'25.786'
 		);
 
-		add_submenu_page(
-			'easy_boats',				                    // The ID of the top-level menu page to which this submenu item belongs
-			__( 'URL Slugs', 'easy-boats' ),			    // The value used to populate the browser's title bar when the menu page is active
-			__( 'URL Slugs', 'easy-boats' ),			    // The label of this submenu item displayed in the menu
-			'administrator',					                    // What roles are able to access this submenu item
-			'easy_boats_url_slugs',	                        // The ID used to represent this submenu item
-			array( $this, 'display_url_slugs_settings')		        // The callback function used to render the options for this submenu item
-		);
+//		add_submenu_page(
+//			'easy_boats',				                    // The ID of the top-level menu page to which this submenu item belongs
+//			__( 'URL Slugs', 'easy-boats' ),			    // The value used to populate the browser's title bar when the menu page is active
+//			__( 'URL Slugs', 'easy-boats' ),			    // The label of this submenu item displayed in the menu
+//			'administrator',					                    // What roles are able to access this submenu item
+//			'easy_boats_url_slugs',	                        // The ID used to represent this submenu item
+//			array( $this, 'display_url_slugs_settings')		        // The callback function used to render the options for this submenu item
+//		);
 	}
 
 	/**
@@ -154,7 +154,7 @@ class Easy_Boats_Admin {
 	}
 
 	/**
-	 * Display real estate settings page
+	 * Display boats settings page
 	 *
 	 * @param   string  $active_tab name of currently active tab
 	 */
@@ -209,7 +209,7 @@ class Easy_Boats_Admin {
 	}
 
 	/**
-	 * Initialize real estate settings page
+	 * Initialize boats settings page
 	 */
 	public function initialize_price_format_options(){
 
