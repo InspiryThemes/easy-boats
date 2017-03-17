@@ -8,7 +8,6 @@
  * @wordpress-plugin
  * Plugin Name:       Easy Boats
  * Plugin URI:        https://github.com/InspiryThemes/easy-boats
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Description:       Easy Boats plugin provides boat post type and agent post type with related functionality.
  * Version:           1.0.0
  * Author:            InspiryThemes

@@ -481,7 +481,6 @@ class Easy_Boats_Admin {
 		);
 
 		return $defaults;
-
 	}
 
 }
