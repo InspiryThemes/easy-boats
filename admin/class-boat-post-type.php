@@ -51,7 +51,7 @@ class Easy_Boats_Boat_Post_Type {
             'show_ui'             => true,
             'show_in_menu'        => true,
             'menu_position'       => 5,
-            'menu_icon'           => 'dashicons-sos',
+            'menu_icon'           => plugin_dir_url( __FILE__ ) . 'images/ship.png',
             'show_in_admin_bar'   => true,
             'show_in_nav_menus'   => true,
             'can_export'          => true,
