@@ -1,531 +1,1117 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: 2016-10-17 15:01+0500\n"
-"PO-Revision-Date: 2016-08-18 15:17+0500\n"
+"Project-Id-Version: Easy Boats 1.0.0\n"
+"POT-Creation-Date: 2017-03-21 17:40+0500\n"
+"PO-Revision-Date: 2017-03-21 17:41+0500\n"
 "Last-Translator: \n"
 "Language-Team: InspiryThemes\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
-"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;esc_html__;esc_html_e\n"
+"X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: en\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: esc_html__;esc_html_e;esc_html_x\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: plugins\n"
 
-#: admin/class-inspiry-client-post-type.php:14
-#: admin/class-inspiry-client-post-type.php:16
-msgid "Clients"
+
+#: admin/class-additional-details-meta-box.php:46
+msgid "Additional Details"
 msgstr ""
 
-#: admin/class-inspiry-client-post-type.php:15
-#: admin/class-inspiry-client-post-type.php:17
-#: admin/class-inspiry-portfolio-post-type.php:90
-msgid "Client"
+
+#: admin/class-agent-post-type.php:22
+msgid "Agents"
 msgstr ""
 
-#: admin/class-inspiry-client-post-type.php:18
-#: admin/class-inspiry-portfolio-post-type.php:18
-#: admin/class-inspiry-service-post-type.php:18
-#: admin/class-inspiry-slide-post-type.php:18
-#: admin/class-inspiry-team-post-type.php:18
-#: admin/class-inspiry-testimonial-post-type.php:18
+
+#: admin/class-agent-post-type.php:23
+#: admin/class-boat-post-type.php:555
+#: admin/class-easy-boats-admin.php:362
+msgid "Agent"
+msgstr ""
+
+
+#: admin/class-agent-post-type.php:24
+msgid "Parent Agent:"
+msgstr ""
+
+
+#: admin/class-agent-post-type.php:25
+msgid "All Agents"
+msgstr ""
+
+
+#: admin/class-agent-post-type.php:26
+msgid "Add New Agent"
+msgstr ""
+
+
+#: admin/class-agent-post-type.php:27
+#: admin/class-boat-post-type.php:27
 msgid "Add New"
 msgstr ""
 
-#: admin/class-inspiry-client-post-type.php:19
-msgid "Add New Client"
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:20
-msgid "New Client"
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:21
-msgid "Edit Client"
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:22
-msgid "View Client"
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:23
-msgid "All Clients"
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:24
-msgid "Search Clients"
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:25
-msgid "Parent Clients:"
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:26
-msgid "No clients found."
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:27
-msgid "No clients found in Trash."
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:55
-msgid "Client Details"
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:61
-msgid "Website URL"
-msgstr ""
-
-#: admin/class-inspiry-client-post-type.php:84
-msgid "Enter client name"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:14
-#: admin/class-inspiry-portfolio-post-type.php:15
-#: admin/class-inspiry-portfolio-post-type.php:16
-msgid "Portfolio"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:17
-msgid "Portfolio Item"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:19
-msgid "Add New Portfolio Item"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:20
-msgid "New Portfolio Item"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:21
-msgid "Edit Portfolio Item"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:22
-msgid "View Portfolio Item"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:23
-msgid "All Portfolio Items"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:24
-msgid "Search Portfolio Items"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:25
-msgid "Parent Portfolio Items:"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:26
-msgid "No portfolio items found."
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:27
-msgid "No portfolio items found in Trash."
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:63
-msgid "Project Details"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:80
-msgid "Name"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:85
-msgid "Year"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:95
-msgid "Deliverable"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:100
-msgid "Expertise"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:105
-msgid "Website"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:121
-msgid "Portfolio Item Types"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:122
-msgid "Portfolio Item Type"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:123
-msgid "Search Portfolio Item Types"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:124
-msgid "Popular Portfolio Item Types"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:125
-msgid "All Portfolio Item Types"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:126
-msgid "Parent Portfolio Item Type"
-msgstr ""
 
-#: admin/class-inspiry-portfolio-post-type.php:127
-msgid "Parent Portfolio Item Type:"
+#: admin/class-agent-post-type.php:28
+msgid "New Agent"
 msgstr ""
 
-#: admin/class-inspiry-portfolio-post-type.php:128
-msgid "Edit Portfolio Item Type"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:129
-msgid "Update Portfolio Item Type"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:130
-msgid "Add New Portfolio Item Type"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:131
-msgid "New Portfolio Item Type Name"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:132
-msgid "Separate Portfolio Item Types with commas"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:133
-msgid "Add or Remove Portfolio Item Types"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:134
-msgid "Choose from the most used Portfolio Item Types"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:135
-#: admin/class-inspiry-service-post-type.php:56
-#: admin/class-inspiry-service-post-type.php:71
-msgid "Types"
-msgstr ""
-
-#: admin/class-inspiry-portfolio-post-type.php:146
-msgid "portfolio-item-type"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:14
-#: admin/class-inspiry-service-post-type.php:16
-msgid "Services"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:15
-#: admin/class-inspiry-service-post-type.php:17
-msgid "Service"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:19
-msgid "Add New Service"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:20
-msgid "New Service"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:21
-msgid "Edit Service"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:22
-msgid "View Service"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:23
-msgid "All Services"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:24
-msgid "Search Services"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:25
-msgid "Parent Services:"
-msgstr ""
 
-#: admin/class-inspiry-service-post-type.php:26
-msgid "No services found."
+#: admin/class-agent-post-type.php:29
+msgid "Edit Agent"
 msgstr ""
 
-#: admin/class-inspiry-service-post-type.php:27
-msgid "No services found in Trash."
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:57
-msgid "Type"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:58
-msgid "Search Types"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:59
-msgid "Popular Types"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:60
-msgid "All Types"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:63
-msgid "Edit Type"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:64
-msgid "Update Type"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:65
-msgid "Add New Type"
-msgstr ""
-
-#: admin/class-inspiry-service-post-type.php:66
-msgid "New Type Name"
-msgstr ""
 
-#: admin/class-inspiry-service-post-type.php:67
-msgid "Separate types with commas"
+#: admin/class-agent-post-type.php:30
+msgid "Update Agent"
 msgstr ""
 
-#: admin/class-inspiry-service-post-type.php:68
-msgid "Add or remove types"
-msgstr ""
 
-#: admin/class-inspiry-service-post-type.php:69
-msgid "Choose from the most used types"
+#: admin/class-agent-post-type.php:31
+msgid "View Agent"
 msgstr ""
 
-#: admin/class-inspiry-service-post-type.php:70
-msgid "No types found."
-msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:14
-#: admin/class-inspiry-slide-post-type.php:16
-msgid "Slides"
+#: admin/class-agent-post-type.php:32
+msgid "Search Agent"
 msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:15
-#: admin/class-inspiry-slide-post-type.php:17
-msgid "Slide"
-msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:19
-msgid "Add New Slide"
+#: admin/class-agent-post-type.php:33
+#: admin/class-boat-post-type.php:33
+msgid "Not found"
 msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:20
-msgid "New Slide"
-msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:21
-msgid "Edit Slide"
+#: admin/class-agent-post-type.php:34
+#: admin/class-boat-post-type.php:34
+msgid "Not found in Trash"
 msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:22
-msgid "View Slide"
-msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:23
-msgid "All Slides"
+#: admin/class-agent-post-type.php:38
+#: admin/class-agent-post-type.php:45
+#: admin/class-easy-boats-admin.php:369
+msgid "agent"
 msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:24
-msgid "Search Slides"
-msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:25
-msgid "Parent Slides:"
+#: admin/class-agent-post-type.php:46
+msgid "Boat Agent"
 msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:26
-msgid "No slides found."
-msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:27
-msgid "No slides found in Trash."
+#: admin/class-agent-post-type.php:79
+#: admin/class-boat-post-type.php:314
+msgid "Photo"
 msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:51
-msgid "Slide Title"
-msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:52
-msgid "Thumbnail"
+#: admin/class-agent-post-type.php:80
+msgid "Email"
 msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:53
-msgid "Date"
-msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:74
-msgid "No Slider Image"
+#: admin/class-agent-post-type.php:81
+msgid "Mobile"
 msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:94
-msgid "Slide Button"
-msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:100
-msgid "Slide Button Label"
+#: admin/class-agent-post-type.php:158
+msgid "Contact Details"
 msgstr ""
 
-#: admin/class-inspiry-slide-post-type.php:105
-msgid "Slide Button URL"
-msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:14
-#: admin/class-inspiry-team-post-type.php:15
-#: admin/class-inspiry-team-post-type.php:16
-msgid "Team"
+#: admin/class-agent-post-type.php:164
+msgid "Job Title"
 msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:17
-msgid "Team Member"
-msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:19
-msgid "Add New Team Member"
+#: admin/class-agent-post-type.php:169
+msgid "Email Address"
 msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:20
-msgid "New Team Member"
-msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:21
-msgid "Edit Team Member"
+#: admin/class-agent-post-type.php:171
+msgid ""
+"Agent related messages from contact form on boat details page, will be sent "
+"on this email address."
 msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:22
-msgid "View Team Member"
-msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:23
-msgid "All Team Members"
+#: admin/class-agent-post-type.php:175
+msgid "Mobile Number"
 msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:24
-msgid "Search Team Members"
-msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:25
-msgid "Parent Team Members:"
+#: admin/class-agent-post-type.php:180
+msgid "Office Number"
 msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:26
-msgid "No team items found."
-msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:27
-msgid "No team items found in Trash."
+#: admin/class-agent-post-type.php:185
+msgid "Fax Number"
 msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:55
-msgid "Member Details"
-msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:61
-msgid "Designation"
+#: admin/class-agent-post-type.php:190
+msgid "Office Address"
 msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:66
-msgid "Twitter URL"
-msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:71
+#: admin/class-agent-post-type.php:195
 msgid "Facebook URL"
 msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:76
-msgid "Google+ URL"
+
+#: admin/class-agent-post-type.php:200
+msgid "Twitter URL"
 msgstr ""
 
-#: admin/class-inspiry-team-post-type.php:81
+
+#: admin/class-agent-post-type.php:205
+msgid "Google Plus URL"
+msgstr ""
+
+
+#: admin/class-agent-post-type.php:210
 msgid "YouTube URL"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:14
-#: admin/class-inspiry-testimonial-post-type.php:16
-msgid "Testimonials"
+
+#: admin/class-agent-post-type.php:215
+msgid "Instagram URL"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:15
-#: admin/class-inspiry-testimonial-post-type.php:17
-msgid "Testimonial"
+
+#: admin/class-agent-post-type.php:220
+msgid "LinkedIn URL"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:19
-msgid "Add New Testimonial"
+
+#: admin/class-agent-post-type.php:225
+msgid "Pinterest URL"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:20
-msgid "New Testimonial"
+
+#: admin/class-boat-post-type.php:22
+msgid "Boats"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:21
-msgid "Edit Testimonial"
+
+#: admin/class-boat-post-type.php:23
+#: admin/class-boat-post-type.php:46
+#: admin/class-boat-post-type.php:424
+#: admin/class-easy-boats-admin.php:278
+msgid "Boat"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:22
-msgid "View Testimonial"
+
+#: admin/class-boat-post-type.php:24
+msgid "Parent Boat:"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:23
-msgid "All Testimonials"
+
+#: admin/class-boat-post-type.php:25
+msgid "All Boats"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:24
-msgid "Search Testimonials"
+
+#: admin/class-boat-post-type.php:26
+msgid "Add New Boat"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:25
-msgid "Parent Testimonials:"
+
+#: admin/class-boat-post-type.php:28
+msgid "New Boat"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:26
-msgid "No testimonials found."
+
+#: admin/class-boat-post-type.php:29
+msgid "Edit Boat"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:27
-msgid "No testimonials found in Trash."
+
+#: admin/class-boat-post-type.php:30
+msgid "Update Boat"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:55
-msgid "Testimonial Details"
+
+#: admin/class-boat-post-type.php:31
+msgid "View Boat"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:61
-msgid "Testimonial Text"
+
+#: admin/class-boat-post-type.php:32
+msgid "Search Boat"
 msgstr ""
 
-#: admin/class-inspiry-testimonial-post-type.php:66
-msgid "Author Website"
+
+#: admin/class-boat-post-type.php:38
+#: admin/class-boat-post-type.php:45
+#: admin/class-easy-boats-admin.php:285
+msgid "boat"
 msgstr ""
 
-#: easy-boats.php:92
-msgid "Meta Box plugin has been deactivated!"
+
+#: admin/class-boat-post-type.php:78
+msgid "Types"
 msgstr ""
 
-#: easy-boats.php:93
-msgid "As now its functionality is embedded with in Easy Boats plugin."
+
+#: admin/class-boat-post-type.php:79
+msgid "All Boat Types"
 msgstr ""
 
-#: easy-boats.php:95
-msgid "So, You should completely remove it from your plugins."
+
+#: admin/class-boat-post-type.php:80
+msgid "Parent Boat Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:81
+msgid "Parent Boat Type:"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:82
+msgid "New Boat Type Name"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:83
+msgid "Add New Boat Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:84
+msgid "Edit Boat Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:85
+msgid "Update Boat Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:86
+msgid "View Boat Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:87
+msgid "Separate Boat Types with commas"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:88
+msgid "Add or remove Boat Types"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:89
+#: admin/class-boat-post-type.php:136
+#: admin/class-boat-post-type.php:183
+#: admin/class-boat-post-type.php:230
+#: admin/class-boat-post-type.php:277
+msgid "Choose from the most used"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:90
+msgid "Popular Boat Types"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:91
+msgid "Search Boat Types"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:92
+#: admin/class-boat-post-type.php:139
+#: admin/class-boat-post-type.php:186
+#: admin/class-boat-post-type.php:233
+#: admin/class-boat-post-type.php:280
+msgid "Not Found"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:96
+#: admin/class-easy-boats-admin.php:299
+msgid "boat-type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:125
+msgid "Hull Types"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:126
+msgid "All Boat Hull Types"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:127
+msgid "Parent Boat Hull Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:128
+msgid "Parent Boat Hull Type:"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:129
+msgid "New Boat Hull Type Name"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:130
+msgid "Add New Boat Hull Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:131
+msgid "Edit Boat Hull Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:132
+msgid "Update Boat Hull Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:133
+msgid "View Boat Hull Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:134
+msgid "Separate Boat Hull Types with commas"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:135
+msgid "Add or remove Boat Hull Types"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:137
+msgid "Popular Boat Hull Types"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:138
+msgid "Search Boat Hull Types"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:143
+#: admin/class-easy-boats-admin.php:313
+msgid "boat-hull-type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:172
+msgid "Statuses"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:173
+msgid "All Boat Statuses"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:174
+msgid "Parent Boat Status"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:175
+msgid "Parent Boat Status:"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:176
+msgid "New Boat Status Name"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:177
+msgid "Add New Boat Status"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:178
+msgid "Edit Boat Status"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:179
+msgid "Update Boat Status"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:180
+msgid "View Boat Status"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:181
+msgid "Separate Boat Statuses with commas"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:182
+msgid "Add or remove Boat Statuses"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:184
+msgid "Popular Boat Statuses"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:185
+msgid "Search Boat Statuses"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:190
+#: admin/class-easy-boats-admin.php:327
+msgid "boat-status"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:219
+msgid "Locations"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:220
+msgid "All Boat Cities"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:221
+msgid "Parent Boat Location"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:222
+msgid "Parent Boat Location:"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:223
+msgid "New Boat Location Name"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:224
+msgid "Add New Boat Location"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:225
+msgid "Edit Boat Location"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:226
+msgid "Update Boat Location"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:227
+msgid "View Boat Location"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:228
+msgid "Separate Boat Cities with commas"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:229
+msgid "Add or remove Boat Cities"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:231
+msgid "Popular Boat Cities"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:232
+msgid "Search Boat Cities"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:237
+#: admin/class-easy-boats-admin.php:341
+msgid "boat-location"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:266
+msgid "Features"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:267
+msgid "All Boat Features"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:268
+msgid "Parent Boat Feature"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:269
+msgid "Parent Boat Feature:"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:270
+msgid "New Boat Feature Name"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:271
+msgid "Add New Boat Feature"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:272
+msgid "Edit Boat Feature"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:273
+msgid "Update Boat Feature"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:274
+msgid "View Boat Feature"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:275
+msgid "Separate Boat Features with commas"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:276
+msgid "Add or remove Boat Features"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:278
+msgid "Popular Boat Features"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:279
+msgid "Search Boat Features"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:284
+#: admin/class-easy-boats-admin.php:355
+msgid "boat-feature"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:315
+msgid "Custom ID"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:316
+msgid "Price"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:333
+msgid "Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:334
+msgid "Hull Type"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:335
+msgid "Status"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:336
+msgid "Location"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:404
+#: plugins/meta-box/inc/fields/select.php:91
+msgid "None"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:417
+msgid "Consult theme documentation for required image size."
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:428
+msgid "Basic Information"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:432
+msgid "Gallery Images"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:436
+msgid "Boat Video"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:440
+msgid "Agent Information"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:444
+msgid "Homepage Slider"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:454
+msgid "Sale or Rent Price ( Only digits )"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:455
+msgid "Example Value: 435000"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:462
+msgid "Mark this boat as featured ?"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:467
+#: admin/class-boat-post-type.php:574
+msgid "Yes "
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:468
+#: admin/class-boat-post-type.php:575
+#: plugins/meta-box/inc/fields/checkbox.php:82
+msgid "No"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:475
+msgid "Length ( Only digits )"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:476
+msgid "Example Value: 2500"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:484
+msgid "Length Postfix"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:485
+msgid "Example Value: ft or m"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:493
+msgid "Built Year"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:494
+msgid "Example Value: 2017"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:502
+msgid "Boat ID"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:503
+msgid "It will help you search a boat directly."
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:512
+msgid "Boat Gallery Images"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:524
+msgid "Virtual Tour Video URL"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:525
+msgid ""
+"Provide virtual tour video URL. YouTube, Vimeo, SWF File and MOV File are "
+"supported"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:531
+msgid "Virtual Tour Video Image"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:542
+msgid "What to display in agent information box ?"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:547
+msgid "Author information."
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:548
+msgid "Agent Information. ( Select the agent below )"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:549
+msgid "None. ( Hide information box )"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:568
+msgid "Do you want to add this boat in Homepage Slider ?"
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:569
+msgid "If Yes, Then you need to provide a slider image below."
+msgstr ""
+
+
+#: admin/class-boat-post-type.php:581
+msgid "Slider Image"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:116
+#: admin/class-easy-boats-admin.php:133
+msgid "Easy Boats Settings"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:117
+msgid "Easy Boats"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:167
+msgid "Price Format"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:177
+msgid "Currency Sign"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:185
+msgid "Default: $"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:191
+msgid "Currency Sign Position"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:200
+msgid "Before ($450,000)"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:201
+msgid "After (450,000$)"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:203
+msgid "Default: Before"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:209
+msgid "Thousand Separator"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:217
+msgid "Default: ,"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:223
+msgid "Decimal Separator"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:231
+msgid "Default: ."
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:237
+msgid "Number of Decimals"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:245
+msgid "Default: 0"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:251
+msgid "Empty Price Text"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:258
+msgid "Price on call"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:259
+msgid "Text to display in case of empty price. Example: Price on call"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:268
+msgid "URL Slugs"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:286
+msgid "Default: boat"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:292
+msgid "Boat Type"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:300
+msgid "Default: boat-type"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:306
+msgid "Boat Hull Type"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:314
+msgid "Default: boat-hull-type"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:320
+msgid "Boat Status"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:328
+msgid "Default: boat-status"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:334
+msgid "Boat City"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:342
+msgid "Default: boat-location"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:348
+msgid "Boat Feature"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:356
+msgid "Default: boat-feature"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:370
+msgid "Default: agent"
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:386
+msgid ""
+"Using options provided below, You can modify price format to match your "
+"needs."
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:393
+msgid "You can modify URL slugs to match your needs."
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:393
+msgid ""
+"Just make sure to re-save permalinks settings after every change to avoid "
+"404 errors. You can do that from Settings > Permalinks."
+msgstr ""
+
+
+#: admin/class-easy-boats-admin.php:456
+msgid "Settings"
+msgstr ""
+
+
+#: plugins/meta-box/inc/core.php:40
+msgid "Documentation"
+msgstr ""
+
+
+#: plugins/meta-box/inc/core.php:41
+msgid "Extensions"
+msgstr ""
+
+
+#: plugins/meta-box/inc/field.php:192
+msgid "+ Add more"
+msgstr ""
+
+
+#: plugins/meta-box/inc/validation.php:49
+msgid "Please correct the errors highlighted below and try again."
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/autocomplete.php:23
+#: plugins/meta-box/inc/fields/autocomplete.php:87
+#: plugins/meta-box/inc/fields/autocomplete.php:104
+msgid "Delete"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/button.php:29
+msgid "Click me"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/checkbox.php:82
+msgid "Yes"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/file-input.php:25
+msgid "Select File"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/file-input.php:49
+#: plugins/meta-box/inc/fields/select.php:91
+msgid "Select"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/file-input.php:51
+msgid "Remove"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/file.php:24
+#, php-format
+msgid "You may only upload maximum %d file"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/file.php:25
+#, php-format
+msgid "You may only upload maximum %d files"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/file.php:85
+msgid "Error: Cannot delete file"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/map.php:49
+msgid "Find Address"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/oembed.php:65
+msgid "Embed HTML not available."
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/oembed.php:81
+msgid "Preview"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/post.php:34
+msgid "Select a post"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/post.php:38
+#: plugins/meta-box/inc/fields/taxonomy.php:51
+#, php-format
+msgid "Select a %s"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/select-advanced.php:44
+msgid "Select an item"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/select.php:91
+msgid "All"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/taxonomy.php:47
+msgid "Select a term"
+msgstr ""
+
+
+#: plugins/meta-box/inc/fields/user.php:34
+msgid "Select an user"
 msgstr ""
