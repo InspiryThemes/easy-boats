@@ -152,27 +152,27 @@ add_action( 'init', function() {
 
 // Embedded meta box plugin
 if ( ! class_exists( 'RWMB_Core' ) ) {
-	require_once ( plugin_dir_path( __FILE__ ) . '/plugins/meta-box/meta-box.php' );
+	require_once ( plugin_dir_path( __FILE__ ) . 'plugins/meta-box/meta-box.php' );
 }
 
 // Meta Box Plugin Extensions
 
 // Columns extension
 if ( !class_exists( 'RWMB_Columns' ) ) {
-	require_once ( plugin_dir_path( __FILE__ ) . 'meta-box-extensions/meta-box-columns/meta-box-columns.php' );
+	require_once ( plugin_dir_path( __FILE__ ) . 'plugins/meta-box-extensions/meta-box-columns/meta-box-columns.php' );
 }
 
 // Show Hide extension
 if ( !class_exists( 'RWMB_Show_Hide' ) ) {
-	require_once ( plugin_dir_path( __FILE__ ) . 'meta-box-extensions/meta-box-show-hide/meta-box-show-hide.php' );
+	require_once ( plugin_dir_path( __FILE__ ) . 'plugins/meta-box-extensions/meta-box-show-hide/meta-box-show-hide.php' );
 }
 
 // Tabs extension
 if ( !class_exists( 'RWMB_Tabs' ) ) {
-	require_once ( plugin_dir_path( __FILE__ ) . 'meta-box-extensions/meta-box-tabs/meta-box-tabs.php' );               // tabs
+	require_once ( plugin_dir_path( __FILE__ ) . 'plugins/meta-box-extensions/meta-box-tabs/meta-box-tabs.php' );  // tabs
 }
 
 // Group extension
 if ( !class_exists( 'RWMB_Group' ) ) {
-	require_once ( plugin_dir_path( __FILE__ ) . 'meta-box-extensions/meta-box-group/meta-box-group.php' );               // tabs
+	require_once ( plugin_dir_path( __FILE__ ) . 'plugins/meta-box-extensions/meta-box-group/meta-box-group.php' );   // tabs
 }
