@@ -29,7 +29,6 @@ class Easy_Boats_Boat {
         'length'                => 'EASYBOATS_boat_length',
         'length_postfix'        => 'EASYBOATS_boat_length_postfix',
         'video_url'             => 'EASYBOATS_tour_video_url',
-        'video_image'           => 'EASYBOATS_tour_video_image',
         'agent_display_option'  => 'EASYBOATS_agent_display_option',
         'agent_id'              => 'EASYBOATS_agents',
         'slider_image'          => 'EASYBOATS_slider_image',
@@ -308,18 +307,6 @@ class Easy_Boats_Boat {
             return null;
         }
         $video_url = $this->get_boat_meta( $this->meta_keys[ 'video_url' ] );
-        return $video_url;
-    }
-
-    /**
-     * Return video image id if exists
-     * @return mixed|null
-     */
-    public function get_video_image() {
-        if ( !$this->boat_id ) {
-            return null;
-        }
-        $video_url = $this->get_boat_meta( $this->meta_keys[ 'video_image' ] );
         return $video_url;
     }
 
