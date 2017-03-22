@@ -162,11 +162,6 @@ class Easy_Boats {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-agent-post-type.php';
 
 		/**
-		 * The class responsible for providing additional details meta box
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-additional-details-meta-box.php';
-
-		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
@@ -249,12 +244,6 @@ class Easy_Boats {
 				$this->loader->add_action( 'manage_posts_custom_column', $agent_post_type, 'display_custom_column' );
 			}
 		}
-
-		// Additional details meta box
-		$additional_details_meta_box = Additional_Details_Meta_Box::get_instance();
-		$this->loader->add_action( 'add_meta_boxes', $additional_details_meta_box, 'add_additional_details_meta_box' );
-		$this->loader->add_action( 'save_post', $additional_details_meta_box, 'save_additional_details' );
-
 	}
 
 	/**
@@ -330,7 +319,6 @@ class Easy_Boats {
 	}
 
 	public function get_currency_sign() {
-		$this->refresh();
 		if( isset( $this->easy_boats_options[ 'currency_sign' ] ) ) {
 			return $this->easy_boats_options[ 'currency_sign' ];
 		}
@@ -366,7 +354,6 @@ class Easy_Boats {
 	}
 
 	public function get_empty_price_text() {
-		$this->refresh();
 		if( isset( $this->easy_boats_options[ 'empty_price_text' ] ) ) {
 			return $this->easy_boats_options[ 'empty_price_text' ];
 		}
@@ -477,14 +464,4 @@ class Easy_Boats {
 		}
 		return $existing_slug;
 	}
-
-	private function refresh(){
-		if ( function_exists( 'icl_object_id' ) ) {
-			// re-read only for wpml
-			$this->easy_boats_options =  get_option( 'easy_boats_price_format_option' );
-			$this->easy_boats_options = get_option( 'easy_boats_url_slugs_option' );
-
-		}
-	}
-
 }
