@@ -417,7 +417,6 @@ class Easy_Boats_Boat_Post_Type {
         $default_desc = __( 'Consult theme documentation for required image size.', 'easy-boats' );
         $gallery_images_desc = apply_filters( 'easy_boats_gallery_description', $default_desc );
         $video_image_desc = apply_filters( 'easy_boats_video_description', $default_desc );
-        $slider_image_desc = apply_filters( 'easy_boats_slider_description', $default_desc );
 
         $meta_boxes[] = array(
             'id' => 'boat-meta-box',
@@ -440,9 +439,9 @@ class Easy_Boats_Boat_Post_Type {
                     'label' => __('Agent Information', 'easy-boats'),
                     'icon' => 'dashicons-businessman',
                 ),
-                'home-slider' => array(
-                    'label' => __('Homepage Slider', 'easy-boats'),
-                    'icon' => 'dashicons-images-alt',
+                'additional-details' => array(
+                    'label' => __('Additional Details', 'easy-boats'),
+                    'icon' => 'dashicons-welcome-add-page',
                 )
             ),
             'tab_style' => 'left',
@@ -562,35 +561,33 @@ class Easy_Boats_Boat_Post_Type {
                     'tab' => 'agent',
                 ),
 
-
-                // Homepage Slider
-                array(
-                    'name' => __('Do you want to add this boat in Homepage Slider ?', 'easy-boats'),
-                    'desc' => __('If Yes, Then you need to provide a slider image below.', 'easy-boats'),
-                    'id' => "{$prefix}add_in_slider",
-                    'type' => 'radio',
-                    'std' => 'no',
-                    'options' => array(
-                        'yes' => __('Yes ', 'easy-boats'),
-                        'no' => __('No', 'easy-boats')
-                    ),
-                    'columns' => 12,
-                    'tab' => 'home-slider',
-                ),
-                array(
-                    'name' => __('Slider Image', 'easy-boats'),
-                    'id' => "{$prefix}slider_image",
-                    'desc' => $slider_image_desc,
-                    'type' => 'image_advanced',
-                    'max_file_uploads' => 1,
-                    'columns' => 12,
-                    'tab' => 'home-slider',
-                )
+                // Additional Details
+	            array(
+		            'id'  => "{$prefix}additional_details",
+		            'type'   => 'group',
+		            'clone'  => true,
+		            'sort_clone' => true,
+		            'tab'   => 'additional-details',
+		            'fields' => array(
+			            array(
+				            'name'  => __( 'Title', 'easy-boats' ),
+				            'id'    => "title",
+				            'columns' => 6,
+				            'type'  => 'text',
+			            ),
+			            array(
+				            'name'  => __( 'Value', 'easy-boats' ),
+				            'id'    => "value",
+				            'columns' => 6,
+				            'type'  => 'text',
+			            ),
+		            )
+	            ),
             )
         );
 
         // apply a filter before returning meta boxes
-        $meta_boxes = apply_filters( 'boat_meta_boxes', $meta_boxes );
+        $meta_boxes = apply_filters( 'easy_boats_meta_boxes', $meta_boxes );
 
         return $meta_boxes;
     }
