@@ -427,13 +427,9 @@ class Easy_Boats_Boat_Post_Type {
                     'label' => __('Basic Information', 'easy-boats'),
                     'icon' => 'dashicons-admin-home',
                 ),
-                'gallery' => array(
-                    'label' => __('Gallery Images', 'easy-boats'),
-                    'icon' => 'dashicons-format-gallery',
-                ),
-                'video' => array(
-                    'label' => __('Boat Video', 'easy-boats'),
-                    'icon' => 'dashicons-format-video',
+                'media' => array(
+	                'label' => __('Boat Media', 'easy-boats'),
+	                'icon' => 'dashicons-admin-media',
                 ),
                 'agent' => array(
                     'label' => __('Agent Information', 'easy-boats'),
@@ -448,15 +444,15 @@ class Easy_Boats_Boat_Post_Type {
             'fields' => array(
 
                 // Details
-                array(
-                    'id' => "{$prefix}boat_price",
-                    'name' => __('Sale or Rent Price ( Only digits )', 'easy-boats'),
-                    'desc' => __('Example Value: 435000', 'easy-boats'),
-                    'type' => 'text',
-                    'std' => "",
-                    'columns' => 6,
-                    'tab' => 'details',
-                ),
+	            array(
+		            'id' => "{$prefix}boat_price",
+		            'name' => __('Sale or Rent Price ( Only digits )', 'easy-boats'),
+		            'desc' => __('Example Value: 435000', 'easy-boats'),
+		            'type' => 'text',
+		            'std' => "",
+		            'columns' => 6,
+		            'tab' => 'details',
+	            ),
                 array(
                     'name' => __('Mark this boat as featured ?', 'easy-boats'),
                     'id' => "{$prefix}featured",
@@ -469,42 +465,50 @@ class Easy_Boats_Boat_Post_Type {
                     'columns' => 6,
                     'tab' => 'details',
                 ),
-                array(
-                    'id' => "{$prefix}boat_length",
-                    'name' => __('Length ( Only digits )', 'easy-boats'),
-                    'desc' => __('Example Value: 2500', 'easy-boats'),
-                    'type' => 'text',
-                    'std' => "",
-                    'columns' => 6,
-                    'tab' => 'details',
-                ),
-                array(
-                    'id' => "{$prefix}boat_length_postfix",
-                    'name' => __('Length Postfix', 'easy-boats'),
-                    'desc' => __('Example Value: ft or m', 'easy-boats'),
-                    'type' => 'text',
-                    'std' => "",
-                    'columns' => 6,
-                    'tab' => 'details',
-                ),
-                array(
-                    'id' => "{$prefix}boat_built_year",
-                    'name' => __('Built Year', 'easy-boats'),
-                    'desc' => __('Example Value: 2017', 'easy-boats'),
-                    'type' => 'text',
-                    'std' => "",
-                    'columns' => 6,
-                    'tab' => 'details',
-                ),
-                array(
-                    'id' => "{$prefix}boat_id",
-                    'name' => __('Boat ID', 'easy-boats'),
-                    'desc' => __('It will help you search a boat directly.', 'easy-boats'),
-                    'type' => 'text',
-                    'std' => "",
-                    'columns' => 6,
-                    'tab' => 'details',
-                ),
+	            array(
+		            'type' => 'divider',
+		            'tab'  => 'details'
+	            ),
+	            array(
+		            'id' => "{$prefix}boat_built_year",
+		            'name' => __('Built Year', 'easy-boats'),
+		            'desc' => __('Example Value: 2017', 'easy-boats'),
+		            'type' => 'text',
+		            'std' => "",
+		            'columns' => 6,
+		            'tab' => 'details',
+	            ),
+	            array(
+		            'id' => "{$prefix}boat_id",
+		            'name' => __('Boat ID', 'easy-boats'),
+		            'desc' => __('It will help you search a boat directly.', 'easy-boats'),
+		            'type' => 'text',
+		            'std' => "",
+		            'columns' => 6,
+		            'tab' => 'details',
+	            ),
+	            array(
+		            'type' => 'divider',
+		            'tab'  => 'details'
+	            ),
+	            array(
+		            'id' => "{$prefix}boat_length",
+		            'name' => __('Length ( Only digits )', 'easy-boats'),
+		            'desc' => __('Example Value: 2500', 'easy-boats'),
+		            'type' => 'text',
+		            'std' => "",
+		            'columns' => 6,
+		            'tab' => 'details',
+	            ),
+	            array(
+		            'id' => "{$prefix}boat_length_postfix",
+		            'name' => __('Length Postfix', 'easy-boats'),
+		            'desc' => __('Example Value: ft or m', 'easy-boats'),
+		            'type' => 'text',
+		            'std' => "",
+		            'columns' => 6,
+		            'tab' => 'details',
+	            ),
 
                 // Boat Gallery
                 array(
@@ -514,8 +518,14 @@ class Easy_Boats_Boat_Post_Type {
                     'type' => 'image_advanced',
                     'max_file_uploads' => 48,
                     'columns' => 12,
-                    'tab' => 'gallery',
+                    'tab' => 'media',
                 ),
+
+                // DIVIDER
+	            array(
+		            'type' => 'divider',
+		            'tab'  => 'media'
+	            ),
 
                 // Boat Video
                 array(
@@ -524,16 +534,7 @@ class Easy_Boats_Boat_Post_Type {
                     'desc' => __('Provide virtual tour video URL. YouTube, Vimeo, SWF File and MOV File are supported', 'easy-boats'),
                     'type' => 'text',
                     'columns' => 12,
-                    'tab' => 'video',
-                ),
-                array(
-                    'name' => __('Virtual Tour Video Image', 'easy-boats'),
-                    'id' => "{$prefix}tour_video_image",
-                    'desc' => $video_image_desc,
-                    'type' => 'image_advanced',
-                    'max_file_uploads' => 1,
-                    'columns' => 12,
-                    'tab' => 'video',
+                    'tab' => 'media',
                 ),
 
                 // Agents
