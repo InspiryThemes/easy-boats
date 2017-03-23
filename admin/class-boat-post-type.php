@@ -413,11 +413,6 @@ class Easy_Boats_Boat_Post_Type {
             }
         }
 
-        // Boat Details Meta Box
-        $default_desc = __( 'Consult theme documentation for required image size.', 'easy-boats' );
-        $gallery_images_desc = apply_filters( 'easy_boats_gallery_description', $default_desc );
-        $video_image_desc = apply_filters( 'easy_boats_video_description', $default_desc );
-
         $meta_boxes[] = array(
             'id' => 'boat-meta-box',
             'title' => __('Boat', 'easy-boats'),
@@ -514,7 +509,7 @@ class Easy_Boats_Boat_Post_Type {
                 array(
                     'name' => __('Boat Gallery Images', 'easy-boats'),
                     'id' => "{$prefix}boat_images",
-                    'desc' => $gallery_images_desc,
+                    'desc' => apply_filters( 'easy_boats_gallery_description',  __( 'Maximum file upload limit is 48.', 'easy-boats' ) ),
                     'type' => 'image_advanced',
                     'max_file_uploads' => 48,
                     'columns' => 12,
