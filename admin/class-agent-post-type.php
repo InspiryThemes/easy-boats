@@ -230,7 +230,7 @@ class Easy_Boats_Agent_Post_Type {
         );
 
         // apply a filter before returning meta boxes
-        $meta_boxes = apply_filters( 'agent_meta_boxes', $meta_boxes );
+        $meta_boxes = apply_filters( 'easy_boats_agent_meta_boxes', $meta_boxes );
 
         return $meta_boxes;
 
