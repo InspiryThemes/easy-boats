@@ -58,11 +58,18 @@ class Easy_Boats {
 	protected $version;
 
 	/**
-	 * Contains plugin easy boats options value
+	 * Contains plugin price format options value
 	 *
-	 * @var mixed|void $easy_boats_options  Contains easy boats options value.
+	 * @var mixed|void $price_format_options  Contains price format options value.
 	 */
-	public $easy_boats_options;
+	protected $price_format_options;
+
+	/**
+	 * Contains plugin url slugs options value
+	 *
+	 * @var mixed|void $url_slugs_options  Contains url slugs options value.
+	 */
+	protected $url_slugs_options;
 
 	/**
 	 * Instance variable for singleton pattern
@@ -97,7 +104,8 @@ class Easy_Boats {
 		$this->plugin_name = 'easy-boats';
 		$this->version = '1.0.0';
 
-		$this->easy_boats_options =  get_option( 'easy_boats_options' );
+		$this->price_format_options =  get_option( 'easy_boats_price_format_option' );
+		$this->url_slugs_options = get_option( 'easy_boats_url_slugs_option' );
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -202,7 +210,8 @@ class Easy_Boats {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_easy_boats_settings' );
-		$this->loader->add_action( 'admin_init', $plugin_admin, 'initialize_easy_boats_options' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'initialize_price_format_options' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'initialize_url_slugs_options' );
 		$this->loader->add_filter( 'plugin_action_links_' . EASYBOATS_PLUGIN_BASENAME, $plugin_admin, 'easy_boats_action_links' );
 
 		// Filters to modify URL slugs
@@ -319,50 +328,50 @@ class Easy_Boats {
 	}
 
 	public function get_currency_sign() {
-		if( isset( $this->easy_boats_options[ 'currency_sign' ] ) ) {
-			return $this->easy_boats_options[ 'currency_sign' ];
+		if( isset( $this->price_format_options[ 'currency_sign' ] ) ) {
+			return $this->price_format_options[ 'currency_sign' ];
 		}
 		return '$';
 	}
 
 	public function get_currency_position() {
-		if( isset( $this->easy_boats_options[ 'currency_position' ] ) ) {
-			return $this->easy_boats_options[ 'currency_position' ];
+		if( isset( $this->price_format_options[ 'currency_position' ] ) ) {
+			return $this->price_format_options[ 'currency_position' ];
 		}
 		return 'before';
 	}
 
 	public function get_thousand_separator() {
-		if( isset( $this->easy_boats_options[ 'thousand_separator' ] ) ) {
-			return $this->easy_boats_options[ 'thousand_separator' ];
+		if( isset( $this->price_format_options[ 'thousand_separator' ] ) ) {
+			return $this->price_format_options[ 'thousand_separator' ];
 		}
 		return ',';
 	}
 
 	public function get_decimal_separator() {
-		if( isset( $this->easy_boats_options[ 'decimal_separator' ] ) ) {
-			return $this->easy_boats_options[ 'decimal_separator' ];
+		if( isset( $this->price_format_options[ 'decimal_separator' ] ) ) {
+			return $this->price_format_options[ 'decimal_separator' ];
 		}
 		return '.';
 	}
 
 	public function get_number_of_decimals() {
-		if( isset( $this->easy_boats_options[ 'number_of_decimals' ] ) ) {
-			return intval( $this->easy_boats_options[ 'number_of_decimals' ] );
+		if( isset( $this->price_format_options[ 'number_of_decimals' ] ) ) {
+			return intval( $this->price_format_options[ 'number_of_decimals' ] );
 		}
 		return 2;
 	}
 
 	public function get_empty_price_text() {
-		if( isset( $this->easy_boats_options[ 'empty_price_text' ] ) ) {
-			return $this->easy_boats_options[ 'empty_price_text' ];
+		if( isset( $this->price_format_options[ 'empty_price_text' ] ) ) {
+			return $this->price_format_options[ 'empty_price_text' ];
 		}
 		return null;
 	}
 
 	public function get_boat_url_slug() {
-		if( isset( $this->easy_boats_options[ 'boat_url_slug' ] ) ) {
-			return sanitize_title( $this->easy_boats_options[ 'boat_url_slug' ] );
+		if( isset( $this->url_slugs_options[ 'boat_url_slug' ] ) ) {
+			return sanitize_title( $this->url_slugs_options[ 'boat_url_slug' ] );
 		}
 		return null;
 	}
@@ -376,8 +385,8 @@ class Easy_Boats {
 	}
 
 	public function get_boat_type_url_slug() {
-		if( isset( $this->easy_boats_options[ 'boat_type_url_slug' ] ) ) {
-			return sanitize_title( $this->easy_boats_options[ 'boat_type_url_slug' ] );
+		if( isset( $this->url_slugs_options[ 'boat_type_url_slug' ] ) ) {
+			return sanitize_title( $this->url_slugs_options[ 'boat_type_url_slug' ] );
 		}
 		return null;
 	}
@@ -391,8 +400,8 @@ class Easy_Boats {
 	}
 
 	public function get_boat_hull_type_url_slug() {
-		if( isset( $this->easy_boats_options[ 'boat_hull_type_url_slug' ] ) ) {
-			return sanitize_title( $this->easy_boats_options[ 'boat_hull_type_url_slug' ] );
+		if( isset( $this->url_slugs_options[ 'boat_hull_type_url_slug' ] ) ) {
+			return sanitize_title( $this->url_slugs_options[ 'boat_hull_type_url_slug' ] );
 		}
 		return null;
 	}
@@ -406,8 +415,8 @@ class Easy_Boats {
 	}
 
 	public function get_boat_status_url_slug() {
-		if( isset( $this->easy_boats_options[ 'boat_status_url_slug' ] ) ) {
-			return sanitize_title( $this->easy_boats_options[ 'boat_status_url_slug' ] );
+		if( isset( $this->url_slugs_options[ 'boat_status_url_slug' ] ) ) {
+			return sanitize_title( $this->url_slugs_options[ 'boat_status_url_slug' ] );
 		}
 		return null;
 	}
@@ -421,8 +430,8 @@ class Easy_Boats {
 	}
 
 	public function get_boat_location_url_slug() {
-		if( isset( $this->easy_boats_options[ 'boat_location_url_slug' ] ) ) {
-			return sanitize_title( $this->easy_boats_options[ 'boat_location_url_slug' ] );
+		if( isset( $this->url_slugs_options[ 'boat_location_url_slug' ] ) ) {
+			return sanitize_title( $this->url_slugs_options[ 'boat_location_url_slug' ] );
 		}
 		return null;
 	}
@@ -436,8 +445,8 @@ class Easy_Boats {
 	}
 
 	public function get_boat_feature_url_slug() {
-		if( isset( $this->easy_boats_options[ 'boat_feature_url_slug' ] ) ) {
-			return sanitize_title( $this->easy_boats_options[ 'boat_feature_url_slug' ] );
+		if( isset( $this->url_slugs_options[ 'boat_feature_url_slug' ] ) ) {
+			return sanitize_title( $this->url_slugs_options[ 'boat_feature_url_slug' ] );
 		}
 		return null;
 	}
@@ -451,8 +460,8 @@ class Easy_Boats {
 	}
 
 	public function get_agent_url_slug() {
-		if( isset( $this->easy_boats_options[ 'agent_url_slug' ] ) ) {
-			return sanitize_title( $this->easy_boats_options[ 'agent_url_slug' ] );
+		if( isset( $this->url_slugs_options[ 'agent_url_slug' ] ) ) {
+			return sanitize_title( $this->url_slugs_options[ 'agent_url_slug' ] );
 		}
 		return null;
 	}
