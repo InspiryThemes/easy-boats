@@ -128,29 +128,6 @@ class Easy_Boats_Admin {
 			'dashicons-admin-settings',
 			'66'
 		);
-
-		add_submenu_page(
-			'easy_boats',				                    // The ID of the top-level menu page to which this submenu item belongs
-			__( 'URL Slugs', 'easy-boats' ),			    // The value used to populate the browser's title bar when the menu page is active
-			__( 'URL Slugs', 'easy-boats' ),			                // The label of this submenu item displayed in the menu
-			'administrator',					            // What roles are able to access this submenu item
-			'easy_boats_url_slugs',	                        // The ID used to represent this submenu item
-			array( $this, 'display_url_slugs_settings')		// The callback function used to render the options for this submenu item
-		);
-	}
-
-	/**
-	 * Wrapper function for price format settings
-	 */
-	public function display_price_format_settings(){
-		$this->display_easy_boats_settings( 'price_format' );
-	}
-
-	/**
-	 * Wrapper function for url slugs settings
-	 */
-	public function display_url_slugs_settings(){
-		$this->display_easy_boats_settings( 'url_slugs' );
 	}
 
 	/**
