@@ -156,7 +156,7 @@ class Easy_Boats_Admin {
 			?>
 
             <h2 class="nav-tab-wrapper">
-                <a href="?page=easy_boats&tab=price_format" class="nav-tab <?php echo $active_tab == 'price_format' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Price Format', 'easy-boats' ); ?></a>
+                <a href="?page=easy_boats&tab=price_  format" class="nav-tab <?php echo $active_tab == 'price_format' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Price Format', 'easy-boats' ); ?></a>
                 <a href="?page=easy_boats&tab=url_slugs" class="nav-tab <?php echo $active_tab == 'url_slugs' ? 'nav-tab-active' : ''; ?>"><?php _e( 'URL Slugs', 'easy-boats' ); ?></a>
             </h2>
 
