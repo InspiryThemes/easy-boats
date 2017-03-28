@@ -76,9 +76,9 @@ add_action( 'init', function() {
 		add_action( 'admin_notices', function () {
 			?>
 			<div class="update-nag notice is-dismissible">
-				<p><strong><?php _e( 'Meta Box plugin has been deactivated!', 'easy-boats' ); ?></strong></p>
-				<p><?php _e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?></p>
-				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
+				<p><strong><?php esc_html_e( 'Meta Box plugin has been deactivated!', 'easy-boats' ); ?></strong></p>
+				<p><?php esc_html_e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?></p>
+				<p><em><?php esc_html_e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
 			</div>
 			<?php
 		} );
@@ -91,10 +91,10 @@ add_action( 'init', function() {
 			?>
 			<div class="update-nag notice is-dismissible">
 				<p>
-					<strong><?php _e( 'Meta Box Columns plugin has been deactivated!', 'easy-boats' ); ?></strong>
-					&nbsp;<?php _e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
+					<strong><?php esc_html_e( 'Meta Box Columns plugin has been deactivated!', 'easy-boats' ); ?></strong>
+					&nbsp;<?php esc_html_e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
 				</p>
-				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
+				<p><em><?php esc_html_e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
 			</div>
 			<?php
 		} );
@@ -107,10 +107,10 @@ add_action( 'init', function() {
 			?>
 			<div class="update-nag notice is-dismissible">
 				<p>
-					<strong><?php _e( 'Meta Box Tabs plugin has been deactivated!', 'easy-boats' ); ?></strong>
-					&nbsp;<?php _e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
+					<strong><?php esc_html_e( 'Meta Box Tabs plugin has been deactivated!', 'easy-boats' ); ?></strong>
+					&nbsp;<?php esc_html_e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
 				</p>
-				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
+				<p><em><?php esc_html_e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
 			</div>
 			<?php
 		} );
@@ -123,10 +123,10 @@ add_action( 'init', function() {
 			?>
 			<div class="update-nag notice is-dismissible">
 				<p>
-					<strong><?php _e( 'Meta Box Show Hide plugin has been deactivated!', 'easy-boats' ); ?></strong>
-					&nbsp;<?php _e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
+					<strong><?php esc_html_e( 'Meta Box Show Hide plugin has been deactivated!', 'easy-boats' ); ?></strong>
+					&nbsp;<?php esc_html_e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
 				</p>
-				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
+				<p><em><?php esc_html_e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
 			</div>
 			<?php
 		} );
@@ -139,10 +139,10 @@ add_action( 'init', function() {
 			?>
 			<div class="update-nag notice is-dismissible">
 				<p>
-					<strong><?php _e( 'Meta Box Group plugin has been deactivated!', 'easy-boats' ); ?></strong>
-					&nbsp;<?php _e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
+					<strong><?php esc_html_e( 'Meta Box Group plugin has been deactivated!', 'easy-boats' ); ?></strong>
+					&nbsp;<?php esc_html_e( 'As now its functionality is embedded with in Easy Boats plugin.', 'easy-boats' ); ?>
 				</p>
-				<p><em><?php _e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
+				<p><em><?php esc_html_e( 'So, You should completely remove it from your plugins.', 'easy-boats' ); ?></em></p>
 			</div>
 			<?php
 		} );

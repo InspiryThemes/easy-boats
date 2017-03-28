@@ -228,7 +228,7 @@ class Easy_Boats_Admin {
         <!-- Create a header in the default WordPress 'wrap' container -->
         <div class="wrap">
 
-            <h2><?php _e( 'Easy Boats Settings', 'easy-boats' ); ?></h2>
+            <h2><?php esc_html_e( 'Easy Boats Settings', 'easy-boats' ); ?></h2>
 
             <!-- Make a call to the WordPress function for rendering errors when settings are saved. -->
 			<?php settings_errors(); ?>
@@ -244,8 +244,8 @@ class Easy_Boats_Admin {
 			?>
 
             <h2 class="nav-tab-wrapper">
-                <a href="?page=easy_boats&tab=price_format" class="nav-tab <?php echo $active_tab == 'price_format' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Price Format', 'easy-boats' ); ?></a>
-                <a href="?page=easy_boats&tab=url_slugs" class="nav-tab <?php echo $active_tab == 'url_slugs' ? 'nav-tab-active' : ''; ?>"><?php _e( 'URL Slugs', 'easy-boats' ); ?></a>
+                <a href="?page=easy_boats&tab=price_format" class="nav-tab <?php echo $active_tab == 'price_format' ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'Price Format', 'easy-boats' ); ?></a>
+                <a href="?page=easy_boats&tab=url_slugs" class="nav-tab <?php echo $active_tab == 'url_slugs' ? 'nav-tab-active' : ''; ?>"><?php esc_html_e( 'URL Slugs', 'easy-boats' ); ?></a>
             </h2>
 
             <!-- Create the form that will be used to render our options -->
