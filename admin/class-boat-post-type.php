@@ -49,7 +49,7 @@ class Easy_Boats_Boat_Post_Type {
             'hierarchical'        => true,
             'public'              => true,
             'show_ui'             => true,
-            'show_in_menu'        => true,
+            'show_in_menu'        => 'easy_boats',
             'menu_position'       => 5,
             'menu_icon'           => plugin_dir_url( __FILE__ ) . 'images/ship.png',
             'show_in_admin_bar'   => true,

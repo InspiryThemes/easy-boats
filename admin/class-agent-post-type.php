@@ -49,7 +49,7 @@ class Easy_Boats_Agent_Post_Type {
             'hierarchical'        => false,
             'public'              => true,
             'show_ui'             => true,
-            'show_in_menu'        => true,
+            'show_in_menu'        => false,
             'menu_position'       => 6,
             'menu_icon'           => 'dashicons-businessman',
             'show_in_admin_bar'   => true,

@@ -125,9 +125,97 @@ class Easy_Boats_Admin {
 			'administrator',					            // What roles are able to access the menu
 			'easy_boats',				                    // The ID used to bind submenu items to this menu
 			array( $this, 'display_easy_boats_settings'),	// The callback function used to render this menu
-			'dashicons-admin-settings',
-			'66'
+			plugin_dir_url( __FILE__ ) . 'images/ship.png',
+			'9'
 		);
+
+		// Add all sub menus.
+		$sub_menus = array(
+			'addnewboat' => array(
+				'easy_boats',
+				__( 'Add New Boat', 'easy-boats' ),
+				__( 'Add New Boat', 'easy-boats' ),
+				'administrator',
+				'post-new.php?post_type=boat',
+			),
+			'boat-type' => array(
+				'easy_boats',
+				__( 'Boat Type', 'easy-boats' ),
+				__( 'Boat Types', 'easy-boats' ),
+				'administrator',
+				'edit-tags.php?taxonomy=boat-type&post_type=boat',
+			),
+			'boat-hull-type' => array(
+				'easy_boats',
+				__( 'Boat Hull Type', 'easy-boats' ),
+				__( 'Boat Hull Types', 'easy-boats' ),
+				'administrator',
+				'edit-tags.php?taxonomy=boat-hull-type&post_type=boat',
+			),
+			'boat-status' => array(
+				'easy_boats',
+				__( 'Boat Status', 'easy-boats' ),
+				__( 'Boat Statuses', 'easy-boats' ),
+				'administrator',
+				'edit-tags.php?taxonomy=boat-status&post_type=boat',
+			),
+			'boat-location' => array(
+				'easy_boats',
+				__( 'Boat Location', 'easy-boats' ),
+				__( 'Boat Locations', 'easy-boats' ),
+				'administrator',
+				'edit-tags.php?taxonomy=boat-location&post_type=boat',
+			),
+			'boat-feature' => array(
+				'easy_boats',
+				__( 'Boat Features', 'easy-boats' ),
+				__( 'Boat Features', 'easy-boats' ),
+				'administrator',
+				'edit-tags.php?taxonomy=boat-feature&post_type=boat',
+			),
+			'allagents' => array(
+				'easy_boats',
+				__( 'Agents', 'easy-boats' ),
+				__( 'All Agents', 'easy-boats' ),
+				'administrator',
+				'edit.php?post_type=agent',
+			),
+			'addnewagent' => array(
+				'easy_boats',
+				__( 'Add New Agent', 'easy-boats' ),
+				__( 'Add New Agent', 'easy-boats' ),
+				'administrator',
+				'post-new.php?post_type=agent',
+			),
+			'easyboats' => array(
+				'easy_boats',
+				__( 'Easy Boats Settings', 'easy-boats' ),
+				__( 'Settings', 'easy-boats' ),
+				'administrator',
+				'easy_boats',
+				 array( $this, 'display_easy_boats_settings'),
+			),
+		);
+
+		// Third-party can add more sub_menus.
+		$sub_menu = apply_filters( 'easy_boats_sub_menus', $sub_menus, 20 );
+
+		/**
+		 * Add Submenu.
+		 *
+		 * @param string $parent_slug
+		 * @param string $page_title
+		 * @param string $menu_title
+		 * @param string $capability
+		 * @param string $menu_slug
+		 * @param callable $function = ''
+		 * @since  1.0.0
+		 */
+		if ( $sub_menu ) {
+			foreach ( $sub_menus as $sub_menu ) {
+				call_user_func_array( 'add_submenu_page', $sub_menu );
+			}
+		}
 	}
 
 	/**
@@ -466,7 +554,7 @@ class Easy_Boats_Admin {
 			}
 
 		} else {
-			_e( 'Field id is missing!', 'easy-boats' );
+			esc_html_e( 'Field id is missing!', 'easy-boats' );
 		}
 	}
 
@@ -498,7 +586,7 @@ class Easy_Boats_Admin {
 				echo '<br/><label class="inspiry-field-description">' . $field_description . '</label>';
 			}
 		} else {
-			_e( 'Field id is missing!', 'easy-boats' );
+			esc_html_e( 'Field id is missing!', 'easy-boats' );
 		}
 	}
 
@@ -509,10 +597,10 @@ class Easy_Boats_Admin {
 	 * @return array
 	 */
 	public function easy_boats_action_links( $links ) {
-		$links[] = '<a href="'. get_admin_url( null, 'admin.php?page=easy_boats' ) .'">' . __( 'Settings', 'easy-boats' ) . '</a>';
+		$links[] = '<a href="'. get_admin_url( null, 'admin.php?page=easy_boats' ) .'">' . esc_html__( 'Settings', 'easy-boats' ) . '</a>';
+
 		return $links;
 	}
-
 
 	/**
 	 * Provides default values for price format options
