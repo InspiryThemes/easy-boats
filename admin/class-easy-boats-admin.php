@@ -219,6 +219,24 @@ class Easy_Boats_Admin {
 	}
 
 	/**
+	 * Highlight the proper top level menu
+	 *
+	 * @param  string $parent_file
+	 *
+	 * @return string
+	 */
+	public function taxonomy_top_level_menu($parent_file) {
+		global $current_screen;
+
+		if ( in_array( $current_screen->taxonomy, array( 'boat-type', 'boat-hull-type', 'boat-status', 'boat-location', 'boat-feature' ) ) ) {
+			$parent_file = 'easy_boats';
+		}
+
+		return $parent_file;
+	}
+	
+
+	/**
 	 * Display boats settings page
 	 *
 	 * @param   string  $active_tab name of currently active tab

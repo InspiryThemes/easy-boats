@@ -212,6 +212,7 @@ class Easy_Boats {
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_easy_boats_settings' );
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'initialize_price_format_options' );
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'initialize_url_slugs_options' );
+		$this->loader->add_action( 'parent_file', $plugin_admin, 'taxonomy_top_level_menu' );
 		$this->loader->add_filter( 'plugin_action_links_' . EASYBOATS_PLUGIN_BASENAME, $plugin_admin, 'easy_boats_action_links' );
 
 		// Filters to modify URL slugs
