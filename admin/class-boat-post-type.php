@@ -121,7 +121,7 @@ class Easy_Boats_Boat_Post_Type {
 
         $labels = array(
             'name'                       => _x( 'Boat Hull Types', 'Taxonomy General Name', 'easy-boats' ),
-            'singular_name'              => _x( 'Boat Feature', 'Taxonomy Singular Name', 'easy-boats' ),
+            'singular_name'              => _x( 'Boat Hull Type', 'Taxonomy Singular Name', 'easy-boats' ),
             'menu_name'                  => __( 'Hull Types', 'easy-boats' ),
             'all_items'                  => __( 'All Boat Hull Types', 'easy-boats' ),
             'parent_item'                => __( 'Parent Boat Hull Type', 'easy-boats' ),
