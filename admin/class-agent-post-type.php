@@ -106,24 +106,12 @@ class Easy_Boats_Agent_Post_Type {
 
         switch ( $column_name ) {
 
-            case 'thumb':
-                if ( has_post_thumbnail ( $post->ID ) ) {
-                    ?>
-                    <a href="<?php the_permalink(); ?>" target="_blank">
-                        <?php the_post_thumbnail( array( 130, 130 ) );?>
-                    </a>
-                    <?php
-                } else {
-                    _e ( 'No Image', 'easy-boats' );
-                }
-                break;
-
             case 'email':
                 $agent_email = is_email( get_post_meta ( $post->ID, 'EASYBOATS_agent_email', true ) );
                 if ( $agent_email ) {
                     echo $agent_email;
                 } else {
-                    _e ( 'NA', 'easy-boats' );
+	                esc_html_e ( 'NA', 'easy-boats' );
                 }
                 break;
 
@@ -132,7 +120,7 @@ class Easy_Boats_Agent_Post_Type {
                 if ( !empty( $mobile_number ) ) {
                     echo $mobile_number;
                 } else {
-                    _e ( 'NA', 'easy-boats' );
+	                esc_html_e ( 'NA', 'easy-boats' );
                 }
                 break;
 
