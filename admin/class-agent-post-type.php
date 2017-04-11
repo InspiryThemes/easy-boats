@@ -74,9 +74,9 @@ class Easy_Boats_Agent_Post_Type {
      * @return  array   $defaults
      */
     public function register_custom_column_titles ( $defaults ) {
-
+	    
         $new_columns = array(
-            "thumb"     => __( 'Photo', 'easy-boats' ),
+            "photo"     => __( 'Photo', 'easy-boats' ),
             "email"     => __( 'Email', 'easy-boats' ),
             "mobile"    => __( 'Mobile', 'easy-boats'),
         );
@@ -106,7 +106,19 @@ class Easy_Boats_Agent_Post_Type {
 
         switch ( $column_name ) {
 
-            case 'email':
+	        case 'photo':
+		        if ( has_post_thumbnail ( $post->ID ) ) {
+			        ?>
+			        <a href="<?php the_permalink(); ?>" target="_blank">
+				        <?php the_post_thumbnail( array( 130, 130 ) );?>
+			        </a>
+			        <?php
+		        } else {
+			        esc_html_e ( 'No Image', 'easy-boats' );
+		        }
+		        break;
+
+	        case 'email':
                 $agent_email = is_email( get_post_meta ( $post->ID, 'EASYBOATS_agent_email', true ) );
                 if ( $agent_email ) {
                     echo $agent_email;

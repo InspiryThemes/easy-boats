@@ -360,7 +360,7 @@ class Easy_Boats_Boat_Post_Type {
                 if ( has_post_thumbnail ( $post->ID ) ) {
                     ?><a href="<?php the_permalink(); ?>" target="_blank"><?php the_post_thumbnail( array( 130, 130 ) );?></a><?php
                 } else {
-                    _e ( 'No Image', 'easy-boats' );
+	                esc_html_e( 'No Image', 'easy-boats' );
                 }
                 break;
 
@@ -369,7 +369,7 @@ class Easy_Boats_Boat_Post_Type {
                 if( ! empty ( $boat_id ) ) {
                     echo $boat_id;
                 } else {
-                    _e ( 'NA', 'easy-boats' );
+	                esc_html_e( 'NA', 'easy-boats' );
                 }
                 break;
 
@@ -380,7 +380,7 @@ class Easy_Boats_Boat_Post_Type {
                     $price_postfix = get_post_meta ( $post->ID, 'EASYBOATS_boat_price_postfix', true );
                     echo Easy_Boats_Boat::format_price( $price_amount, $price_postfix );
                 } else {
-                    _e ( 'NA', 'easy-boats' );
+	                esc_html_e( 'NA', 'easy-boats' );
                 }
                 break;
 
