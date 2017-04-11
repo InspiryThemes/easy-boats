@@ -74,7 +74,7 @@ class Easy_Boats_Agent_Post_Type {
      * @return  array   $defaults
      */
     public function register_custom_column_titles ( $defaults ) {
-	    
+
         $new_columns = array(
             "photo"     => __( 'Photo', 'easy-boats' ),
             "email"     => __( 'Email', 'easy-boats' ),
