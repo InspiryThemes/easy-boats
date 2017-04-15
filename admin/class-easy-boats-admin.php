@@ -126,7 +126,7 @@ class Easy_Boats_Admin {
 			'easy_boats',				                    // The ID used to bind submenu items to this menu
 			array( $this, 'display_easy_boats_settings'),	// The callback function used to render this menu
 			plugin_dir_url( __FILE__ ) . 'images/ship.png',
-			'9'
+			'6'
 		);
 
 		// Add all sub menus.
