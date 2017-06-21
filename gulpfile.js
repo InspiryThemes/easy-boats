@@ -2,39 +2,23 @@
  * Gulpfile
  *
  * @since 1.0.0
- */
-
-
-/**
- * Load Plugins.
  *
  * Load gulp plugins and assign them semantic names.
  */
-var gulp 	= require('gulp');
-var zip 	= require('gulp-zip');
-var notify 	= require('gulp-notify');
-
-var wpPot   = require('gulp-wp-pot'); // For generating the .pot file.
-var sort    = require('gulp-sort'); // Recommended to prevent unnecessary changes in pot-file.
-
-var projectPHPWatchFiles    = './**/*.php'; // Path to all PHP files.
-var translatePath           = './languages/'; // Where to save the translation files.
-var text_domain             = 'easy-boats'; // Your textdomain here.
-var destFile                = 'easy-boats.pot'; // Name of the transalation file.
-var packageName             = 'easy-boats'; // Package name.
-var bugReport               = 'https://github.com/InspiryThemes/easy-boats/issues'; // Where can users report bugs.
-var lastTranslator          = 'Tariq <tariq@inspirythemes.com>'; // Last translator Email ID.
-var team                    = 'InspiryThemes <tariq@inspirythemes.com>'; // Team's Email ID.
+var gulp = require('gulp');
+var zip = require('gulp-zip');
+var notify = require('gulp-notify');
 
 /**
  * Build Plugin Zip
  */
 gulp.task('zip', function () {
-    return gulp.src( [
+    return gulp.src([
         // Include
         './**/*',
 
         // Exclude
+        '!./.idea',
         '!./prepros.cfg',
         '!./**/.DS_Store',
         '!./sass/**/*.scss',
@@ -46,36 +30,10 @@ gulp.task('zip', function () {
         '!./*.sublime-project',
         '!./*.sublime-workspace'
     ])
-    .pipe ( zip ( 'easy-boats.zip' ) )
-    .pipe ( gulp.dest ( '../' ) )
-    .pipe ( notify ( {
-        message : 'Easy Boats plugin zip is ready.',
-        onLast : true
-    } ) );
-});
-
-
-/**
- * WP POT Translation File Generator.
- *
- * * This task does the following:
- *     1. Gets the source of all the PHP files
- *     2. Sort files in stream by path or any custom sort comparator
- *     3. Applies wpPot with the variable set at the top of this file
- *     4. Generate a .pot file of i18n that can be used for l10n to build .mo file
- */
-gulp.task( 'translate', function () {
-    return gulp.src( projectPHPWatchFiles )
-        .pipe( sort() )
-        .pipe( wpPot( {
-            domain        : text_domain,
-            destFile      : destFile,
-            package       : packageName,
-            bugReport     : bugReport,
-            lastTranslator: lastTranslator,
-            team          : team
-        } ) )
-        .pipe( gulp.dest( translatePath + destFile ) )
-        .pipe( notify( { message: 'TASK: "translate" Completed! 💯', onLast: true } ) )
-
+        .pipe(zip('easy-boats.zip'))
+        .pipe(gulp.dest('../'))
+        .pipe(notify({
+            message: 'Easy Boats plugin zip is ready.',
+            onLast: true
+        }));
 });
