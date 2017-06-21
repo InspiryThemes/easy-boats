@@ -1,0 +1,26 @@
+{
+  "name": "easy-boats",
+  "version": "1.0.0",
+  "description": "Easy Boats plugin provides simple and easy way to built boat related websites.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InspiryThemes/easy-boats.git"
+  },
+  "author": "Tariq",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/InspiryThemes/easy-boats/issues"
+  },
+  "homepage": "https://github.com/InspiryThemes/easy-boats#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sort": "^2.0.0",
+    "gulp-wp-pot": "^2.0.4",
+    "gulp-zip": "^3.2.0"
+  }
+}
