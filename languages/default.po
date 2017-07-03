@@ -1,0 +1,979 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Boats 1.0.0\n"
+"POT-Creation-Date: 2017-07-01 19:08+0500\n"
+"PO-Revision-Date: 2017-07-01 19:09+0500\n"
+"Last-Translator: Tariq <tariq@inspirythemes,com>\n"
+"Language-Team: InspiryThemes\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /wp-content/plugins/easy-boats\n"
+
+#: /wp-content/plugins/easy-boats/easy-boats.php:79
+msgid "Meta Box plugin has been deactivated!"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/easy-boats.php:80
+#: /wp-content/plugins/easy-boats/easy-boats.php:95
+#: /wp-content/plugins/easy-boats/easy-boats.php:111
+#: /wp-content/plugins/easy-boats/easy-boats.php:127
+#: /wp-content/plugins/easy-boats/easy-boats.php:143
+msgid "As now its functionality is embedded with in Easy Boats plugin."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/easy-boats.php:81
+#: /wp-content/plugins/easy-boats/easy-boats.php:97
+#: /wp-content/plugins/easy-boats/easy-boats.php:113
+#: /wp-content/plugins/easy-boats/easy-boats.php:129
+#: /wp-content/plugins/easy-boats/easy-boats.php:145
+msgid "So, You should completely remove it from your plugins."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/easy-boats.php:94
+msgid "Meta Box Columns plugin has been deactivated!"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/easy-boats.php:110
+msgid "Meta Box Tabs plugin has been deactivated!"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/easy-boats.php:126
+msgid "Meta Box Show Hide plugin has been deactivated!"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/easy-boats.php:142
+msgid "Meta Box Group plugin has been deactivated!"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:22
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:178
+msgid "Agents"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:23
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:550
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:518
+msgid "Agent"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:24
+msgid "Parent Agent:"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:25
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:179
+msgid "All Agents"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:26
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:185
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:186
+msgid "Add New Agent"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:27
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:27
+msgid "Add New"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:28
+msgid "New Agent"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:29
+msgid "Edit Agent"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:30
+msgid "Update Agent"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:31
+msgid "View Agent"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:32
+msgid "Search Agent"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:33
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:33
+msgid "Not found"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:34
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:34
+msgid "Not found in Trash"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:38
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:45
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:525
+msgid "agent"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:46
+msgid "Boat Agent"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:79
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:314
+msgid "Photo"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:80
+msgid "Email"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:81
+msgid "Mobile"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:117
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:363
+msgid "No Image"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:126
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:135
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:372
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:383
+msgid "NA"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:158
+msgid "Contact Details"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:164
+msgid "Job Title"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:169
+msgid "Email Address"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:171
+msgid ""
+"Agent related messages from contact form on boat details page, will be sent "
+"on this email address."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:175
+msgid "Mobile Number"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:180
+msgid "Office Number"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:185
+msgid "Fax Number"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:190
+msgid "Office Address"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:195
+msgid "Facebook URL"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:200
+msgid "Twitter URL"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:205
+msgid "Google Plus URL"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:210
+msgid "YouTube URL"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:215
+msgid "Instagram URL"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:220
+msgid "LinkedIn URL"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-agent-post-type.php:225
+msgid "Pinterest URL"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:22
+msgid "Boats"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:23
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:46
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:418
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:434
+msgid "Boat"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:24
+msgid "Parent Boat:"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:25
+msgid "All Boats"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:26
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:136
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:137
+msgid "Add New Boat"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:28
+msgid "New Boat"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:29
+msgid "Edit Boat"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:30
+msgid "Update Boat"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:31
+msgid "View Boat"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:32
+msgid "Search Boat"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:38
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:45
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:441
+msgid "boat"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:78
+msgid "Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:79
+msgid "All Boat Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:80
+msgid "Parent Boat Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:81
+msgid "Parent Boat Type:"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:82
+msgid "New Boat Type Name"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:83
+msgid "Add New Boat Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:84
+msgid "Edit Boat Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:85
+msgid "Update Boat Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:86
+msgid "View Boat Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:87
+msgid "Separate Boat Types with commas"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:88
+msgid "Add or remove Boat Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:89
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:136
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:183
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:230
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:277
+msgid "Choose from the most used"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:90
+msgid "Popular Boat Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:91
+msgid "Search Boat Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:92
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:139
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:186
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:233
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:280
+msgid "Not Found"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:96
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:455
+msgid "boat-type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:125
+msgid "Hull Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:126
+msgid "All Boat Hull Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:127
+msgid "Parent Boat Hull Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:128
+msgid "Parent Boat Hull Type:"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:129
+msgid "New Boat Hull Type Name"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:130
+msgid "Add New Boat Hull Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:131
+msgid "Edit Boat Hull Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:132
+msgid "Update Boat Hull Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:133
+msgid "View Boat Hull Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:134
+msgid "Separate Boat Hull Types with commas"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:135
+msgid "Add or remove Boat Hull Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:137
+msgid "Popular Boat Hull Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:138
+msgid "Search Boat Hull Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:143
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:469
+msgid "boat-hull-type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:172
+msgid "Statuses"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:173
+msgid "All Boat Statuses"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:174
+msgid "Parent Boat Status"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:175
+msgid "Parent Boat Status:"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:176
+msgid "New Boat Status Name"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:177
+msgid "Add New Boat Status"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:178
+msgid "Edit Boat Status"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:179
+msgid "Update Boat Status"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:180
+msgid "View Boat Status"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:181
+msgid "Separate Boat Statuses with commas"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:182
+msgid "Add or remove Boat Statuses"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:184
+msgid "Popular Boat Statuses"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:185
+msgid "Search Boat Statuses"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:190
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:483
+msgid "boat-status"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:219
+msgid "Locations"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:220
+msgid "All Boat Cities"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:221
+msgid "Parent Boat Location"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:222
+msgid "Parent Boat Location:"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:223
+msgid "New Boat Location Name"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:224
+msgid "Add New Boat Location"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:225
+msgid "Edit Boat Location"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:226
+msgid "Update Boat Location"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:227
+msgid "View Boat Location"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:228
+msgid "Separate Boat Cities with commas"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:229
+msgid "Add or remove Boat Cities"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:231
+msgid "Popular Boat Cities"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:232
+msgid "Search Boat Cities"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:237
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:497
+msgid "boat-location"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:266
+msgid "Features"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:267
+msgid "All Boat Features"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:268
+msgid "Parent Boat Feature"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:269
+msgid "Parent Boat Feature:"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:270
+msgid "New Boat Feature Name"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:271
+msgid "Add New Boat Feature"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:272
+msgid "Edit Boat Feature"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:273
+msgid "Update Boat Feature"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:274
+msgid "View Boat Feature"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:275
+msgid "Separate Boat Features with commas"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:276
+msgid "Add or remove Boat Features"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:278
+msgid "Popular Boat Features"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:279
+msgid "Search Boat Features"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:284
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:511
+msgid "boat-feature"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:315
+msgid "Custom ID"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:316
+msgid "Price"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:333
+msgid "Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:334
+msgid "Hull Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:335
+msgid "Status"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:336
+msgid "Location"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:404
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/select.php:84
+msgid "None"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:422
+msgid "Basic Information"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:426
+msgid "Boat Media"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:430
+msgid "Agent Information"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:434
+msgid "Additional Details"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:444
+msgid "Sale or Rent Price ( Only digits )"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:445
+msgid "Example Value: 435000"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:452
+msgid "Mark this boat as featured ?"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:457
+msgid "Yes "
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:458
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/checkbox.php:53
+msgid "No"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:469
+msgid "Built Year"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:470
+msgid "Example Value: 2017"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:478
+msgid "Boat ID"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:479
+msgid "It will help you search a boat directly."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:491
+msgid "Length ( Only digits )"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:492
+msgid "Example Value: 2500"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:500
+msgid "Length Postfix"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:501
+msgid "Example Value: ft or m"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:510
+msgid "Boat Gallery Images"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:512
+msgid "Maximum file upload limit is 48."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:528
+msgid "Virtual Tour Video URL"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:529
+msgid ""
+"Provide virtual tour video URL. YouTube, Vimeo, SWF File and MOV File are "
+"supported"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:537
+msgid "What to display in agent information box ?"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:542
+msgid "Author information."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:543
+msgid "Agent Information. ( Select the agent below )"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:544
+msgid "None. ( Hide information box )"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:569
+msgid "Title"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-boat-post-type.php:575
+msgid "Value"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:123
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:192
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:249
+msgid "Easy Boats Settings"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:124
+msgid "Easy Boats"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:143
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:448
+msgid "Boat Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:144
+msgid "Boat Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:150
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:462
+msgid "Boat Hull Type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:151
+msgid "Boat Hull Types"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:157
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:476
+msgid "Boat Status"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:158
+msgid "Boat Statuses"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:164
+msgid "Boat Location"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:165
+msgid "Boat Locations"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:171
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:172
+msgid "Boat Features"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:193
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:618
+msgid "Settings"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:265
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:309
+msgid "Price Format"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:266
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:424
+msgid "URL Slugs"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:319
+msgid "Currency Sign"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:327
+msgid "Default: $"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:333
+msgid "Currency Sign Position"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:342
+msgid "Before ($450,000)"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:343
+msgid "After (450,000$)"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:345
+msgid "Default: Before"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:351
+msgid "Thousand Separator"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:359
+msgid "Default: ,"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:365
+msgid "Decimal Separator"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:373
+msgid "Default: ."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:379
+msgid "Number of Decimals"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:387
+msgid "Default: 0"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:393
+msgid "Empty Price Text"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:400
+msgid "Price on call"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:401
+msgid "Text to display in case of empty price. Example: Price on call"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:442
+msgid "Default: boat"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:456
+msgid "Default: boat-type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:470
+msgid "Default: boat-hull-type"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:484
+msgid "Default: boat-status"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:490
+msgid "Boat City"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:498
+msgid "Default: boat-location"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:504
+msgid "Boat Feature"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:512
+msgid "Default: boat-feature"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:526
+msgid "Default: agent"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:541
+msgid ""
+"Using options provided below, You can modify price format to match your "
+"needs."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:548
+msgid "You can modify URL slugs to match your needs."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:549
+msgid ""
+"Just make sure to re-save permalinks settings after every change to avoid "
+"404 errors. You can do that from Settings > Permalinks ."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:575
+#: /wp-content/plugins/easy-boats/admin/class-easy-boats-admin.php:607
+msgid "Field id is missing!"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/clone.php:95
+msgid "+ Add more"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/core.php:42
+msgid "Documentation"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/core.php:43
+msgid "Extensions"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/validation.php:47
+msgid "Please correct the errors highlighted below and try again."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/autocomplete.php:15
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/autocomplete.php:74
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/autocomplete.php:89
+msgid "Delete"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/button.php:27
+msgid "Click me"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/checkbox.php:53
+msgid "Yes"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/file-input.php:17
+msgid "Select File"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/file-input.php:39
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/select.php:84
+msgid "Select"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/file-input.php:41
+msgid "Remove"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/file.php:16
+#, php-format
+msgid "You may only upload maximum %d file"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/file.php:17
+#, php-format
+msgid "You may only upload maximum %d files"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/file.php:73
+msgid "Error: Cannot delete file"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/map.php:57
+msgid "Find Address"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/oembed.php:60
+msgid "Embed HTML not available."
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/oembed.php:75
+msgid "Preview"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/post.php:33
+msgid "Select a post"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/post.php:36
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/taxonomy.php:51
+#, php-format
+msgid "Select a %s"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/select-advanced.php:41
+msgid "Select an item"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/select.php:84
+msgid "All"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/taxonomy.php:48
+msgid "Select a term"
+msgstr ""
+
+#: /wp-content/plugins/easy-boats/plugins/meta-box/inc/fields/user.php:33
+msgid "Select an user"
+msgstr ""

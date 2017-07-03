@@ -1,1117 +1,979 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Boats 1.0.0\n"
-"POT-Creation-Date: 2017-03-21 17:40+0500\n"
-"PO-Revision-Date: 2017-03-21 17:41+0500\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2017-07-01 19:08+0500\n"
+"PO-Revision-Date: 2017-07-01 19:09+0500\n"
+"Last-Translator: Tariq <tariq@inspirythemes,com>\n"
 "Language-Team: InspiryThemes\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: __;esc_html__;esc_html_e\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-
-#: admin/class-additional-details-meta-box.php:46
-msgid "Additional Details"
+#: easy-boats/easy-boats.php:79
+msgid "Meta Box plugin has been deactivated!"
 msgstr ""
 
+#: easy-boats/easy-boats.php:80
+#: easy-boats/easy-boats.php:95
+#: easy-boats/easy-boats.php:111
+#: easy-boats/easy-boats.php:127
+#: easy-boats/easy-boats.php:143
+msgid "As now its functionality is embedded with in Easy Boats plugin."
+msgstr ""
 
-#: admin/class-agent-post-type.php:22
+#: easy-boats/easy-boats.php:81
+#: easy-boats/easy-boats.php:97
+#: easy-boats/easy-boats.php:113
+#: easy-boats/easy-boats.php:129
+#: easy-boats/easy-boats.php:145
+msgid "So, You should completely remove it from your plugins."
+msgstr ""
+
+#: easy-boats/easy-boats.php:94
+msgid "Meta Box Columns plugin has been deactivated!"
+msgstr ""
+
+#: easy-boats/easy-boats.php:110
+msgid "Meta Box Tabs plugin has been deactivated!"
+msgstr ""
+
+#: easy-boats/easy-boats.php:126
+msgid "Meta Box Show Hide plugin has been deactivated!"
+msgstr ""
+
+#: easy-boats/easy-boats.php:142
+msgid "Meta Box Group plugin has been deactivated!"
+msgstr ""
+
+#: easy-boats/admin/class-agent-post-type.php:22
+#: easy-boats/admin/class-easy-boats-admin.php:178
 msgid "Agents"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:23
-#: admin/class-boat-post-type.php:555
-#: admin/class-easy-boats-admin.php:362
+#: easy-boats/admin/class-agent-post-type.php:23
+#: easy-boats/admin/class-boat-post-type.php:550
+#: easy-boats/admin/class-easy-boats-admin.php:518
 msgid "Agent"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:24
+#: easy-boats/admin/class-agent-post-type.php:24
 msgid "Parent Agent:"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:25
+#: easy-boats/admin/class-agent-post-type.php:25
+#: easy-boats/admin/class-easy-boats-admin.php:179
 msgid "All Agents"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:26
+#: easy-boats/admin/class-agent-post-type.php:26
+#: easy-boats/admin/class-easy-boats-admin.php:185
+#: easy-boats/admin/class-easy-boats-admin.php:186
 msgid "Add New Agent"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:27
-#: admin/class-boat-post-type.php:27
+#: easy-boats/admin/class-agent-post-type.php:27
+#: easy-boats/admin/class-boat-post-type.php:27
 msgid "Add New"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:28
+#: easy-boats/admin/class-agent-post-type.php:28
 msgid "New Agent"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:29
+#: easy-boats/admin/class-agent-post-type.php:29
 msgid "Edit Agent"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:30
+#: easy-boats/admin/class-agent-post-type.php:30
 msgid "Update Agent"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:31
+#: easy-boats/admin/class-agent-post-type.php:31
 msgid "View Agent"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:32
+#: easy-boats/admin/class-agent-post-type.php:32
 msgid "Search Agent"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:33
-#: admin/class-boat-post-type.php:33
+#: easy-boats/admin/class-agent-post-type.php:33
+#: easy-boats/admin/class-boat-post-type.php:33
 msgid "Not found"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:34
-#: admin/class-boat-post-type.php:34
+#: easy-boats/admin/class-agent-post-type.php:34
+#: easy-boats/admin/class-boat-post-type.php:34
 msgid "Not found in Trash"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:38
-#: admin/class-agent-post-type.php:45
-#: admin/class-easy-boats-admin.php:369
+#: easy-boats/admin/class-agent-post-type.php:38
+#: easy-boats/admin/class-agent-post-type.php:45
+#: easy-boats/admin/class-easy-boats-admin.php:525
 msgid "agent"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:46
+#: easy-boats/admin/class-agent-post-type.php:46
 msgid "Boat Agent"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:79
-#: admin/class-boat-post-type.php:314
+#: easy-boats/admin/class-agent-post-type.php:79
+#: easy-boats/admin/class-boat-post-type.php:314
 msgid "Photo"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:80
+#: easy-boats/admin/class-agent-post-type.php:80
 msgid "Email"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:81
+#: easy-boats/admin/class-agent-post-type.php:81
 msgid "Mobile"
 msgstr ""
 
+#: easy-boats/admin/class-agent-post-type.php:117
+#: easy-boats/admin/class-boat-post-type.php:363
+msgid "No Image"
+msgstr ""
 
-#: admin/class-agent-post-type.php:158
+#: easy-boats/admin/class-agent-post-type.php:126
+#: easy-boats/admin/class-agent-post-type.php:135
+#: easy-boats/admin/class-boat-post-type.php:372
+#: easy-boats/admin/class-boat-post-type.php:383
+msgid "NA"
+msgstr ""
+
+#: easy-boats/admin/class-agent-post-type.php:158
 msgid "Contact Details"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:164
+#: easy-boats/admin/class-agent-post-type.php:164
 msgid "Job Title"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:169
+#: easy-boats/admin/class-agent-post-type.php:169
 msgid "Email Address"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:171
+#: easy-boats/admin/class-agent-post-type.php:171
 msgid ""
 "Agent related messages from contact form on boat details page, will be sent "
 "on this email address."
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:175
+#: easy-boats/admin/class-agent-post-type.php:175
 msgid "Mobile Number"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:180
+#: easy-boats/admin/class-agent-post-type.php:180
 msgid "Office Number"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:185
+#: easy-boats/admin/class-agent-post-type.php:185
 msgid "Fax Number"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:190
+#: easy-boats/admin/class-agent-post-type.php:190
 msgid "Office Address"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:195
+#: easy-boats/admin/class-agent-post-type.php:195
 msgid "Facebook URL"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:200
+#: easy-boats/admin/class-agent-post-type.php:200
 msgid "Twitter URL"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:205
+#: easy-boats/admin/class-agent-post-type.php:205
 msgid "Google Plus URL"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:210
+#: easy-boats/admin/class-agent-post-type.php:210
 msgid "YouTube URL"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:215
+#: easy-boats/admin/class-agent-post-type.php:215
 msgid "Instagram URL"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:220
+#: easy-boats/admin/class-agent-post-type.php:220
 msgid "LinkedIn URL"
 msgstr ""
 
-
-#: admin/class-agent-post-type.php:225
+#: easy-boats/admin/class-agent-post-type.php:225
 msgid "Pinterest URL"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:22
+#: easy-boats/admin/class-boat-post-type.php:22
 msgid "Boats"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:23
-#: admin/class-boat-post-type.php:46
-#: admin/class-boat-post-type.php:424
-#: admin/class-easy-boats-admin.php:278
+#: easy-boats/admin/class-boat-post-type.php:23
+#: easy-boats/admin/class-boat-post-type.php:46
+#: easy-boats/admin/class-boat-post-type.php:418
+#: easy-boats/admin/class-easy-boats-admin.php:434
 msgid "Boat"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:24
+#: easy-boats/admin/class-boat-post-type.php:24
 msgid "Parent Boat:"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:25
+#: easy-boats/admin/class-boat-post-type.php:25
 msgid "All Boats"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:26
+#: easy-boats/admin/class-boat-post-type.php:26
+#: easy-boats/admin/class-easy-boats-admin.php:136
+#: easy-boats/admin/class-easy-boats-admin.php:137
 msgid "Add New Boat"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:28
+#: easy-boats/admin/class-boat-post-type.php:28
 msgid "New Boat"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:29
+#: easy-boats/admin/class-boat-post-type.php:29
 msgid "Edit Boat"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:30
+#: easy-boats/admin/class-boat-post-type.php:30
 msgid "Update Boat"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:31
+#: easy-boats/admin/class-boat-post-type.php:31
 msgid "View Boat"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:32
+#: easy-boats/admin/class-boat-post-type.php:32
 msgid "Search Boat"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:38
-#: admin/class-boat-post-type.php:45
-#: admin/class-easy-boats-admin.php:285
+#: easy-boats/admin/class-boat-post-type.php:38
+#: easy-boats/admin/class-boat-post-type.php:45
+#: easy-boats/admin/class-easy-boats-admin.php:441
 msgid "boat"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:78
+#: easy-boats/admin/class-boat-post-type.php:78
 msgid "Types"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:79
+#: easy-boats/admin/class-boat-post-type.php:79
 msgid "All Boat Types"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:80
+#: easy-boats/admin/class-boat-post-type.php:80
 msgid "Parent Boat Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:81
+#: easy-boats/admin/class-boat-post-type.php:81
 msgid "Parent Boat Type:"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:82
+#: easy-boats/admin/class-boat-post-type.php:82
 msgid "New Boat Type Name"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:83
+#: easy-boats/admin/class-boat-post-type.php:83
 msgid "Add New Boat Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:84
+#: easy-boats/admin/class-boat-post-type.php:84
 msgid "Edit Boat Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:85
+#: easy-boats/admin/class-boat-post-type.php:85
 msgid "Update Boat Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:86
+#: easy-boats/admin/class-boat-post-type.php:86
 msgid "View Boat Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:87
+#: easy-boats/admin/class-boat-post-type.php:87
 msgid "Separate Boat Types with commas"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:88
+#: easy-boats/admin/class-boat-post-type.php:88
 msgid "Add or remove Boat Types"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:89
-#: admin/class-boat-post-type.php:136
-#: admin/class-boat-post-type.php:183
-#: admin/class-boat-post-type.php:230
-#: admin/class-boat-post-type.php:277
+#: easy-boats/admin/class-boat-post-type.php:89
+#: easy-boats/admin/class-boat-post-type.php:136
+#: easy-boats/admin/class-boat-post-type.php:183
+#: easy-boats/admin/class-boat-post-type.php:230
+#: easy-boats/admin/class-boat-post-type.php:277
 msgid "Choose from the most used"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:90
+#: easy-boats/admin/class-boat-post-type.php:90
 msgid "Popular Boat Types"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:91
+#: easy-boats/admin/class-boat-post-type.php:91
 msgid "Search Boat Types"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:92
-#: admin/class-boat-post-type.php:139
-#: admin/class-boat-post-type.php:186
-#: admin/class-boat-post-type.php:233
-#: admin/class-boat-post-type.php:280
+#: easy-boats/admin/class-boat-post-type.php:92
+#: easy-boats/admin/class-boat-post-type.php:139
+#: easy-boats/admin/class-boat-post-type.php:186
+#: easy-boats/admin/class-boat-post-type.php:233
+#: easy-boats/admin/class-boat-post-type.php:280
 msgid "Not Found"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:96
-#: admin/class-easy-boats-admin.php:299
+#: easy-boats/admin/class-boat-post-type.php:96
+#: easy-boats/admin/class-easy-boats-admin.php:455
 msgid "boat-type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:125
+#: easy-boats/admin/class-boat-post-type.php:125
 msgid "Hull Types"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:126
+#: easy-boats/admin/class-boat-post-type.php:126
 msgid "All Boat Hull Types"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:127
+#: easy-boats/admin/class-boat-post-type.php:127
 msgid "Parent Boat Hull Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:128
+#: easy-boats/admin/class-boat-post-type.php:128
 msgid "Parent Boat Hull Type:"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:129
+#: easy-boats/admin/class-boat-post-type.php:129
 msgid "New Boat Hull Type Name"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:130
+#: easy-boats/admin/class-boat-post-type.php:130
 msgid "Add New Boat Hull Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:131
+#: easy-boats/admin/class-boat-post-type.php:131
 msgid "Edit Boat Hull Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:132
+#: easy-boats/admin/class-boat-post-type.php:132
 msgid "Update Boat Hull Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:133
+#: easy-boats/admin/class-boat-post-type.php:133
 msgid "View Boat Hull Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:134
+#: easy-boats/admin/class-boat-post-type.php:134
 msgid "Separate Boat Hull Types with commas"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:135
+#: easy-boats/admin/class-boat-post-type.php:135
 msgid "Add or remove Boat Hull Types"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:137
+#: easy-boats/admin/class-boat-post-type.php:137
 msgid "Popular Boat Hull Types"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:138
+#: easy-boats/admin/class-boat-post-type.php:138
 msgid "Search Boat Hull Types"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:143
-#: admin/class-easy-boats-admin.php:313
+#: easy-boats/admin/class-boat-post-type.php:143
+#: easy-boats/admin/class-easy-boats-admin.php:469
 msgid "boat-hull-type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:172
+#: easy-boats/admin/class-boat-post-type.php:172
 msgid "Statuses"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:173
+#: easy-boats/admin/class-boat-post-type.php:173
 msgid "All Boat Statuses"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:174
+#: easy-boats/admin/class-boat-post-type.php:174
 msgid "Parent Boat Status"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:175
+#: easy-boats/admin/class-boat-post-type.php:175
 msgid "Parent Boat Status:"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:176
+#: easy-boats/admin/class-boat-post-type.php:176
 msgid "New Boat Status Name"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:177
+#: easy-boats/admin/class-boat-post-type.php:177
 msgid "Add New Boat Status"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:178
+#: easy-boats/admin/class-boat-post-type.php:178
 msgid "Edit Boat Status"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:179
+#: easy-boats/admin/class-boat-post-type.php:179
 msgid "Update Boat Status"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:180
+#: easy-boats/admin/class-boat-post-type.php:180
 msgid "View Boat Status"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:181
+#: easy-boats/admin/class-boat-post-type.php:181
 msgid "Separate Boat Statuses with commas"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:182
+#: easy-boats/admin/class-boat-post-type.php:182
 msgid "Add or remove Boat Statuses"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:184
+#: easy-boats/admin/class-boat-post-type.php:184
 msgid "Popular Boat Statuses"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:185
+#: easy-boats/admin/class-boat-post-type.php:185
 msgid "Search Boat Statuses"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:190
-#: admin/class-easy-boats-admin.php:327
+#: easy-boats/admin/class-boat-post-type.php:190
+#: easy-boats/admin/class-easy-boats-admin.php:483
 msgid "boat-status"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:219
+#: easy-boats/admin/class-boat-post-type.php:219
 msgid "Locations"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:220
+#: easy-boats/admin/class-boat-post-type.php:220
 msgid "All Boat Cities"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:221
+#: easy-boats/admin/class-boat-post-type.php:221
 msgid "Parent Boat Location"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:222
+#: easy-boats/admin/class-boat-post-type.php:222
 msgid "Parent Boat Location:"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:223
+#: easy-boats/admin/class-boat-post-type.php:223
 msgid "New Boat Location Name"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:224
+#: easy-boats/admin/class-boat-post-type.php:224
 msgid "Add New Boat Location"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:225
+#: easy-boats/admin/class-boat-post-type.php:225
 msgid "Edit Boat Location"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:226
+#: easy-boats/admin/class-boat-post-type.php:226
 msgid "Update Boat Location"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:227
+#: easy-boats/admin/class-boat-post-type.php:227
 msgid "View Boat Location"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:228
+#: easy-boats/admin/class-boat-post-type.php:228
 msgid "Separate Boat Cities with commas"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:229
+#: easy-boats/admin/class-boat-post-type.php:229
 msgid "Add or remove Boat Cities"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:231
+#: easy-boats/admin/class-boat-post-type.php:231
 msgid "Popular Boat Cities"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:232
+#: easy-boats/admin/class-boat-post-type.php:232
 msgid "Search Boat Cities"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:237
-#: admin/class-easy-boats-admin.php:341
+#: easy-boats/admin/class-boat-post-type.php:237
+#: easy-boats/admin/class-easy-boats-admin.php:497
 msgid "boat-location"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:266
+#: easy-boats/admin/class-boat-post-type.php:266
 msgid "Features"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:267
+#: easy-boats/admin/class-boat-post-type.php:267
 msgid "All Boat Features"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:268
+#: easy-boats/admin/class-boat-post-type.php:268
 msgid "Parent Boat Feature"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:269
+#: easy-boats/admin/class-boat-post-type.php:269
 msgid "Parent Boat Feature:"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:270
+#: easy-boats/admin/class-boat-post-type.php:270
 msgid "New Boat Feature Name"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:271
+#: easy-boats/admin/class-boat-post-type.php:271
 msgid "Add New Boat Feature"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:272
+#: easy-boats/admin/class-boat-post-type.php:272
 msgid "Edit Boat Feature"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:273
+#: easy-boats/admin/class-boat-post-type.php:273
 msgid "Update Boat Feature"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:274
+#: easy-boats/admin/class-boat-post-type.php:274
 msgid "View Boat Feature"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:275
+#: easy-boats/admin/class-boat-post-type.php:275
 msgid "Separate Boat Features with commas"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:276
+#: easy-boats/admin/class-boat-post-type.php:276
 msgid "Add or remove Boat Features"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:278
+#: easy-boats/admin/class-boat-post-type.php:278
 msgid "Popular Boat Features"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:279
+#: easy-boats/admin/class-boat-post-type.php:279
 msgid "Search Boat Features"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:284
-#: admin/class-easy-boats-admin.php:355
+#: easy-boats/admin/class-boat-post-type.php:284
+#: easy-boats/admin/class-easy-boats-admin.php:511
 msgid "boat-feature"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:315
+#: easy-boats/admin/class-boat-post-type.php:315
 msgid "Custom ID"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:316
+#: easy-boats/admin/class-boat-post-type.php:316
 msgid "Price"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:333
+#: easy-boats/admin/class-boat-post-type.php:333
 msgid "Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:334
+#: easy-boats/admin/class-boat-post-type.php:334
 msgid "Hull Type"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:335
+#: easy-boats/admin/class-boat-post-type.php:335
 msgid "Status"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:336
+#: easy-boats/admin/class-boat-post-type.php:336
 msgid "Location"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:404
-#: plugins/meta-box/inc/fields/select.php:91
+#: easy-boats/admin/class-boat-post-type.php:404
+#: easy-boats/plugins/meta-box/inc/fields/select.php:84
 msgid "None"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:417
-msgid "Consult theme documentation for required image size."
-msgstr ""
-
-
-#: admin/class-boat-post-type.php:428
+#: easy-boats/admin/class-boat-post-type.php:422
 msgid "Basic Information"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:432
-msgid "Gallery Images"
+#: easy-boats/admin/class-boat-post-type.php:426
+msgid "Boat Media"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:436
-msgid "Boat Video"
-msgstr ""
-
-
-#: admin/class-boat-post-type.php:440
+#: easy-boats/admin/class-boat-post-type.php:430
 msgid "Agent Information"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:444
-msgid "Homepage Slider"
+#: easy-boats/admin/class-boat-post-type.php:434
+msgid "Additional Details"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:454
+#: easy-boats/admin/class-boat-post-type.php:444
 msgid "Sale or Rent Price ( Only digits )"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:455
+#: easy-boats/admin/class-boat-post-type.php:445
 msgid "Example Value: 435000"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:462
+#: easy-boats/admin/class-boat-post-type.php:452
 msgid "Mark this boat as featured ?"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:467
-#: admin/class-boat-post-type.php:574
+#: easy-boats/admin/class-boat-post-type.php:457
 msgid "Yes "
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:468
-#: admin/class-boat-post-type.php:575
-#: plugins/meta-box/inc/fields/checkbox.php:82
+#: easy-boats/admin/class-boat-post-type.php:458
+#: easy-boats/plugins/meta-box/inc/fields/checkbox.php:53
 msgid "No"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:475
-msgid "Length ( Only digits )"
-msgstr ""
-
-
-#: admin/class-boat-post-type.php:476
-msgid "Example Value: 2500"
-msgstr ""
-
-
-#: admin/class-boat-post-type.php:484
-msgid "Length Postfix"
-msgstr ""
-
-
-#: admin/class-boat-post-type.php:485
-msgid "Example Value: ft or m"
-msgstr ""
-
-
-#: admin/class-boat-post-type.php:493
+#: easy-boats/admin/class-boat-post-type.php:469
 msgid "Built Year"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:494
+#: easy-boats/admin/class-boat-post-type.php:470
 msgid "Example Value: 2017"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:502
+#: easy-boats/admin/class-boat-post-type.php:478
 msgid "Boat ID"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:503
+#: easy-boats/admin/class-boat-post-type.php:479
 msgid "It will help you search a boat directly."
 msgstr ""
 
+#: easy-boats/admin/class-boat-post-type.php:491
+msgid "Length ( Only digits )"
+msgstr ""
 
-#: admin/class-boat-post-type.php:512
+#: easy-boats/admin/class-boat-post-type.php:492
+msgid "Example Value: 2500"
+msgstr ""
+
+#: easy-boats/admin/class-boat-post-type.php:500
+msgid "Length Postfix"
+msgstr ""
+
+#: easy-boats/admin/class-boat-post-type.php:501
+msgid "Example Value: ft or m"
+msgstr ""
+
+#: easy-boats/admin/class-boat-post-type.php:510
 msgid "Boat Gallery Images"
 msgstr ""
 
+#: easy-boats/admin/class-boat-post-type.php:512
+msgid "Maximum file upload limit is 48."
+msgstr ""
 
-#: admin/class-boat-post-type.php:524
+#: easy-boats/admin/class-boat-post-type.php:528
 msgid "Virtual Tour Video URL"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:525
+#: easy-boats/admin/class-boat-post-type.php:529
 msgid ""
 "Provide virtual tour video URL. YouTube, Vimeo, SWF File and MOV File are "
 "supported"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:531
-msgid "Virtual Tour Video Image"
-msgstr ""
-
-
-#: admin/class-boat-post-type.php:542
+#: easy-boats/admin/class-boat-post-type.php:537
 msgid "What to display in agent information box ?"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:547
+#: easy-boats/admin/class-boat-post-type.php:542
 msgid "Author information."
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:548
+#: easy-boats/admin/class-boat-post-type.php:543
 msgid "Agent Information. ( Select the agent below )"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:549
+#: easy-boats/admin/class-boat-post-type.php:544
 msgid "None. ( Hide information box )"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:568
-msgid "Do you want to add this boat in Homepage Slider ?"
+#: easy-boats/admin/class-boat-post-type.php:569
+msgid "Title"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:569
-msgid "If Yes, Then you need to provide a slider image below."
+#: easy-boats/admin/class-boat-post-type.php:575
+msgid "Value"
 msgstr ""
 
-
-#: admin/class-boat-post-type.php:581
-msgid "Slider Image"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:116
-#: admin/class-easy-boats-admin.php:133
+#: easy-boats/admin/class-easy-boats-admin.php:123
+#: easy-boats/admin/class-easy-boats-admin.php:192
+#: easy-boats/admin/class-easy-boats-admin.php:249
 msgid "Easy Boats Settings"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:117
+#: easy-boats/admin/class-easy-boats-admin.php:124
 msgid "Easy Boats"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:167
-msgid "Price Format"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:177
-msgid "Currency Sign"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:185
-msgid "Default: $"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:191
-msgid "Currency Sign Position"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:200
-msgid "Before ($450,000)"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:201
-msgid "After (450,000$)"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:203
-msgid "Default: Before"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:209
-msgid "Thousand Separator"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:217
-msgid "Default: ,"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:223
-msgid "Decimal Separator"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:231
-msgid "Default: ."
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:237
-msgid "Number of Decimals"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:245
-msgid "Default: 0"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:251
-msgid "Empty Price Text"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:258
-msgid "Price on call"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:259
-msgid "Text to display in case of empty price. Example: Price on call"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:268
-msgid "URL Slugs"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:286
-msgid "Default: boat"
-msgstr ""
-
-
-#: admin/class-easy-boats-admin.php:292
+#: easy-boats/admin/class-easy-boats-admin.php:143
+#: easy-boats/admin/class-easy-boats-admin.php:448
 msgid "Boat Type"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:300
-msgid "Default: boat-type"
+#: easy-boats/admin/class-easy-boats-admin.php:144
+msgid "Boat Types"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:306
+#: easy-boats/admin/class-easy-boats-admin.php:150
+#: easy-boats/admin/class-easy-boats-admin.php:462
 msgid "Boat Hull Type"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:314
-msgid "Default: boat-hull-type"
+#: easy-boats/admin/class-easy-boats-admin.php:151
+msgid "Boat Hull Types"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:320
+#: easy-boats/admin/class-easy-boats-admin.php:157
+#: easy-boats/admin/class-easy-boats-admin.php:476
 msgid "Boat Status"
 msgstr ""
 
+#: easy-boats/admin/class-easy-boats-admin.php:158
+msgid "Boat Statuses"
+msgstr ""
 
-#: admin/class-easy-boats-admin.php:328
+#: easy-boats/admin/class-easy-boats-admin.php:164
+msgid "Boat Location"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:165
+msgid "Boat Locations"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:171
+#: easy-boats/admin/class-easy-boats-admin.php:172
+msgid "Boat Features"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:193
+#: easy-boats/admin/class-easy-boats-admin.php:618
+msgid "Settings"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:265
+#: easy-boats/admin/class-easy-boats-admin.php:309
+msgid "Price Format"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:266
+#: easy-boats/admin/class-easy-boats-admin.php:424
+msgid "URL Slugs"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:319
+msgid "Currency Sign"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:327
+msgid "Default: $"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:333
+msgid "Currency Sign Position"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:342
+msgid "Before ($450,000)"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:343
+msgid "After (450,000$)"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:345
+msgid "Default: Before"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:351
+msgid "Thousand Separator"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:359
+msgid "Default: ,"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:365
+msgid "Decimal Separator"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:373
+msgid "Default: ."
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:379
+msgid "Number of Decimals"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:387
+msgid "Default: 0"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:393
+msgid "Empty Price Text"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:400
+msgid "Price on call"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:401
+msgid "Text to display in case of empty price. Example: Price on call"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:442
+msgid "Default: boat"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:456
+msgid "Default: boat-type"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:470
+msgid "Default: boat-hull-type"
+msgstr ""
+
+#: easy-boats/admin/class-easy-boats-admin.php:484
 msgid "Default: boat-status"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:334
+#: easy-boats/admin/class-easy-boats-admin.php:490
 msgid "Boat City"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:342
+#: easy-boats/admin/class-easy-boats-admin.php:498
 msgid "Default: boat-location"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:348
+#: easy-boats/admin/class-easy-boats-admin.php:504
 msgid "Boat Feature"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:356
+#: easy-boats/admin/class-easy-boats-admin.php:512
 msgid "Default: boat-feature"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:370
+#: easy-boats/admin/class-easy-boats-admin.php:526
 msgid "Default: agent"
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:386
+#: easy-boats/admin/class-easy-boats-admin.php:541
 msgid ""
 "Using options provided below, You can modify price format to match your "
 "needs."
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:393
+#: easy-boats/admin/class-easy-boats-admin.php:548
 msgid "You can modify URL slugs to match your needs."
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:393
+#: easy-boats/admin/class-easy-boats-admin.php:549
 msgid ""
 "Just make sure to re-save permalinks settings after every change to avoid "
-"404 errors. You can do that from Settings > Permalinks."
+"404 errors. You can do that from Settings > Permalinks ."
 msgstr ""
 
-
-#: admin/class-easy-boats-admin.php:456
-msgid "Settings"
+#: easy-boats/admin/class-easy-boats-admin.php:575
+#: easy-boats/admin/class-easy-boats-admin.php:607
+msgid "Field id is missing!"
 msgstr ""
 
-
-#: plugins/meta-box/inc/core.php:40
-msgid "Documentation"
-msgstr ""
-
-
-#: plugins/meta-box/inc/core.php:41
-msgid "Extensions"
-msgstr ""
-
-
-#: plugins/meta-box/inc/field.php:192
+#: easy-boats/plugins/meta-box/inc/clone.php:95
 msgid "+ Add more"
 msgstr ""
 
+#: easy-boats/plugins/meta-box/inc/core.php:42
+msgid "Documentation"
+msgstr ""
 
-#: plugins/meta-box/inc/validation.php:49
+#: easy-boats/plugins/meta-box/inc/core.php:43
+msgid "Extensions"
+msgstr ""
+
+#: easy-boats/plugins/meta-box/inc/validation.php:47
 msgid "Please correct the errors highlighted below and try again."
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/autocomplete.php:23
-#: plugins/meta-box/inc/fields/autocomplete.php:87
-#: plugins/meta-box/inc/fields/autocomplete.php:104
+#: easy-boats/plugins/meta-box/inc/fields/autocomplete.php:15
+#: easy-boats/plugins/meta-box/inc/fields/autocomplete.php:74
+#: easy-boats/plugins/meta-box/inc/fields/autocomplete.php:89
 msgid "Delete"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/button.php:29
+#: easy-boats/plugins/meta-box/inc/fields/button.php:27
 msgid "Click me"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/checkbox.php:82
+#: easy-boats/plugins/meta-box/inc/fields/checkbox.php:53
 msgid "Yes"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/file-input.php:25
+#: easy-boats/plugins/meta-box/inc/fields/file-input.php:17
 msgid "Select File"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/file-input.php:49
-#: plugins/meta-box/inc/fields/select.php:91
+#: easy-boats/plugins/meta-box/inc/fields/file-input.php:39
+#: easy-boats/plugins/meta-box/inc/fields/select.php:84
 msgid "Select"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/file-input.php:51
+#: easy-boats/plugins/meta-box/inc/fields/file-input.php:41
 msgid "Remove"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/file.php:24
+#: easy-boats/plugins/meta-box/inc/fields/file.php:16
 #, php-format
 msgid "You may only upload maximum %d file"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/file.php:25
+#: easy-boats/plugins/meta-box/inc/fields/file.php:17
 #, php-format
 msgid "You may only upload maximum %d files"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/file.php:85
+#: easy-boats/plugins/meta-box/inc/fields/file.php:73
 msgid "Error: Cannot delete file"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/map.php:49
+#: easy-boats/plugins/meta-box/inc/fields/map.php:57
 msgid "Find Address"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/oembed.php:65
+#: easy-boats/plugins/meta-box/inc/fields/oembed.php:60
 msgid "Embed HTML not available."
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/oembed.php:81
+#: easy-boats/plugins/meta-box/inc/fields/oembed.php:75
 msgid "Preview"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/post.php:34
+#: easy-boats/plugins/meta-box/inc/fields/post.php:33
 msgid "Select a post"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/post.php:38
-#: plugins/meta-box/inc/fields/taxonomy.php:51
+#: easy-boats/plugins/meta-box/inc/fields/post.php:36
+#: easy-boats/plugins/meta-box/inc/fields/taxonomy.php:51
 #, php-format
 msgid "Select a %s"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/select-advanced.php:44
+#: easy-boats/plugins/meta-box/inc/fields/select-advanced.php:41
 msgid "Select an item"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/select.php:91
+#: easy-boats/plugins/meta-box/inc/fields/select.php:84
 msgid "All"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/taxonomy.php:47
+#: easy-boats/plugins/meta-box/inc/fields/taxonomy.php:48
 msgid "Select a term"
 msgstr ""
 
-
-#: plugins/meta-box/inc/fields/user.php:34
+#: easy-boats/plugins/meta-box/inc/fields/user.php:33
 msgid "Select an user"
 msgstr ""
