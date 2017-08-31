@@ -214,27 +214,27 @@ class Easy_Boats_Boat_Post_Type {
     public function register_boat_location_taxonomy() {
 
         $labels = array(
-            'name'                       => _x( 'Boat Location', 'Taxonomy General Name', 'easy-boats' ),
-            'singular_name'              => _x( 'Boat Location', 'Taxonomy Singular Name', 'easy-boats' ),
+            'name'                       => _x( 'Boat location', 'Taxonomy General Name', 'easy-boats' ),
+            'singular_name'              => _x( 'Boat location', 'Taxonomy Singular Name', 'easy-boats' ),
             'menu_name'                  => __( 'Locations', 'easy-boats' ),
-            'all_items'                  => __( 'All Boat Cities', 'easy-boats' ),
-            'parent_item'                => __( 'Parent Boat Location', 'easy-boats' ),
-            'parent_item_colon'          => __( 'Parent Boat Location:', 'easy-boats' ),
-            'new_item_name'              => __( 'New Boat Location Name', 'easy-boats' ),
-            'add_new_item'               => __( 'Add New Boat Location', 'easy-boats' ),
-            'edit_item'                  => __( 'Edit Boat Location', 'easy-boats' ),
-            'update_item'                => __( 'Update Boat Location', 'easy-boats' ),
-            'view_item'                  => __( 'View Boat Location', 'easy-boats' ),
-            'separate_items_with_commas' => __( 'Separate Boat Cities with commas', 'easy-boats' ),
-            'add_or_remove_items'        => __( 'Add or remove Boat Cities', 'easy-boats' ),
+            'all_items'                  => __( 'All locations', 'easy-boats' ),
+            'parent_item'                => __( 'Parent location', 'easy-boats' ),
+            'parent_item_colon'          => __( 'Parent location:', 'easy-boats' ),
+            'new_item_name'              => __( 'New location name', 'easy-boats' ),
+            'add_new_item'               => __( 'Add new location', 'easy-boats' ),
+            'edit_item'                  => __( 'Edit location', 'easy-boats' ),
+            'update_item'                => __( 'Update location', 'easy-boats' ),
+            'view_item'                  => __( 'View location', 'easy-boats' ),
+            'separate_items_with_commas' => __( 'Separate locations with commas', 'easy-boats' ),
+            'add_or_remove_items'        => __( 'Add or remove locations', 'easy-boats' ),
             'choose_from_most_used'      => __( 'Choose from the most used', 'easy-boats' ),
-            'popular_items'              => __( 'Popular Boat Cities', 'easy-boats' ),
-            'search_items'               => __( 'Search Boat Cities', 'easy-boats' ),
-            'not_found'                  => __( 'Not Found', 'easy-boats' ),
+            'popular_items'              => __( 'Popular locations', 'easy-boats' ),
+            'search_items'               => __( 'Search locations', 'easy-boats' ),
+            'not_found'                  => __( 'Not found', 'easy-boats' ),
         );
 
         $rewrite = array(
-            'slug'                       => apply_filters( 'easy_boats_boat_location_slug', __( 'boat-location', 'easy-boats' ) ),
+            'slug'                       => apply_filters( 'easy_boats_boat_location_slug', __( 'location', 'easy-boats' ) ),
             'with_front'                 => true,
             'hierarchical'               => true,
         );
