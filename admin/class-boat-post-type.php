@@ -167,23 +167,23 @@ class Easy_Boats_Boat_Post_Type {
     public function register_boat_status_taxonomy() {
 
         $labels = array(
-            'name'                       => _x( 'Boat Status', 'Taxonomy General Name', 'easy-boats' ),
-            'singular_name'              => _x( 'Boat Status', 'Taxonomy Singular Name', 'easy-boats' ),
+            'name'                       => _x( 'Boat status', 'Taxonomy General Name', 'easy-boats' ),
+            'singular_name'              => _x( 'Boat status', 'Taxonomy Singular Name', 'easy-boats' ),
             'menu_name'                  => __( 'Statuses', 'easy-boats' ),
-            'all_items'                  => __( 'All Boat Statuses', 'easy-boats' ),
-            'parent_item'                => __( 'Parent Boat Status', 'easy-boats' ),
-            'parent_item_colon'          => __( 'Parent Boat Status:', 'easy-boats' ),
-            'new_item_name'              => __( 'New Boat Status Name', 'easy-boats' ),
-            'add_new_item'               => __( 'Add New Boat Status', 'easy-boats' ),
-            'edit_item'                  => __( 'Edit Boat Status', 'easy-boats' ),
-            'update_item'                => __( 'Update Boat Status', 'easy-boats' ),
-            'view_item'                  => __( 'View Boat Status', 'easy-boats' ),
-            'separate_items_with_commas' => __( 'Separate Boat Statuses with commas', 'easy-boats' ),
-            'add_or_remove_items'        => __( 'Add or remove Boat Statuses', 'easy-boats' ),
+            'all_items'                  => __( 'All statuses', 'easy-boats' ),
+            'parent_item'                => __( 'Parent status', 'easy-boats' ),
+            'parent_item_colon'          => __( 'Parent status:', 'easy-boats' ),
+            'new_item_name'              => __( 'New status name', 'easy-boats' ),
+            'add_new_item'               => __( 'Add new status', 'easy-boats' ),
+            'edit_item'                  => __( 'Edit status', 'easy-boats' ),
+            'update_item'                => __( 'Update status', 'easy-boats' ),
+            'view_item'                  => __( 'View status', 'easy-boats' ),
+            'separate_items_with_commas' => __( 'Separate statuses with commas', 'easy-boats' ),
+            'add_or_remove_items'        => __( 'Add or remove statuses', 'easy-boats' ),
             'choose_from_most_used'      => __( 'Choose from the most used', 'easy-boats' ),
-            'popular_items'              => __( 'Popular Boat Statuses', 'easy-boats' ),
-            'search_items'               => __( 'Search Boat Statuses', 'easy-boats' ),
-            'not_found'                  => __( 'Not Found', 'easy-boats' ),
+            'popular_items'              => __( 'Popular statuses', 'easy-boats' ),
+            'search_items'               => __( 'Search statuses', 'easy-boats' ),
+            'not_found'                  => __( 'Not found', 'easy-boats' ),
         );
 
         $rewrite = array(
