@@ -422,8 +422,8 @@ class Easy_Boats_Boat_Post_Type {
                     'label' => __('Basic Information', 'easy-boats'),
                     'icon' => 'dashicons-admin-home',
                 ),
-                'additional-details' => array(
-	                'label' => __('Additional Details', 'easy-boats'),
+                'specifications' => array(
+	                'label' => __('Specifications', 'easy-boats'),
 	                'icon' => 'dashicons-welcome-add-page',
                 ),
                 'media' => array(
@@ -508,13 +508,13 @@ class Easy_Boats_Boat_Post_Type {
 		            'type' => 'divider',
 		            'tab'  => 'details'
 	            ),
-	            // Additional Details
+	            // Specifications
 	            array(
-		            'id'  => "{$prefix}additional_details",
+		            'id'  => "{$prefix}specifications",
 		            'type'   => 'group',
 		            'clone'  => true,
 		            'sort_clone' => true,
-		            'tab'   => 'additional-details',
+		            'tab'   => 'specifications',
 		            'fields' => array(
 			            array(
 				            'name'  => __( 'Title', 'easy-boats' ),

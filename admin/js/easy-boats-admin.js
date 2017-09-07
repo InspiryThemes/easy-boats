@@ -31,8 +31,8 @@
 
 	$(function() {
 
-		/* Apply jquery ui sortable on additional details */
-		$( "#inspiry-additional-details-container" ).sortable({
+		/* Apply jquery ui sortable on specifications */
+		$( "#inspiry-specifications-container" ).sortable({
 			revert: 100,
 			placeholder: "detail-placeholder",
 			handle: ".sort-detail",
@@ -48,7 +48,7 @@
 				'<div class="inspiry-detail-control"><a class="remove-detail" href="#"><span class="dashicons dashicons-dismiss"></span></a></div>' +
 				'</div>';
 
-			$( '#inspiry-additional-details-container').append( newInspiryDetail );
+			$( '#inspiry-specifications-container').append( newInspiryDetail );
 			bindAdditionalDetailsEvents();
 		});
 

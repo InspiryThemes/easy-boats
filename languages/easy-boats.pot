@@ -603,7 +603,7 @@ msgid "Agent Information"
 msgstr ""
 
 #: easy-boats/admin/class-boat-post-type.php:434
-msgid "Additional Details"
+msgid "Specifications"
 msgstr ""
 
 #: easy-boats/admin/class-boat-post-type.php:444

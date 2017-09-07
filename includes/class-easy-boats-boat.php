@@ -32,7 +32,7 @@ class Easy_Boats_Boat {
         'agent_display_option'  => 'EASYBOATS_agent_display_option',
         'agent_id'              => 'EASYBOATS_agents',
         'slider_image'          => 'EASYBOATS_slider_image',
-        'additional_details'    => 'EASYBOATS_additional_details',
+        'specifications'        => 'EASYBOATS_specifications',
     );
 
     /**
@@ -311,14 +311,14 @@ class Easy_Boats_Boat {
     }
 
     /**
-     * Return boat additional details
+     * Return boat specifications
      * @return bool|mixed
      */
-    public function get_additional_details() {
+    public function get_specifications() {
         if ( ! $this->boat_id ) {
             return false;
         }
-        return maybe_unserialize ( $this->get_boat_meta( $this->meta_keys['additional_details'] ) );
+        return maybe_unserialize ( $this->get_boat_meta( $this->meta_keys['specifications'] ) );
     }
 
     /**
