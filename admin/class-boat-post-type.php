@@ -422,18 +422,18 @@ class Easy_Boats_Boat_Post_Type {
                     'label' => __('Basic Information', 'easy-boats'),
                     'icon' => 'dashicons-admin-home',
                 ),
+                'additional-details' => array(
+	                'label' => __('Additional Details', 'easy-boats'),
+	                'icon' => 'dashicons-welcome-add-page',
+                ),
                 'media' => array(
-	                'label' => __('Boat Media', 'easy-boats'),
+	                'label' => __('Photos and Video', 'easy-boats'),
 	                'icon' => 'dashicons-admin-media',
                 ),
                 'agent' => array(
                     'label' => __('Agent Information', 'easy-boats'),
                     'icon' => 'dashicons-businessman',
                 ),
-                'additional-details' => array(
-                    'label' => __('Additional Details', 'easy-boats'),
-                    'icon' => 'dashicons-welcome-add-page',
-                )
             ),
             'tab_style' => 'left',
             'fields' => array(
@@ -504,6 +504,32 @@ class Easy_Boats_Boat_Post_Type {
 		            'columns' => 6,
 		            'tab' => 'details',
 	            ),
+	            array(
+		            'type' => 'divider',
+		            'tab'  => 'details'
+	            ),
+	            // Additional Details
+	            array(
+		            'id'  => "{$prefix}additional_details",
+		            'type'   => 'group',
+		            'clone'  => true,
+		            'sort_clone' => true,
+		            'tab'   => 'additional-details',
+		            'fields' => array(
+			            array(
+				            'name'  => __( 'Title', 'easy-boats' ),
+				            'id'    => "title",
+				            'columns' => 6,
+				            'type'  => 'text',
+			            ),
+			            array(
+				            'name'  => __( 'Value', 'easy-boats' ),
+				            'id'    => "value",
+				            'columns' => 6,
+				            'type'  => 'text',
+			            ),
+		            )
+	            ),
 
                 // Boat Gallery
                 array(
@@ -557,28 +583,7 @@ class Easy_Boats_Boat_Post_Type {
                     'tab' => 'agent',
                 ),
 
-                // Additional Details
-	            array(
-		            'id'  => "{$prefix}additional_details",
-		            'type'   => 'group',
-		            'clone'  => true,
-		            'sort_clone' => true,
-		            'tab'   => 'additional-details',
-		            'fields' => array(
-			            array(
-				            'name'  => __( 'Title', 'easy-boats' ),
-				            'id'    => "title",
-				            'columns' => 6,
-				            'type'  => 'text',
-			            ),
-			            array(
-				            'name'  => __( 'Value', 'easy-boats' ),
-				            'id'    => "value",
-				            'columns' => 6,
-				            'type'  => 'text',
-			            ),
-		            )
-	            ),
+
             )
         );
 
