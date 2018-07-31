@@ -120,8 +120,8 @@ class Easy_Boats_Admin {
 	public function add_easy_boats_settings(){
 
 		add_menu_page(
-			__( 'Easy Boats Settings', 'easy-boats'),	    // The value used to populate the browser's title bar when the menu page is active
-			__( 'Easy Boats', 'easy-boats'),			    // The text of the menu in the administrator's sidebar
+			apply_filters( 'easy_boats_page_title', __( 'Easy Boats Settings', 'easy-boats') ),	    // The value used to populate the browser's title bar when the menu page is active
+			apply_filters( 'easy_boats_menu_title', __( 'Easy Boats', 'easy-boats') ),			    // The text of the menu in the administrator's sidebar
 			'administrator',					            // What roles are able to access the menu
 			'easy_boats',				                    // The ID used to bind submenu items to this menu
 			array( $this, 'display_easy_boats_settings'),	// The callback function used to render this menu
@@ -173,34 +173,42 @@ class Easy_Boats_Admin {
 				'administrator',
 				'edit-tags.php?taxonomy=boat-feature',
 			),
-			'allagents' => array(
-				'easy_boats',
-				__( 'Agents', 'easy-boats' ),
-				__( 'All Agents', 'easy-boats' ),
-				'administrator',
-				'edit.php?post_type=agent',
-			),
-			'addnewagent' => array(
-				'easy_boats',
-				__( 'Add New Agent', 'easy-boats' ),
-				__( 'Add New Agent', 'easy-boats' ),
-				'administrator',
-				'post-new.php?post_type=agent',
-			),
-			'easyboats' => array(
-				'easy_boats',
-				__( 'Easy Boats Settings', 'easy-boats' ),
-				__( 'Settings', 'easy-boats' ),
-				'administrator',
-				'easy_boats',
-				 array( $this, 'display_easy_boats_settings'),
-			),
+		);
+
+		$sub_menus = apply_filters( 'easy_boats_taxonomy_menus', $sub_menus );
+
+		$sub_menus['allagents'] = array(
+			'easy_boats',
+			__( 'Agents', 'easy-boats' ),
+			__( 'All Agents', 'easy-boats' ),
+			'administrator',
+			'edit.php?post_type=agent',
+		);
+
+		$sub_menus['addnewagent'] = array(
+			'easy_boats',
+			__( 'Add New Agent', 'easy-boats' ),
+			__( 'Add New Agent', 'easy-boats' ),
+			'administrator',
+			'post-new.php?post_type=agent',
+		);
+
+		$sub_menus = apply_filters( 'easy_boats_custom_post_type_menus', $sub_menus );
+
+		$sub_menus['easyboats'] = array(
+			'easy_boats',
+			apply_filters( 'easy_boats_settings_menu_page_title', __( 'Easy Boats Settings', 'easy-boats') ),
+			apply_filters( 'easy_boats_settings_menu_title', __( 'Settings', 'easy-boats') ),
+			'administrator',
+			'easy_boats',
+			array( $this, 'display_easy_boats_settings' ),
 		);
 
 		// Third-party can add more sub_menus.
-		$sub_menu = apply_filters( 'easy_boats_sub_menus', $sub_menus, 20 );
+		$sub_menus = apply_filters( 'easy_boats_sub_menus', $sub_menus, 20 );
 
 		/**
+         *
 		 * Add Submenu.
 		 *
 		 * @param string $parent_slug
@@ -211,7 +219,7 @@ class Easy_Boats_Admin {
 		 * @param callable $function = ''
 		 * @since  1.0.0
 		 */
-		if ( $sub_menu ) {
+		if ( $sub_menus ) {
 			foreach ( $sub_menus as $sub_menu ) {
 				call_user_func_array( 'add_submenu_page', $sub_menu );
 			}
@@ -246,7 +254,7 @@ class Easy_Boats_Admin {
         <!-- Create a header in the default WordPress 'wrap' container -->
         <div class="wrap">
 
-            <h2><?php esc_html_e( 'Easy Boats Settings', 'easy-boats' ); ?></h2>
+            <h2><?php echo apply_filters( 'easy_boats_settings_page_title', __( 'Easy Boats Settings', 'easy-boats') ); ?></h2>
 
             <!-- Make a call to the WordPress function for rendering errors when settings are saved. -->
 			<?php settings_errors(); ?>
